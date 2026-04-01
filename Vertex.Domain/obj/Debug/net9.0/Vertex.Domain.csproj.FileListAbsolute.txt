@@ -9,3 +9,4 @@ G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.dll
 G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\refint\Vertex.Domain.dll
 G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.pdb
 G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\ref\Vertex.Domain.dll
+G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.sourcelink.json

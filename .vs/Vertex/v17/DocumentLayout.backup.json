@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "G:\\Vertex\\Vertex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|g:\\vertex\\vertex\\vertex.domain\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:vertex.domain\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|g:\\vertex\\vertex\\vertex.domain\\enums\\stationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:vertex.domain\\enums\\stationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|g:\\vertex\\vertex\\vertex.domain\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:vertex.domain\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|g:\\vertex\\vertex\\vertex.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:vertex.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Vertex.API\\Properties\\launchSettings.json",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Properties\\launchSettings.json*",
-              "RelativeToolTip": "Vertex.API\\Properties\\launchSettings.json*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-01T21:57:22.852Z",
+              "Title": "Session.cs",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Session.cs",
+              "RelativeDocumentMoniker": "Vertex.Domain\\Entities\\Session.cs",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Session.cs",
+              "RelativeToolTip": "Vertex.Domain\\Entities\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T22:23:35.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Program.cs",
-              "RelativeDocumentMoniker": "Vertex.API\\Program.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Program.cs",
-              "RelativeToolTip": "Vertex.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Title": "StationStatus.cs",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Enums\\StationStatus.cs",
+              "RelativeDocumentMoniker": "Vertex.Domain\\Enums\\StationStatus.cs",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Domain\\Enums\\StationStatus.cs",
+              "RelativeToolTip": "Vertex.Domain\\Enums\\StationStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T21:44:02.303Z",
+              "WhenOpened": "2026-04-01T22:22:00.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Station.cs",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Station.cs",
+              "RelativeDocumentMoniker": "Vertex.Domain\\Entities\\Station.cs",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Station.cs",
+              "RelativeToolTip": "Vertex.Domain\\Entities\\Station.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T22:19:59.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "Vertex.Domain\\Entities\\Customer.cs",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "Vertex.Domain\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T22:16:31.677Z",
               "EditorCaption": ""
             }
           ]
