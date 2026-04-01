@@ -1,0 +1,11 @@
+G:\Vertex\Vertex\Vertex.Domain\bin\Debug\net9.0\Vertex.Domain.deps.json
+G:\Vertex\Vertex\Vertex.Domain\bin\Debug\net9.0\Vertex.Domain.dll
+G:\Vertex\Vertex\Vertex.Domain\bin\Debug\net9.0\Vertex.Domain.pdb
+G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.AssemblyInfoInputs.cache
+G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.AssemblyInfo.cs
+G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.csproj.CoreCompileInputs.cache
+G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.dll
+G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\refint\Vertex.Domain.dll
+G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.pdb
+G:\Vertex\Vertex\Vertex.Domain\obj\Debug\net9.0\ref\Vertex.Domain.dll
