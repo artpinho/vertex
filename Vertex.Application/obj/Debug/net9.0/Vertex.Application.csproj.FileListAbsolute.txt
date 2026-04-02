@@ -1,3 +1,9 @@
+G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.csproj.AssemblyReference.cache
+G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.AssemblyInfoInputs.cache
+G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.AssemblyInfo.cs
+G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.csproj.CoreCompileInputs.cache
+G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.sourcelink.json
 G:\Vertex\Vertex\Vertex.Application\bin\Debug\net9.0\Vertex.Application.deps.json
 G:\Vertex\Vertex\Vertex.Application\bin\Debug\net9.0\Vertex.Application.dll
 G:\Vertex\Vertex\Vertex.Application\bin\Debug\net9.0\Vertex.Application.pdb
@@ -5,12 +11,6 @@ G:\Vertex\Vertex\Vertex.Application\bin\Debug\net9.0\Vertex.Domain.dll
 G:\Vertex\Vertex\Vertex.Application\bin\Debug\net9.0\Vertex.Infrastructure.dll
 G:\Vertex\Vertex\Vertex.Application\bin\Debug\net9.0\Vertex.Domain.pdb
 G:\Vertex\Vertex\Vertex.Application\bin\Debug\net9.0\Vertex.Infrastructure.pdb
-G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.csproj.AssemblyReference.cache
-G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.GeneratedMSBuildEditorConfig.editorconfig
-G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.AssemblyInfoInputs.cache
-G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.AssemblyInfo.cs
-G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.csproj.CoreCompileInputs.cache
-G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.sourcelink.json
 G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.A.C12873C8.Up2Date
 G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\Vertex.Application.dll
 G:\Vertex\Vertex\Vertex.Application\obj\Debug\net9.0\refint\Vertex.Application.dll

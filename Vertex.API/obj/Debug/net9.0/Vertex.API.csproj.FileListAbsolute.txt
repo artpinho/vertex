@@ -1,3 +1,11 @@
+G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.csproj.AssemblyReference.cache
+G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\rpswa.dswa.cache.json
+G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.GeneratedMSBuildEditorConfig.editorconfig
+G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.AssemblyInfoInputs.cache
+G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.AssemblyInfo.cs
+G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.csproj.CoreCompileInputs.cache
+G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.MvcApplicationPartsAssemblyInfo.cache
+G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.sourcelink.json
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\appsettings.Development.json
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\appsettings.json
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Vertex.API.staticwebassets.endpoints.json
@@ -8,6 +16,7 @@ G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Vertex.API.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Vertex.API.pdb
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Azure.Core.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Azure.Identity.dll
+G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\BCrypt.Net-Next.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Humanizer.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Microsoft.Build.Locator.dll
@@ -148,15 +157,6 @@ G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Vertex.Infrastructure.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Vertex.Application.pdb
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Vertex.Infrastructure.pdb
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Vertex.Domain.pdb
-G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.csproj.AssemblyReference.cache
-G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\rpswa.dswa.cache.json
-G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.GeneratedMSBuildEditorConfig.editorconfig
-G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.AssemblyInfoInputs.cache
-G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.AssemblyInfo.cs
-G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.csproj.CoreCompileInputs.cache
-G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.MvcApplicationPartsAssemblyInfo.cs
-G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.MvcApplicationPartsAssemblyInfo.cache
-G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\Vertex.API.sourcelink.json
 G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\rjimswa.dswa.cache.json
 G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 G:\Vertex\Vertex\Vertex.API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

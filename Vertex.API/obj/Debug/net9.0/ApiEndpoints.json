@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "Vertex.API.Controllers.CustomersController",
+    "Method": "Create",
+    "RelativePath": "api/Customers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Vertex.Application.DTOs.CreateCustomerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.API.Controllers.CustomersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Customers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.API.Controllers.CustomersController",
+    "Method": "GetById",
+    "RelativePath": "api/Customers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Vertex.API.Controllers.SessionsController",
     "Method": "EndSession",
     "RelativePath": "api/Sessions/end",
@@ -32,6 +74,48 @@
         "Name": "stationId",
         "Type": "System.Int32",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.API.Controllers.StationsController",
+    "Method": "Create",
+    "RelativePath": "api/Stations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Vertex.Application.DTOs.CreateStationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.API.Controllers.StationsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Stations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.API.Controllers.StationsController",
+    "Method": "GetById",
+    "RelativePath": "api/Stations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
