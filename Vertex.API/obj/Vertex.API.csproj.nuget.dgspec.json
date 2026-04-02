@@ -57,6 +57,12 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[9.0.6, )"
@@ -115,6 +121,9 @@
             "projectReferences": {
               "G:\\Vertex\\Vertex\\Vertex.Domain\\Vertex.Domain.csproj": {
                 "projectPath": "G:\\Vertex\\Vertex\\Vertex.Domain\\Vertex.Domain.csproj"
+              },
+              "G:\\Vertex\\Vertex\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj": {
+                "projectPath": "G:\\Vertex\\Vertex\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj"
               }
             }
           }
@@ -134,6 +143,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -268,6 +287,28 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

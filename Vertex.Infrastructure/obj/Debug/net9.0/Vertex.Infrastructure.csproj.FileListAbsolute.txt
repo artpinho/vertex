@@ -1,4 +1,5 @@
 G:\Vertex\Vertex\Vertex.Infrastructure\bin\Debug\net9.0\Vertex.Infrastructure.deps.json
+G:\Vertex\Vertex\Vertex.Infrastructure\bin\Debug\net9.0\Vertex.Infrastructure.runtimeconfig.json
 G:\Vertex\Vertex\Vertex.Infrastructure\bin\Debug\net9.0\Vertex.Infrastructure.dll
 G:\Vertex\Vertex\Vertex.Infrastructure\bin\Debug\net9.0\Vertex.Infrastructure.pdb
 G:\Vertex\Vertex\Vertex.Infrastructure\bin\Debug\net9.0\Vertex.Domain.dll
@@ -8,8 +9,10 @@ G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.Ge
 G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.AssemblyInfoInputs.cache
 G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.AssemblyInfo.cs
 G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.csproj.CoreCompileInputs.cache
+G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.sourcelink.json
 G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.I.2DD15020.Up2Date
 G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.dll
 G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\refint\Vertex.Infrastructure.dll
 G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.pdb
+G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.genruntimeconfig.cache
 G:\Vertex\Vertex\Vertex.Infrastructure\obj\Debug\net9.0\ref\Vertex.Infrastructure.dll

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,5 +16,8 @@ namespace Vertex.Domain.Entities
         public DateTime? EndTime { get; set; }
         public int DurationMinutes { get; set; }
         public decimal AmountCharged { get; set; }
+
+        [NotMapped]
+        public bool IsActive => EndTime == null;
     }
 }

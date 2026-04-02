@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "G:\\Vertex\\Vertex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|g:\\vertex\\vertex\\vertex.domain\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:vertex.domain\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|g:\\vertex\\vertex\\vertex.domain\\enums\\stationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:vertex.domain\\enums\\stationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|g:\\vertex\\vertex\\vertex.domain\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:vertex.domain\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|g:\\vertex\\vertex\\vertex.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:vertex.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Session.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Session.cs",
-              "RelativeDocumentMoniker": "Vertex.Domain\\Entities\\Session.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Session.cs",
-              "RelativeToolTip": "Vertex.Domain\\Entities\\Session.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T22:23:35.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StationStatus.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Enums\\StationStatus.cs",
-              "RelativeDocumentMoniker": "Vertex.Domain\\Enums\\StationStatus.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Domain\\Enums\\StationStatus.cs",
-              "RelativeToolTip": "Vertex.Domain\\Enums\\StationStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T22:22:00.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Station.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Station.cs",
-              "RelativeDocumentMoniker": "Vertex.Domain\\Entities\\Station.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Station.cs",
-              "RelativeToolTip": "Vertex.Domain\\Entities\\Station.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "Vertex.Application\\Services\\PasswordService.cs",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\PasswordService.cs",
+              "RelativeToolTip": "Vertex.Application\\Services\\PasswordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T22:19:59.918Z",
+              "WhenOpened": "2026-04-02T00:34:22.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Customer.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Customer.cs",
               "RelativeDocumentMoniker": "Vertex.Domain\\Entities\\Customer.cs",
               "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Customer.cs",
               "RelativeToolTip": "Vertex.Domain\\Entities\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T22:16:31.677Z",
+              "WhenOpened": "2026-04-02T00:31:27.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\SessionService.cs",
+              "RelativeDocumentMoniker": "Vertex.Application\\Services\\SessionService.cs",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\SessionService.cs",
+              "RelativeToolTip": "Vertex.Application\\Services\\SessionService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T23:04:10.954Z",
               "EditorCaption": ""
             }
           ]
