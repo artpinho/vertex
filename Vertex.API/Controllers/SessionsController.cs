@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Vertex.Application.DTOs;
 using Vertex.Application.Interfaces;
 
 namespace Vertex.API.Controllers
@@ -15,11 +16,11 @@ namespace Vertex.API.Controllers
         }
 
         [HttpPost("start")]
-        public async Task<IActionResult> StartSession(int customerId, int stationId)
+        public async Task<IActionResult> StartSession([FromBody] StartSessionRequest request)
         {
             try
             {
-                var result = await _sessionService.StartSessionAsync(customerId, stationId);
+                var result = await _sessionService.StartSessionAsync(request);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -29,12 +30,12 @@ namespace Vertex.API.Controllers
         }
 
         [HttpPost("end")]
-        public async Task<IActionResult> EndSession(int sessionId)
+        public async Task<IActionResult> EndSession([FromBody] EndSessionRequest request)
         {
             try
             {
-                await _sessionService.EndSessionAsync(sessionId);
-                return Ok(new { Message = "Sessão finalizada com sucesso." });
+                var result = await _sessionService.EndSessionAsync(request.SessionId);
+                return Ok(result);
             }
             catch (Exception ex)
             {

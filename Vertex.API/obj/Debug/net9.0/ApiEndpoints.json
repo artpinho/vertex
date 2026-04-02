@@ -50,9 +50,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "sessionId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "Vertex.Application.DTOs.EndSessionRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -66,14 +66,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "customerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "stationId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "Vertex.Application.DTOs.StartSessionRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

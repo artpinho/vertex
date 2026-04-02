@@ -8,6 +8,8 @@ using Vertex.Infrastructure.Data;
 using Vertex.Domain.Entities;
 using Vertex.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
+using Azure.Core;
+using Vertex.Application.DTOs;
 
 namespace Vertex.Application.Services
 {
@@ -21,19 +23,26 @@ namespace Vertex.Application.Services
             _context = context;
         }
 
-        public async Task<Session> StartSessionAsync(int customerId, int stationId)
+        public async Task<SessionResponse> StartSessionAsync(StartSessionRequest request)
         {
-            var station = await _context.Stations.FindAsync(stationId);
+            var station = await _context.Stations
+                .FirstOrDefaultAsync(s => s.Id == request.StationId);
 
             if (station == null)
                 throw new Exception("Estação não encontrada.");
             if (station.Status != StationStatus.Available)
                 throw new Exception("Estação não está disponível.");
 
+            var customer = await _context.Customers
+                .FirstOrDefaultAsync(c => c.Id == request.CustomerId);
+
+            if (customer == null)
+                throw new Exception("Cliente não encontrado.");
+
             var session = new Session
             {
-                CustomerId = customerId,
-                StationId = stationId,
+                CustomerId = request.CustomerId,
+                StationId = request.StationId,
                 StartTime = DateTime.UtcNow
             };
 
@@ -43,10 +52,20 @@ namespace Vertex.Application.Services
 
             await _context.SaveChangesAsync();
 
-            return session;
+            return new SessionResponse
+            {
+                Id = session.Id,
+                CustomerId = session.CustomerId,
+                StationId = session.StationId,
+                StartTime = session.StartTime,
+                EndTime = session.EndTime,
+                DurationInMinutes = session.DurationMinutes,
+                AmountCharged = session.AmountCharged,
+                IsActive = true
+            };
         }
 
-        public async Task<Session> EndSessionAsync(int sessionId)
+        public async Task<SessionResponse> EndSessionAsync(int sessionId)
         {
             var session = await _context.Sessions
                     .FirstOrDefaultAsync(s => s.Id == sessionId);
@@ -72,7 +91,17 @@ namespace Vertex.Application.Services
 
             await _context.SaveChangesAsync();
 
-            return session;
+            return new SessionResponse
+            {
+                Id = session.Id,
+                CustomerId = session.CustomerId,
+                StationId = session.StationId,
+                StartTime = session.StartTime,
+                EndTime = session.EndTime,
+                DurationInMinutes = session.DurationMinutes,
+                AmountCharged = session.AmountCharged,
+                IsActive = false
+            };
         }
     }
 }

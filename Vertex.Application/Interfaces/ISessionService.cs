@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Vertex.Domain.Entities;
+using Vertex.Application.DTOs;
 
 namespace Vertex.Application.Interfaces
 {
     public  interface ISessionService
     {
-        Task<Session> StartSessionAsync(int customerId, int stationId);
-        Task<Session> EndSessionAsync(int sessionId);    
+        Task<SessionResponse> StartSessionAsync(StartSessionRequest request);
+        Task<SessionResponse> EndSessionAsync(int sessionId);    
     }
 }
