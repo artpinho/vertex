@@ -292,10 +292,6 @@
       "StartSessionRequest": {
         "type": "object",
         "properties": {
-          "customerId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "stationId": {
             "type": "integer",
             "format": "int32"

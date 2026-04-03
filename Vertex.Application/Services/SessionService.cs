@@ -25,6 +25,13 @@ namespace Vertex.Application.Services
 
         public async Task<SessionResponse> StartSessionAsync(int customerId, int stationId)
         {
+            // Validar sessão ativa para o cliente
+            var hasActiveSession = await _context.Sessions
+                .AnyAsync(s => s.CustomerId == customerId && s.EndTime == null);
+
+            if (hasActiveSession)
+                throw new Exception("O cliente já possui uma sessão ativa.");
+
             var station = await _context.Stations
                 .FirstOrDefaultAsync(s => s.Id == stationId);
 
@@ -38,6 +45,10 @@ namespace Vertex.Application.Services
 
             if (customer == null)
                 throw new Exception("Cliente não encontrado.");
+
+            // Validar se o cliente tem crédito suficiente para iniciar a sessão
+            if (customer.Balance <= 0)
+                throw new Exception("Saldo insuficiente para iniciar a sessão.");
 
             var session = new Session
             {
@@ -83,6 +94,18 @@ namespace Vertex.Application.Services
             session.DurationMinutes = (int)duration.TotalMinutes;
 
             session.AmountCharged = (decimal)duration.TotalHours * PricePerHour; // Cálculo do valor a ser cobrado
+
+            var customer = await _context.Customers
+                .FirstOrDefaultAsync(c => c.Id == session.CustomerId);
+
+            if (customer == null)
+                throw new Exception("Cliente não encontrado.");
+
+            // Debitar o valor da sessão do saldo do cliente
+            customer.Balance -= session.AmountCharged;
+
+            if (customer.Balance < session.AmountCharged)
+                throw new Exception("Saldo insuficiente para encerrar a sessão.");
 
             var station = await _context.Stations.FindAsync(session.StationId);
 
