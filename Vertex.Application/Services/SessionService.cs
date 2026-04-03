@@ -23,10 +23,10 @@ namespace Vertex.Application.Services
             _context = context;
         }
 
-        public async Task<SessionResponse> StartSessionAsync(StartSessionRequest request)
+        public async Task<SessionResponse> StartSessionAsync(int customerId, int stationId)
         {
             var station = await _context.Stations
-                .FirstOrDefaultAsync(s => s.Id == request.StationId);
+                .FirstOrDefaultAsync(s => s.Id == stationId);
 
             if (station == null)
                 throw new Exception("Estação não encontrada.");
@@ -34,15 +34,15 @@ namespace Vertex.Application.Services
                 throw new Exception("Estação não está disponível.");
 
             var customer = await _context.Customers
-                .FirstOrDefaultAsync(c => c.Id == request.CustomerId);
+                .FirstOrDefaultAsync(c => c.Id == customerId);
 
             if (customer == null)
                 throw new Exception("Cliente não encontrado.");
 
             var session = new Session
             {
-                CustomerId = request.CustomerId,
-                StationId = request.StationId,
+                CustomerId = customerId,
+                StationId = stationId,
                 StartTime = DateTime.UtcNow
             };
 

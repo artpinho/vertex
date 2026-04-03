@@ -10,7 +10,7 @@ namespace Vertex.Application.Interfaces
 {
     public  interface ISessionService
     {
-        Task<SessionResponse> StartSessionAsync(StartSessionRequest request);
+        Task<SessionResponse> StartSessionAsync(int customerId, int stationId);
         Task<SessionResponse> EndSessionAsync(int sessionId);    
     }
 }

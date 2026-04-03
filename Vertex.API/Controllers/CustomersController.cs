@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.DTOs;
 using Vertex.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace Vertex.API.Controllers
 {
@@ -29,6 +31,7 @@ namespace Vertex.API.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
