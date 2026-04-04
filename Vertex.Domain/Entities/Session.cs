@@ -16,6 +16,7 @@ namespace Vertex.Domain.Entities
         public DateTime? EndTime { get; set; }
         public int DurationMinutes { get; set; }
         public decimal AmountCharged { get; set; }
+        public Station? Station { get; set; }
 
         [NotMapped]
         public bool IsActive => EndTime == null;

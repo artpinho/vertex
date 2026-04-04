@@ -2,9 +2,9 @@
 
 ## 📌 Sobre o Projeto
 
-O **Vertex** é um sistema de gerenciamento para LAN houses e cyber cafés, focado em controle de uso de estações, gestão de clientes e autenticação segura.
+O **Vertex** é um sistema completo de gerenciamento para LAN houses e cyber cafés, com foco em controle de sessões, gestão de clientes, autenticação segura e controle financeiro.
 
-O projeto está sendo desenvolvido com **.NET 9** e segue princípios de **Clean Architecture**, com separação clara entre camadas e foco em boas práticas de mercado.
+O projeto está sendo desenvolvido com **.NET 9** utilizando princípios de **Clean Architecture**, visando escalabilidade, segurança e boas práticas do mercado.
 
 ---
 
@@ -13,10 +13,10 @@ O projeto está sendo desenvolvido com **.NET 9** e segue princípios de **Clean
 ```
 Vertex.sln
 
-├── Vertex.API            → Camada HTTP (Controllers / Swagger / Auth)
-├── Vertex.Application    → Regras de negócio (Services / DTOs)
-├── Vertex.Domain         → Entidades e regras do domínio
-├── Vertex.Infrastructure → Persistência (EF Core / SQL Server)
+├── Vertex.API            → Controllers, autenticação, Swagger
+├── Vertex.Application    → Services, DTOs, regras de negócio
+├── Vertex.Domain         → Entidades e enums
+├── Vertex.Infrastructure → EF Core, DbContext, persistência
 ├── Vertex.Admin          → Interface administrativa (futuro)
 ├── Vertex.Client         → App das estações (futuro)
 ```
@@ -28,12 +28,12 @@ Vertex.sln
 * Clean Architecture
 * Separation of Concerns
 * Dependency Injection
+* DTO Pattern (Request/Response)
 * Entity Framework Core (Code First)
 * SQL Server (Docker)
-* REST API
-* DTO Pattern
-* JWT Authentication
+* JWT Authentication (Bearer Token)
 * Password Hashing (BCrypt)
+* Nullable Reference Types
 * Async/Await
 
 ---
@@ -48,7 +48,7 @@ Vertex.sln
 * PasswordHash 🔐
 * Email
 * PhoneNumber
-* Balance
+* Balance 💰
 * CreatedAt
 * Address (Value Object)
 * Photo
@@ -73,6 +73,7 @@ Vertex.sln
 * DurationMinutes
 * AmountCharged
 * IsActive (computed)
+* Navigation: Station
 
 ---
 
@@ -80,24 +81,22 @@ Vertex.sln
 
 * Login com **username + senha**
 * Senhas protegidas com **BCrypt**
-* Autenticação via **JWT (Bearer Token)**
-* Claims incluídas:
+* Autenticação via **JWT**
+* Uso de **Claims**:
 
   * Username
   * CustomerId
 * Endpoints protegidos com `[Authorize]`
+* Swagger configurado com suporte a Bearer Token
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## 💰 Controle Financeiro
 
-* .NET 9
-* ASP.NET Core Web API
-* Entity Framework Core
-* SQL Server (Docker)
-* Swagger (Swashbuckle)
-* BCrypt.Net
-* JWT Bearer Authentication
+* ✔ Validação de saldo antes de iniciar sessão
+* ✔ Débito automático ao encerrar sessão
+* ✔ Bloqueio de sessão sem saldo
+* ✔ Adição de crédito via API (`add-balance`)
 
 ---
 
@@ -105,10 +104,10 @@ Vertex.sln
 
 ### 🔹 Customer
 
-* ✔ Criar cliente (com senha hash)
+* ✔ Criar cliente com senha hash
 * ✔ Listar clientes
 * ✔ Buscar por ID
-* ✔ DTO de entrada e saída
+* ✔ Adicionar saldo (com usuário autenticado)
 
 ---
 
@@ -122,92 +121,97 @@ Vertex.sln
 
 ### 🔹 Session
 
-* ✔ Iniciar sessão
+* ✔ Iniciar sessão (com usuário autenticado)
 * ✔ Encerrar sessão
 * ✔ Cálculo de tempo e valor
 * ✔ Controle de status da estação
-* ✔ Uso do usuário autenticado (JWT)
+* ✔ Validação de sessão ativa (não permite múltiplas)
+* ✔ Histórico de sessões por usuário
 
 ---
 
 ### 🔹 Autenticação
 
-* ✔ Login
+* ✔ Login com validação de senha
 * ✔ Geração de JWT
 * ✔ Proteção de endpoints
 * ✔ Integração com Swagger (Authorize)
 
 ---
 
-## 🔄 Fluxo de Uso (Atual)
+## 🔄 Fluxo de Uso Atual
 
 1. Cliente se cadastra
 2. Cliente realiza login
 3. API retorna JWT
-4. Cliente utiliza token para acessar endpoints protegidos
-5. Inicia sessão em uma estação:
+4. Cliente adiciona crédito
+5. Cliente inicia sessão:
 
-   * API valida usuário via token
-   * API valida estação disponível
-6. Encerra sessão:
+   * API valida token
+   * API valida saldo
+   * API valida estação
+6. Cliente encerra sessão:
 
-   * Calcula tempo
-   * Calcula valor
-   * Libera estação
+   * Tempo calculado
+   * Valor calculado
+   * Saldo debitado
+7. Cliente pode consultar histórico de sessões
 
 ---
 
 ## ⚠️ Aprendizados Importantes
 
 * Diferença entre instâncias SQL (Docker vs Local)
-* Importância da Connection String correta
-* Uso correto de DTOs (entrada vs saída)
+* Configuração correta de Connection String
+* Importância de DTOs (não expor entidade)
 * Segurança com hashing de senha
-* Uso de JWT e Claims
+* JWT e uso de Claims
 * Separação de responsabilidades entre camadas
-* Não confiar em dados vindos do cliente (ex: CustomerId)
+* Não confiar em dados do cliente (ex: CustomerId)
+* Uso correto de navegação no EF (`Include`)
 
 ---
 
 ## 🚧 Roadmap (Próximos Passos)
 
-### 🥇 Fase 1 — Regras de Negócio
+### 🥇 Fase 1 — Backend Profissional
 
-* [ ] Validar sessão ativa por usuário
-* [ ] Controle de saldo/créditos
-* [ ] Bloqueio de sessão sem saldo
-
----
-
-### 🥈 Fase 2 — Segurança Avançada
-
-* [ ] Refresh Token
-* [ ] Expiração configurável
-* [ ] Roles (Admin / User)
+* [ ] Padronização de respostas (Result Pattern)
+* [ ] Tratamento global de exceções (Middleware)
+* [ ] Logs estruturados
 
 ---
 
-### 🥉 Fase 3 — Funcionalidades
+### 🥈 Fase 2 — Funcionalidades Avançadas
+
+* [ ] Dashboard administrativo
+* [ ] Sessões em tempo real
+* [ ] Relatórios (uso, faturamento)
+* [ ] Ranking de usuários
+
+---
+
+### 🥉 Fase 3 — Regras de Negócio
 
 * [ ] Planos de horas
 * [ ] Preço por faixa de horário
-* [ ] Descontos e promoções
-* [ ] Produtos (snacks, impressão)
+* [ ] Promoções e descontos
+* [ ] Controle de produtos (snacks, impressão)
 
 ---
 
 ### 🏁 Fase 4 — Interface Admin
 
-* [ ] Dashboard de estações
-* [ ] Controle em tempo real
-* [ ] Relatórios
+* [ ] Painel web (Razor Pages)
+* [ ] Monitoramento de estações
+* [ ] Controle manual de sessões
 
 ---
 
 ### 🎮 Fase 5 — App Cliente (Estações)
 
 * [ ] Bloqueio de tela
-* [ ] Login do usuário
+* [ ] Login local do usuário
 * [ ] Contador de tempo
 * [ ] Comunicação com API
 
@@ -216,7 +220,7 @@ Vertex.sln
 ### 🚀 Fase 6 — Evolução SaaS
 
 * [ ] Multi-tenant (várias lan houses)
-* [ ] Deploy em nuvem
+* [ ] Deploy em nuvem (Azure/AWS)
 * [ ] Escalabilidade
 
 ---
@@ -228,6 +232,7 @@ Construir um sistema completo de gerenciamento de LAN house com:
 * Controle de uso por estação
 * Gestão de clientes
 * Controle financeiro
+* Segurança robusta
 * Interface moderna
 * Escalabilidade para SaaS
 
@@ -242,6 +247,6 @@ Desenvolvedor .NET 🚀
 
 ## 💡 Observações
 
-Este projeto está sendo desenvolvido com foco em aprendizado prático, aplicando conceitos reais de mercado e evoluindo progressivamente para um sistema completo.
+Este projeto está evoluindo de forma incremental, aplicando conceitos reais de mercado e simulando cenários de produção desde o início.
 
 ---

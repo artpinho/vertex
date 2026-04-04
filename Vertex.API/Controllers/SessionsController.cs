@@ -52,5 +52,27 @@ namespace Vertex.API.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [Authorize]
+        [HttpGet("history")]
+        public async Task<IActionResult> GetHistory()
+        {
+            var customerIdClaim = User.FindFirst("CustomerId")?.Value;
+
+            if (customerIdClaim == null)
+                return Unauthorized("CustomerId claim is missing.");
+
+            var customerId = int.Parse(customerIdClaim);
+
+            try
+            {
+                var result = await _sessionService.GetHistoryAsync(customerId);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

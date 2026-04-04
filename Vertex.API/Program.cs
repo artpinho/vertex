@@ -23,6 +23,7 @@ builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<PasswordService>();
 builder.Services.AddScoped<IStationService, StationService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IDashboardService, DashboardService>();
 
 
 // Swagger

@@ -14,5 +14,6 @@ namespace Vertex.Application.Interfaces
         Task<CustomerResponse> CreateAsync(CreateCustomerRequest request);
         Task<List<CustomerResponse>> GetAllAsync();
         Task<CustomerResponse> GetByIdAsync(int id);
+        Task<CustomerResponse> AddBalanceAsync(int customerId, decimal amount);
     }
 }

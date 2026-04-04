@@ -52,5 +52,27 @@ namespace Vertex.API.Controllers
                 return NotFound(ex.Message);
             }
         }
+
+        [Authorize]
+        [HttpPost("add-balance")]
+        public async Task<IActionResult> AddBalance(AddBalanceRequest request)
+        {
+            var customerIdClaim = User.FindFirst("CustomerId")?.Value;
+
+            if (customerIdClaim == null)
+                return Unauthorized("CustomerId claim is missing or invalid.");
+
+            var customerId = int.Parse(customerIdClaim);
+
+            try
+            {
+                var result = await _customerService.AddBalanceAsync(customerId, request.Amount);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

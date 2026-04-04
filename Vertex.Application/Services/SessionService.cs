@@ -126,5 +126,23 @@ namespace Vertex.Application.Services
                 IsActive = false
             };
         }
+
+        public async Task<List<SessionHistoryResponse>> GetHistoryAsync(int customerId)
+        {
+            return await _context.Sessions
+                .Include(s => s.Station)
+                .Where(s => s.CustomerId == customerId)
+                .OrderByDescending(s => s.StartTime)
+                .Select(s => new SessionHistoryResponse
+                {
+                    Id = s.Id,
+                    StartTime = s.StartTime,
+                    EnndTime = s.EndTime,
+                    DurationInMinutes = s.DurationMinutes,
+                    AmountCharged = s.AmountCharged,
+                    StationName = s.Station!.Name
+                })
+                .ToListAsync();
+        }
     }
 }

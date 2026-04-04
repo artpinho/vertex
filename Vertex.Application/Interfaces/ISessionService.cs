@@ -12,5 +12,6 @@ namespace Vertex.Application.Interfaces
     {
         Task<SessionResponse> StartSessionAsync(int customerId, int stationId);
         Task<SessionResponse> EndSessionAsync(int sessionId);    
+        Task<List<SessionHistoryResponse>> GetHistoryAsync(int customerId);
     }
 }

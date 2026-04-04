@@ -87,5 +87,32 @@ namespace Vertex.Application.Services
                 })
                 .FirstOrDefaultAsync() ?? throw new Exception("Cliente não encontrado");
         }
+
+        public async Task<CustomerResponse> AddBalanceAsync(int id, decimal amount)
+        {
+            if (amount <= 0)
+                throw new Exception("O valor a ser adicionado deve ser maior que zero.");
+
+            var customer = await _context.Customers
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (customer == null)
+                throw new Exception("Cliente não encontrado");
+
+            customer.Balance += amount;
+
+            await _context.SaveChangesAsync();
+
+            return new CustomerResponse
+            {
+                Id = customer.Id,
+                Name = customer.Name,
+                Username = customer.Username,
+                Email = customer.Email,
+                PhoneNumber = customer.PhoneNumber,
+                Balance = customer.Balance,
+                CreatedAt = customer.CreatedAt
+            };
+        }
     }
 }

@@ -100,6 +100,49 @@
         }
       }
     },
+    "/api/Customers/add-balance": {
+      "post": {
+        "tags": [
+          "Customers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddBalanceRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddBalanceRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddBalanceRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Dashboard": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Sessions/start": {
       "post": {
         "tags": [
@@ -155,6 +198,18 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sessions/history": {
+      "get": {
+        "tags": [
+          "Sessions"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -229,6 +284,16 @@
   },
   "components": {
     "schemas": {
+      "AddBalanceRequest": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateCustomerRequest": {
         "type": "object",
         "properties": {

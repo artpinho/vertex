@@ -58,6 +58,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Vertex.API.Controllers.CustomersController",
+    "Method": "AddBalance",
+    "RelativePath": "api/Customers/add-balance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Vertex.Application.DTOs.AddBalanceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.API.Controllers.DashboardController",
+    "Method": "Get",
+    "RelativePath": "api/Dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Vertex.API.Controllers.SessionsController",
     "Method": "EndSession",
     "RelativePath": "api/Sessions/end",
@@ -71,6 +97,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.API.Controllers.SessionsController",
+    "Method": "GetHistory",
+    "RelativePath": "api/Sessions/history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
