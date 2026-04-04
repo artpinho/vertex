@@ -55,6 +55,7 @@ G:\Vertex\Vertex\Vertex.Admin\wwwroot\lib\jquery-validation-unobtrusive\dist\jqu
 G:\Vertex\Vertex\Vertex.Admin\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 G:\Vertex\Vertex\Vertex.Admin\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
 G:\Vertex\Vertex\Vertex.Admin\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+G:\Vertex\Vertex\Vertex.Admin\wwwroot\js\dashboard.js
 G:\Vertex\Vertex\Vertex.Admin\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
 G:\Vertex\Vertex\Vertex.Admin\wwwroot\lib\jquery\dist\jquery.js
 G:\Vertex\Vertex\Vertex.Admin\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
@@ -62,6 +63,7 @@ G:\Vertex\Vertex\Vertex.Admin\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.mi
 G:\Vertex\Vertex\Vertex.Admin\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\dashboard.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

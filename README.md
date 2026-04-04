@@ -4,12 +4,13 @@
 
 O **Vertex** é um sistema completo de gerenciamento para LAN houses e cyber cafés, com foco em:
 
-* Controle de sessões de uso
+* Controle de sessões
 * Gestão de clientes
 * Controle financeiro (créditos e débitos)
 * Monitoramento em tempo real
+* Dashboard administrativo
 
-Desenvolvido com **.NET 9**, seguindo princípios de **Clean Architecture**, com separação clara de responsabilidades e preparado para evolução para SaaS.
+Desenvolvido com **.NET 9** e baseado em **Clean Architecture**, o projeto evolui progressivamente para um sistema SaaS escalável.
 
 ---
 
@@ -20,9 +21,9 @@ Vertex.sln
 
 ├── Vertex.API            → Controllers, Auth, SignalR, Swagger
 ├── Vertex.Application    → Services, DTOs, Interfaces
-├── Vertex.Domain         → Entidades e regras do domínio
-├── Vertex.Infrastructure → EF Core, DbContext, persistência
-├── Vertex.Admin          → Dashboard Web (em construção)
+├── Vertex.Domain         → Entidades e regras de negócio
+├── Vertex.Infrastructure → EF Core, DbContext
+├── Vertex.Admin          → Dashboard Web (Razor Pages)
 ├── Vertex.Client         → App das estações (futuro)
 ```
 
@@ -39,8 +40,8 @@ Vertex.sln
 * JWT Authentication (Bearer Token)
 * Password Hashing (BCrypt)
 * SignalR (tempo real)
-* Nullable Reference Types
 * Async/Await
+* Nullable Reference Types
 
 ---
 
@@ -85,15 +86,15 @@ Vertex.sln
 
 ## 🔐 Autenticação e Segurança
 
-* Login com **username + senha**
-* Senhas protegidas com **BCrypt**
-* Autenticação via **JWT**
+* Login com username + senha
+* Senhas protegidas com BCrypt
+* Autenticação via JWT
 * Uso de Claims:
 
   * Username
   * CustomerId
 * Endpoints protegidos com `[Authorize]`
-* Swagger com suporte a autenticação Bearer
+* Swagger com suporte a Bearer Token
 
 ---
 
@@ -102,20 +103,20 @@ Vertex.sln
 * ✔ Validação de saldo antes de iniciar sessão
 * ✔ Débito automático ao encerrar sessão
 * ✔ Bloqueio de sessão sem saldo
-* ✔ Adição de crédito via API (`add-balance`)
+* ✔ Adição de crédito via API
 
 ---
 
 ## ⚡ Tempo Real (SignalR)
 
-* ✔ Hub de comunicação (`DashboardHub`)
-* ✔ Eventos disparados:
+* ✔ DashboardHub implementado
+* ✔ Eventos em tempo real:
 
-  * `SessionStarted`
-  * `SessionEnded`
-* ✔ Abstração via `IRealtimeService`
-* ✔ Implementação desacoplada (`SignalRRealtimeService`)
-* ✔ Base para dashboard em tempo real
+  * SessionStarted
+  * SessionEnded
+* ✔ Atualização automática do dashboard
+* ✔ Abstração com `IRealtimeService`
+* ✔ Implementação desacoplada na API
 
 ---
 
@@ -133,7 +134,19 @@ Vertex.sln
 
 * ✔ Receita por período
 * ✔ Sessões por dia
-* ✔ Base para gráficos de linha/barra
+* ✔ Base para gráficos (Chart.js futuro)
+
+---
+
+## 🖥️ Vertex.Admin (Frontend)
+
+* ✔ Projeto Razor Pages criado
+* ✔ Página Dashboard
+* ✔ Integração com API (fetch)
+* ✔ Integração com SignalR
+* ✔ Atualização em tempo real funcionando
+* ✔ Listagem de estações com status dinâmico
+* ✔ Consumo de métricas do dashboard
 
 ---
 
@@ -141,10 +154,10 @@ Vertex.sln
 
 ### 🔹 Customer
 
-* ✔ Criar cliente com senha hash
+* ✔ Criar cliente
 * ✔ Listar clientes
 * ✔ Buscar por ID
-* ✔ Adicionar saldo (usuário autenticado)
+* ✔ Adicionar saldo
 
 ---
 
@@ -162,83 +175,89 @@ Vertex.sln
 * ✔ Encerrar sessão
 * ✔ Cálculo de tempo e valor
 * ✔ Controle de status da estação
-* ✔ Validação de sessão ativa (1 por usuário)
+* ✔ Validação de sessão ativa
 * ✔ Histórico de sessões
 
 ---
 
 ### 🔹 Autenticação
 
-* ✔ Login com validação de senha
-* ✔ Geração de JWT
+* ✔ Login com JWT
 * ✔ Proteção de endpoints
 * ✔ Integração com Swagger
 
 ---
 
-## 🔄 Fluxo de Uso Atual
+## 🔄 Fluxo Atual do Sistema
 
 1. Cliente se cadastra
 2. Cliente realiza login
 3. Recebe token JWT
-4. Cliente adiciona crédito
-5. Cliente inicia sessão:
+4. Adiciona crédito
+5. Inicia sessão:
 
    * Validação de token
    * Validação de saldo
    * Validação de estação
-6. Cliente encerra sessão:
+6. Encerra sessão:
 
    * Tempo calculado
    * Valor calculado
-   * Saldo debitado
+   * Débito do saldo
 7. Sistema dispara eventos em tempo real
-8. Cliente pode consultar histórico
+8. Dashboard atualiza automaticamente
 
 ---
 
 ## ⚠️ Aprendizados Importantes
 
-* Diferença entre ambientes SQL (Docker vs local)
-* Importância de DTOs (segurança e desacoplamento)
-* Uso correto de JWT e Claims
-* Não confiar em dados vindos do cliente
+* Uso correto de DTOs (não expor entidades)
+* Autenticação com JWT e Claims
+* Segurança: não confiar em dados do cliente
+* Ordem correta: salvar no banco → disparar evento
 * Separação de camadas (Clean Architecture)
-* Uso correto de navegação no EF (`Include`)
-* Ordem correta: salvar → notificar (SignalR)
+* SignalR desacoplado via interface
+* Integração frontend + backend + tempo real
 
 ---
 
 ## 🚧 Roadmap (Próximos Passos)
 
-### 🥇 Fase 1 — Backend Profissional
+### 🥇 Fase 1 — Segurança no Admin
 
-* [ ] Padronização de respostas (Result Pattern)
-* [ ] Middleware global de exceções
-* [ ] Logs estruturados
-
----
-
-### 🥈 Fase 2 — Dashboard Web (Vertex.Admin)
-
-* [ ] Interface web (Razor Pages ou React)
-* [ ] Lista de estações em tempo real
-* [ ] Status visual (cores)
-* [ ] Atualização via SignalR
-* [ ] Cards de métricas
+* [ ] Tela de login no Vertex.Admin
+* [ ] Armazenar JWT (localStorage)
+* [ ] Enviar token automaticamente nas requisições
 
 ---
 
-### 🥉 Fase 3 — Regras de Negócio Avançadas
+### 🥈 Fase 2 — UI Profissional
 
-* [ ] Planos de horas
-* [ ] Preço por faixa de horário
-* [ ] Promoções e descontos
-* [ ] Controle de produtos (snacks, impressão)
+* [ ] Melhorar layout (Bootstrap/Tailwind)
+* [ ] Cards visuais para métricas
+* [ ] Status das estações com cores e ícones
+* [ ] Responsividade
 
 ---
 
-### 🏁 Fase 4 — App Cliente (Estações)
+### 🥉 Fase 3 — Funcionalidades Avançadas
+
+* [ ] Gráficos com Chart.js
+* [ ] Ranking de usuários
+* [ ] Relatórios (diário/mensal)
+* [ ] Filtros por período
+
+---
+
+### 🏁 Fase 4 — Controle Operacional
+
+* [ ] Controle manual de sessões
+* [ ] Encerrar sessão remotamente
+* [ ] Bloquear estação
+
+---
+
+### 🎮 Fase 5 — App Cliente (Estações)
 
 * [ ] Bloqueio de tela
 * [ ] Login local
@@ -247,9 +266,9 @@ Vertex.sln
 
 ---
 
-### 🚀 Fase 5 — Evolução SaaS
+### 🚀 Fase 6 — Evolução SaaS
 
-* [ ] Multi-tenant (várias lan houses)
+* [ ] Multi-tenant
 * [ ] Deploy em nuvem
 * [ ] Escalabilidade
 
@@ -257,13 +276,13 @@ Vertex.sln
 
 ## 📈 Objetivo Final
 
-Construir um sistema completo de gerenciamento de LAN house com:
+Criar um sistema completo de gerenciamento de LAN house com:
 
 * Controle de uso por estação
 * Gestão de clientes
 * Controle financeiro
-* Monitoramento em tempo real
-* Dashboard moderno
+* Dashboard em tempo real
+* Interface moderna
 * Escalabilidade para SaaS
 
 ---
@@ -277,6 +296,6 @@ Desenvolvedor .NET 🚀
 
 ## 💡 Observações
 
-Este projeto está sendo desenvolvido com foco em aprendizado prático e aplicação de conceitos reais de mercado, evoluindo progressivamente para um sistema completo e profissional.
+Este projeto está sendo desenvolvido com foco em aprendizado prático e evolução contínua, simulando um sistema real de produção desde o início.
 
 ---

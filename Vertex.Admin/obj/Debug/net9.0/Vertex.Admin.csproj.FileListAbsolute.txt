@@ -155,3 +155,4 @@ G:\Vertex\Vertex\Vertex.Admin\obj\Debug\net9.0\refint\Vertex.Admin.dll
 G:\Vertex\Vertex\Vertex.Admin\obj\Debug\net9.0\Vertex.Admin.pdb
 G:\Vertex\Vertex\Vertex.Admin\obj\Debug\net9.0\Vertex.Admin.genruntimeconfig.cache
 G:\Vertex\Vertex\Vertex.Admin\obj\Debug\net9.0\ref\Vertex.Admin.dll
+G:\Vertex\Vertex\Vertex.Admin\obj\Debug\net9.0\compressed\x6phrrwrd0-qz1q0jy6l7.gz

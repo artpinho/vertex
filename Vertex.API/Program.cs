@@ -84,7 +84,19 @@ builder.Services.AddAuthentication(options =>
         ValidAudience = jwtSettings["Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
-}); 
+});
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAdmin",
+        policy =>
+        {
+            policy.WithOrigins("https://localhost:7090") // porta do Admin
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials();
+        });
+});
 
 var app = builder.Build();
 
@@ -100,6 +112,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseCors("AllowAdmin");
 app.MapHub<DashboardHub>("/hubs/dashboard");
 app.MapControllers();
 

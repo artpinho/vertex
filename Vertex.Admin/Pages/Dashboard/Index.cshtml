@@ -1,0 +1,30 @@
+﻿@page
+@model DashboardModel
+
+<h2>Vertex Dashboard</h2>
+
+<div>
+    <p>Total Customers: <span id="totalCustomers"></span></p>
+    <p>Total Stations: <span id="totalStations"></span></p>
+    <p>Stations In Use: <span id="stationsInUse"></span></p>
+    <p>Active Sessions: <span id="activeSessions"></span></p>
+    <p>Today Revenue: <span id="todayRevenue"></span></p>
+</div>
+
+<hr />
+
+<h3>Stations</h3>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="stationsTable">
+    </tbody>
+</table>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+<script src="/js/dashboard.js"></script>

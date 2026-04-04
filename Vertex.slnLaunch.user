@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Vertex.API\\Vertex.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Vertex.Admin\\Vertex.Admin.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
