@@ -11,16 +11,19 @@ using Microsoft.EntityFrameworkCore;
 using Azure.Core;
 using Vertex.Application.DTOs;
 
+
 namespace Vertex.Application.Services
 {
     public class SessionService : ISessionService
     {
         private readonly AppDbContext _context;
+        private readonly IRealtimeService _realtimeService;
 
         private const decimal PricePerHour = 5.0m; // Preço por hora
-        public SessionService(AppDbContext context)
+        public SessionService(AppDbContext context, IRealtimeService realtime )
         {
             _context = context;
+            _realtimeService = realtime;
         }
 
         public async Task<SessionResponse> StartSessionAsync(int customerId, int stationId)
@@ -62,6 +65,14 @@ namespace Vertex.Application.Services
             _context.Sessions.Add(session);
 
             await _context.SaveChangesAsync();
+
+            await _realtimeService.NotifySessionStarted(new
+            {
+                session.Id,
+                session.CustomerId,
+                session.StationId,
+                session.StartTime
+            });
 
             return new SessionResponse
             {
@@ -113,6 +124,15 @@ namespace Vertex.Application.Services
                 station.Status = StationStatus.Available;
 
             await _context.SaveChangesAsync();
+
+            await _realtimeService.NotifySessionEnded(new
+            {
+                session.Id,
+                session.CustomerId,
+                session.StationId,
+                session.DurationMinutes,
+                session.AmountCharged
+            });
 
             return new SessionResponse
             {

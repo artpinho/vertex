@@ -2,22 +2,27 @@
 
 ## 📌 Sobre o Projeto
 
-O **Vertex** é um sistema completo de gerenciamento para LAN houses e cyber cafés, com foco em controle de sessões, gestão de clientes, autenticação segura e controle financeiro.
+O **Vertex** é um sistema completo de gerenciamento para LAN houses e cyber cafés, com foco em:
 
-O projeto está sendo desenvolvido com **.NET 9** utilizando princípios de **Clean Architecture**, visando escalabilidade, segurança e boas práticas do mercado.
+* Controle de sessões de uso
+* Gestão de clientes
+* Controle financeiro (créditos e débitos)
+* Monitoramento em tempo real
+
+Desenvolvido com **.NET 9**, seguindo princípios de **Clean Architecture**, com separação clara de responsabilidades e preparado para evolução para SaaS.
 
 ---
 
 ## 🧱 Arquitetura da Solução
 
-```
+```plaintext
 Vertex.sln
 
-├── Vertex.API            → Controllers, autenticação, Swagger
-├── Vertex.Application    → Services, DTOs, regras de negócio
-├── Vertex.Domain         → Entidades e enums
+├── Vertex.API            → Controllers, Auth, SignalR, Swagger
+├── Vertex.Application    → Services, DTOs, Interfaces
+├── Vertex.Domain         → Entidades e regras do domínio
 ├── Vertex.Infrastructure → EF Core, DbContext, persistência
-├── Vertex.Admin          → Interface administrativa (futuro)
+├── Vertex.Admin          → Dashboard Web (em construção)
 ├── Vertex.Client         → App das estações (futuro)
 ```
 
@@ -33,6 +38,7 @@ Vertex.sln
 * SQL Server (Docker)
 * JWT Authentication (Bearer Token)
 * Password Hashing (BCrypt)
+* SignalR (tempo real)
 * Nullable Reference Types
 * Async/Await
 
@@ -82,12 +88,12 @@ Vertex.sln
 * Login com **username + senha**
 * Senhas protegidas com **BCrypt**
 * Autenticação via **JWT**
-* Uso de **Claims**:
+* Uso de Claims:
 
   * Username
   * CustomerId
 * Endpoints protegidos com `[Authorize]`
-* Swagger configurado com suporte a Bearer Token
+* Swagger com suporte a autenticação Bearer
 
 ---
 
@@ -100,6 +106,37 @@ Vertex.sln
 
 ---
 
+## ⚡ Tempo Real (SignalR)
+
+* ✔ Hub de comunicação (`DashboardHub`)
+* ✔ Eventos disparados:
+
+  * `SessionStarted`
+  * `SessionEnded`
+* ✔ Abstração via `IRealtimeService`
+* ✔ Implementação desacoplada (`SignalRRealtimeService`)
+* ✔ Base para dashboard em tempo real
+
+---
+
+## 📊 Dashboard (API)
+
+* ✔ Total de clientes
+* ✔ Total de estações
+* ✔ Estações em uso
+* ✔ Sessões ativas
+* ✔ Faturamento do dia
+
+---
+
+## 📈 Gráficos (Analytics)
+
+* ✔ Receita por período
+* ✔ Sessões por dia
+* ✔ Base para gráficos de linha/barra
+
+---
+
 ## 🧪 Funcionalidades Implementadas
 
 ### 🔹 Customer
@@ -107,7 +144,7 @@ Vertex.sln
 * ✔ Criar cliente com senha hash
 * ✔ Listar clientes
 * ✔ Buscar por ID
-* ✔ Adicionar saldo (com usuário autenticado)
+* ✔ Adicionar saldo (usuário autenticado)
 
 ---
 
@@ -125,8 +162,8 @@ Vertex.sln
 * ✔ Encerrar sessão
 * ✔ Cálculo de tempo e valor
 * ✔ Controle de status da estação
-* ✔ Validação de sessão ativa (não permite múltiplas)
-* ✔ Histórico de sessões por usuário
+* ✔ Validação de sessão ativa (1 por usuário)
+* ✔ Histórico de sessões
 
 ---
 
@@ -135,7 +172,7 @@ Vertex.sln
 * ✔ Login com validação de senha
 * ✔ Geração de JWT
 * ✔ Proteção de endpoints
-* ✔ Integração com Swagger (Authorize)
+* ✔ Integração com Swagger
 
 ---
 
@@ -143,32 +180,32 @@ Vertex.sln
 
 1. Cliente se cadastra
 2. Cliente realiza login
-3. API retorna JWT
+3. Recebe token JWT
 4. Cliente adiciona crédito
 5. Cliente inicia sessão:
 
-   * API valida token
-   * API valida saldo
-   * API valida estação
+   * Validação de token
+   * Validação de saldo
+   * Validação de estação
 6. Cliente encerra sessão:
 
    * Tempo calculado
    * Valor calculado
    * Saldo debitado
-7. Cliente pode consultar histórico de sessões
+7. Sistema dispara eventos em tempo real
+8. Cliente pode consultar histórico
 
 ---
 
 ## ⚠️ Aprendizados Importantes
 
-* Diferença entre instâncias SQL (Docker vs Local)
-* Configuração correta de Connection String
-* Importância de DTOs (não expor entidade)
-* Segurança com hashing de senha
-* JWT e uso de Claims
-* Separação de responsabilidades entre camadas
-* Não confiar em dados do cliente (ex: CustomerId)
+* Diferença entre ambientes SQL (Docker vs local)
+* Importância de DTOs (segurança e desacoplamento)
+* Uso correto de JWT e Claims
+* Não confiar em dados vindos do cliente
+* Separação de camadas (Clean Architecture)
 * Uso correto de navegação no EF (`Include`)
+* Ordem correta: salvar → notificar (SignalR)
 
 ---
 
@@ -177,21 +214,22 @@ Vertex.sln
 ### 🥇 Fase 1 — Backend Profissional
 
 * [ ] Padronização de respostas (Result Pattern)
-* [ ] Tratamento global de exceções (Middleware)
+* [ ] Middleware global de exceções
 * [ ] Logs estruturados
 
 ---
 
-### 🥈 Fase 2 — Funcionalidades Avançadas
+### 🥈 Fase 2 — Dashboard Web (Vertex.Admin)
 
-* [ ] Dashboard administrativo
-* [ ] Sessões em tempo real
-* [ ] Relatórios (uso, faturamento)
-* [ ] Ranking de usuários
+* [ ] Interface web (Razor Pages ou React)
+* [ ] Lista de estações em tempo real
+* [ ] Status visual (cores)
+* [ ] Atualização via SignalR
+* [ ] Cards de métricas
 
 ---
 
-### 🥉 Fase 3 — Regras de Negócio
+### 🥉 Fase 3 — Regras de Negócio Avançadas
 
 * [ ] Planos de horas
 * [ ] Preço por faixa de horário
@@ -200,27 +238,19 @@ Vertex.sln
 
 ---
 
-### 🏁 Fase 4 — Interface Admin
-
-* [ ] Painel web (Razor Pages)
-* [ ] Monitoramento de estações
-* [ ] Controle manual de sessões
-
----
-
-### 🎮 Fase 5 — App Cliente (Estações)
+### 🏁 Fase 4 — App Cliente (Estações)
 
 * [ ] Bloqueio de tela
-* [ ] Login local do usuário
+* [ ] Login local
 * [ ] Contador de tempo
 * [ ] Comunicação com API
 
 ---
 
-### 🚀 Fase 6 — Evolução SaaS
+### 🚀 Fase 5 — Evolução SaaS
 
 * [ ] Multi-tenant (várias lan houses)
-* [ ] Deploy em nuvem (Azure/AWS)
+* [ ] Deploy em nuvem
 * [ ] Escalabilidade
 
 ---
@@ -232,8 +262,8 @@ Construir um sistema completo de gerenciamento de LAN house com:
 * Controle de uso por estação
 * Gestão de clientes
 * Controle financeiro
-* Segurança robusta
-* Interface moderna
+* Monitoramento em tempo real
+* Dashboard moderno
 * Escalabilidade para SaaS
 
 ---
@@ -247,6 +277,6 @@ Desenvolvedor .NET 🚀
 
 ## 💡 Observações
 
-Este projeto está evoluindo de forma incremental, aplicando conceitos reais de mercado e simulando cenários de produção desde o início.
+Este projeto está sendo desenvolvido com foco em aprendizado prático e aplicação de conceitos reais de mercado, evoluindo progressivamente para um sistema completo e profissional.
 
 ---

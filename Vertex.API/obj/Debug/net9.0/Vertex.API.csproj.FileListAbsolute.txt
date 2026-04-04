@@ -47,6 +47,7 @@ G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Microsoft.OpenApi.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Mono.TextTemplating.dll
+G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Newtonsoft.Json.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -62,6 +63,7 @@ G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\System.Drawing.Common.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\System.Formats.Asn1.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\System.Memory.Data.dll
+G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\System.Net.WebSockets.WebSocketProtocol.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\System.Runtime.Caching.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
 G:\Vertex\Vertex\Vertex.API\bin\Debug\net9.0\System.Security.Permissions.dll

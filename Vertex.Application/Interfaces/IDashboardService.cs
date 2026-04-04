@@ -10,5 +10,6 @@ namespace Vertex.Application.Interfaces
     public interface IDashboardService
     {
         Task <DashboardResponse> GetAsync();
+        Task<List<RevenueChartResponse>> GetRevenueChartAsync(int days);
     }
 }

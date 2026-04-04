@@ -22,5 +22,13 @@ namespace Vertex.API.Controllers
             var result = await _dashboardService.GetAsync();
             return Ok(result);
         }
+
+        [Authorize]
+        [HttpGet("revenue-chart")]
+        public async Task<IActionResult> GetRevenueChart([FromQuery] int days = 7)
+        {
+            var result = await _dashboardService.GetRevenueChartAsync(days);
+            return Ok(result);
+        }
     }
 }

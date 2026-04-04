@@ -3,64 +3,32 @@
   "WorkspaceRootPath": "G:\\Vertex\\Vertex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\services\\stationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\services\\stationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\services\\signalrrealtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\services\\signalrrealtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\hubs\\dashboardhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\hubs\\dashboardhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\controllers\\sessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\controllers\\sessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\dtos\\dashboardresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\dtos\\dashboardresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|g:\\vertex\\vertex\\vertex.domain\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8BD42F-1C37-414D-B1A2-B537D80496AF}|Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:vertex.domain\\entities\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\interfaces\\isessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\interfaces\\isessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\dtos\\sessionhistoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|solutionrelative:vertex.application\\dtos\\sessionhistoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{510EFDBE-BD48-4648-891A-C340DFA3483C}|Vertex.Application\\Vertex.Application.csproj|g:\\vertex\\vertex\\vertex.application\\dtos\\startsessionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,43 +81,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PasswordService.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\PasswordService.cs",
-              "RelativeDocumentMoniker": "Vertex.Application\\Services\\PasswordService.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\PasswordService.cs",
-              "RelativeToolTip": "Vertex.Application\\Services\\PasswordService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DashboardHub.cs",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Hubs\\DashboardHub.cs",
+              "RelativeDocumentMoniker": "Vertex.API\\Hubs\\DashboardHub.cs",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Hubs\\DashboardHub.cs",
+              "RelativeToolTip": "Vertex.API\\Hubs\\DashboardHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T02:47:17.639Z",
+              "WhenOpened": "2026-04-04T17:08:28.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "SignalRRealtimeService.cs",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Services\\SignalRRealtimeService.cs",
+              "RelativeDocumentMoniker": "Vertex.API\\Services\\SignalRRealtimeService.cs",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Services\\SignalRRealtimeService.cs",
+              "RelativeToolTip": "Vertex.API\\Services\\SignalRRealtimeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T17:05:32.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Vertex.API\\Controllers\\DashboardController.cs",
               "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "Vertex.API\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvyAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-04T02:42:08.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "DashboardService.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\DashboardService.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\Services\\DashboardService.cs",
               "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\DashboardService.cs",
               "RelativeToolTip": "Vertex.Application\\Services\\DashboardService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-04T02:35:13.361Z",
               "EditorCaption": ""
@@ -157,123 +138,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "Vertex.API\\Controllers\\CustomersController.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "Vertex.API\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Program.cs",
+              "RelativeDocumentMoniker": "Vertex.API\\Program.cs",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Program.cs",
+              "RelativeToolTip": "Vertex.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T18:31:47.034Z",
+              "WhenOpened": "2026-04-02T18:18:58.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StationsController.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\StationsController.cs",
-              "RelativeDocumentMoniker": "Vertex.API\\Controllers\\StationsController.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\StationsController.cs",
-              "RelativeToolTip": "Vertex.API\\Controllers\\StationsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T19:13:56.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "Vertex.Application\\Services\\CustomerService.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\CustomerService.cs",
-              "RelativeToolTip": "Vertex.Application\\Services\\CustomerService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwHQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T18:13:17.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SessionService.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\SessionService.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\Services\\SessionService.cs",
               "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\SessionService.cs",
               "RelativeToolTip": "Vertex.Application\\Services\\SessionService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwJEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAQwIQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-03T22:51:17.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StationService.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\StationService.cs",
-              "RelativeDocumentMoniker": "Vertex.Application\\Services\\StationService.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Application\\Services\\StationService.cs",
-              "RelativeToolTip": "Vertex.Application\\Services\\StationService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAwwDsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T19:06:38.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SessionsController.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\SessionsController.cs",
-              "RelativeDocumentMoniker": "Vertex.API\\Controllers\\SessionsController.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\SessionsController.cs",
-              "RelativeToolTip": "Vertex.API\\Controllers\\SessionsController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswEwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T02:23:48.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Vertex.API\\Controllers\\AuthController.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Vertex.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T23:27:48.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DashboardResponse.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\DashboardResponse.cs",
-              "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\DashboardResponse.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\DashboardResponse.cs",
-              "RelativeToolTip": "Vertex.Application\\DTOs\\DashboardResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T02:33:00.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SessionHistoryResponse.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\SessionHistoryResponse.cs",
-              "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\SessionHistoryResponse.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\SessionHistoryResponse.cs",
-              "RelativeToolTip": "Vertex.Application\\DTOs\\SessionHistoryResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T02:17:02.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "ISessionService.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Interfaces\\ISessionService.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\Interfaces\\ISessionService.cs",
@@ -286,33 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Session.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Session.cs",
-              "RelativeDocumentMoniker": "Vertex.Domain\\Entities\\Session.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Session.cs",
-              "RelativeToolTip": "Vertex.Domain\\Entities\\Session.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T02:21:00.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Program.cs",
-              "RelativeDocumentMoniker": "Vertex.API\\Program.cs",
-              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.API\\Program.cs",
-              "RelativeToolTip": "Vertex.API\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBYAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T18:18:58.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\LoginRequest.cs",
@@ -320,11 +184,12 @@
               "RelativeToolTip": "Vertex.Application\\DTOs\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T23:09:02.793Z"
+              "WhenOpened": "2026-04-02T23:09:02.793Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 7,
               "Title": "StartSessionRequest.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\StartSessionRequest.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\StartSessionRequest.cs",
@@ -332,11 +197,12 @@
               "RelativeToolTip": "Vertex.Application\\DTOs\\StartSessionRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T19:21:14.628Z"
+              "WhenOpened": "2026-04-02T19:21:14.628Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\Interfaces\\IAuthService.cs",
@@ -344,11 +210,12 @@
               "RelativeToolTip": "Vertex.Application\\Interfaces\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T23:10:02.466Z"
+              "WhenOpened": "2026-04-02T23:10:02.466Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 9,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\LoginResponse.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\LoginResponse.cs",
@@ -356,11 +223,12 @@
               "RelativeToolTip": "Vertex.Application\\DTOs\\LoginResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T23:09:28.281Z"
+              "WhenOpened": "2026-04-02T23:09:28.281Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 12,
               "Title": "EndSessionRequest.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\EndSessionRequest.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\EndSessionRequest.cs",
@@ -368,11 +236,12 @@
               "RelativeToolTip": "Vertex.Application\\DTOs\\EndSessionRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T19:21:57.98Z"
+              "WhenOpened": "2026-04-02T19:21:57.98Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 11,
               "Title": "SessionResponse.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\SessionResponse.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\SessionResponse.cs",
@@ -380,11 +249,12 @@
               "RelativeToolTip": "Vertex.Application\\DTOs\\SessionResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T19:22:16.216Z"
+              "WhenOpened": "2026-04-02T19:22:16.216Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 13,
               "Title": "IStationService.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\Interfaces\\IStationService.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\Interfaces\\IStationService.cs",
@@ -392,11 +262,12 @@
               "RelativeToolTip": "Vertex.Application\\Interfaces\\IStationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T19:05:57.305Z"
+              "WhenOpened": "2026-04-02T19:05:57.305Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 14,
               "Title": "StationResponse.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\StationResponse.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\StationResponse.cs",
@@ -404,11 +275,12 @@
               "RelativeToolTip": "Vertex.Application\\DTOs\\StationResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T19:04:59.562Z"
+              "WhenOpened": "2026-04-02T19:04:59.562Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 15,
               "Title": "CreateStationRequest.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\CreateStationRequest.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\CreateStationRequest.cs",
@@ -416,11 +288,12 @@
               "RelativeToolTip": "Vertex.Application\\DTOs\\CreateStationRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T19:04:31.752Z"
+              "WhenOpened": "2026-04-02T19:04:31.752Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 16,
               "Title": "dbo.Customers.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost/VertexDb/sa/SqlTable/dbo.Customers.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/localhost/VertexDb/sa/SqlTable/dbo.Customers.sql",
@@ -429,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 17,
               "Title": "CreateCustomerRequest.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Application\\DTOs\\CreateCustomerRequest.cs",
               "RelativeDocumentMoniker": "Vertex.Application\\DTOs\\CreateCustomerRequest.cs",
@@ -437,7 +310,8 @@
               "RelativeToolTip": "Vertex.Application\\DTOs\\CreateCustomerRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T18:10:29.489Z"
+              "WhenOpened": "2026-04-02T18:10:29.489Z",
+              "EditorCaption": ""
             }
           ]
         }

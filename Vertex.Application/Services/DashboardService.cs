@@ -47,6 +47,26 @@ namespace Vertex.Application.Services
             };
 
         }
+
+        public async Task<List<RevenueChartResponse>> GetRevenueChartAsync(int days)
+        {
+            var startDate = DateTime.UtcNow.Date.AddDays(-days);
+
+            var data = await _context.Sessions
+                .Where(s => s.EndTime != null && s.EndTime.Value.Date >= startDate)
+                .GroupBy(s => s.EndTime!.Value.Date)
+                .Select(g => new RevenueChartResponse
+                {
+                    Date = g.Key,
+                    Revenue = g.Sum(s => s.AmountCharged),
+                    Sessions = g.Count()
+                })
+                .OrderBy(x => x.Date)
+                .ToListAsync();
+
+            return data;
+        }
+            
     }
         
 }

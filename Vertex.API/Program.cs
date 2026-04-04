@@ -6,6 +6,7 @@ using Vertex.Application.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Vertex.API.Hubs;
 {
     
 }
@@ -24,7 +25,9 @@ builder.Services.AddScoped<PasswordService>();
 builder.Services.AddScoped<IStationService, StationService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IDashboardService, DashboardService>();
+builder.Services.AddScoped<IRealtimeService, SignalRRealtimeService>();
 
+builder.Services.AddSignalR();
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -91,11 +94,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapHub<DashboardHub>("/hubs/dashboard");
 app.MapControllers();
 
 app.Run();
