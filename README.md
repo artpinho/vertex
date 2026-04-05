@@ -8,9 +8,9 @@ O **Vertex** é um sistema completo de gerenciamento para LAN houses e cyber caf
 * Gestão de clientes
 * Controle financeiro (créditos e débitos)
 * Monitoramento em tempo real
-* Dashboard administrativo
+* Dashboard administrativo web
 
-Desenvolvido com **.NET 9** e baseado em **Clean Architecture**, o projeto evolui progressivamente para um sistema SaaS escalável.
+Desenvolvido com **.NET 9** e baseado em **Clean Architecture**, o projeto simula um sistema real de produção desde o início.
 
 ---
 
@@ -134,19 +134,24 @@ Vertex.sln
 
 * ✔ Receita por período
 * ✔ Sessões por dia
-* ✔ Base para gráficos (Chart.js futuro)
+* ✔ Base para gráficos
 
 ---
 
 ## 🖥️ Vertex.Admin (Frontend)
 
-* ✔ Projeto Razor Pages criado
-* ✔ Página Dashboard
-* ✔ Integração com API (fetch)
-* ✔ Integração com SignalR
-* ✔ Atualização em tempo real funcionando
-* ✔ Listagem de estações com status dinâmico
-* ✔ Consumo de métricas do dashboard
+### ✔ Implementado
+
+* Projeto Razor Pages criado
+* Página de Login
+* Autenticação integrada com API
+* Token JWT armazenado em Session
+* Dashboard protegido (redirect sem login)
+* Consumo de API com Authorization Bearer
+* Integração com SignalR
+* Atualização em tempo real funcionando
+* Listagem de estações dinâmica
+* Correção de bug de token no JS (ordem de scripts)
 
 ---
 
@@ -185,79 +190,82 @@ Vertex.sln
 * ✔ Login com JWT
 * ✔ Proteção de endpoints
 * ✔ Integração com Swagger
+* ✔ Login no Vertex.Admin
 
 ---
 
 ## 🔄 Fluxo Atual do Sistema
 
 1. Cliente se cadastra
-2. Cliente realiza login
+2. Cliente realiza login (API ou Admin)
 3. Recebe token JWT
-4. Adiciona crédito
-5. Inicia sessão:
+4. Token é armazenado (Session no Admin)
+5. Cliente adiciona crédito
+6. Inicia sessão:
 
    * Validação de token
    * Validação de saldo
    * Validação de estação
-6. Encerra sessão:
+7. Encerra sessão:
 
    * Tempo calculado
    * Valor calculado
    * Débito do saldo
-7. Sistema dispara eventos em tempo real
-8. Dashboard atualiza automaticamente
+8. Sistema dispara eventos em tempo real
+9. Dashboard atualiza automaticamente
 
 ---
 
 ## ⚠️ Aprendizados Importantes
 
-* Uso correto de DTOs (não expor entidades)
-* Autenticação com JWT e Claims
-* Segurança: não confiar em dados do cliente
-* Ordem correta: salvar no banco → disparar evento
-* Separação de camadas (Clean Architecture)
+* Integração completa frontend + backend + realtime
+* Uso correto de JWT no frontend (Bearer)
+* Importância da ordem de scripts (JS + Razor)
+* Não confiar em dados do cliente
+* Separação de responsabilidades (Clean Architecture)
 * SignalR desacoplado via interface
-* Integração frontend + backend + tempo real
+* Ordem correta: salvar no banco → notificar
 
 ---
 
 ## 🚧 Roadmap (Próximos Passos)
 
-### 🥇 Fase 1 — Segurança no Admin
+### 🥇 Fase 1 — UI Profissional
 
-* [ ] Tela de login no Vertex.Admin
-* [ ] Armazenar JWT (localStorage)
-* [ ] Enviar token automaticamente nas requisições
-
----
-
-### 🥈 Fase 2 — UI Profissional
-
-* [ ] Melhorar layout (Bootstrap/Tailwind)
+* [ ] Melhorar layout (Bootstrap ou Tailwind)
 * [ ] Cards visuais para métricas
-* [ ] Status das estações com cores e ícones
+* [ ] Status das estações com cores e badges
 * [ ] Responsividade
 
 ---
 
-### 🥉 Fase 3 — Funcionalidades Avançadas
+### 🥈 Fase 2 — Dashboard Avançado
 
 * [ ] Gráficos com Chart.js
-* [ ] Ranking de usuários
-* [ ] Relatórios (diário/mensal)
 * [ ] Filtros por período
+* [ ] Indicadores (KPIs)
+* [ ] Ranking de usuários
+
+---
+
+### 🥉 Fase 3 — Funcionalidades de Negócio
+
+* [ ] Planos de horas
+* [ ] Preço por horário
+* [ ] Promoções
+* [ ] Produtos (snacks, impressão)
 
 ---
 
 ### 🏁 Fase 4 — Controle Operacional
 
-* [ ] Controle manual de sessões
 * [ ] Encerrar sessão remotamente
 * [ ] Bloquear estação
+* [ ] Monitoramento em tempo real avançado
 
 ---
 
-### 🎮 Fase 5 — App Cliente (Estações)
+### 🎮 Fase 5 — App Cliente
 
 * [ ] Bloqueio de tela
 * [ ] Login local
@@ -266,7 +274,7 @@ Vertex.sln
 
 ---
 
-### 🚀 Fase 6 — Evolução SaaS
+### 🚀 Fase 6 — SaaS
 
 * [ ] Multi-tenant
 * [ ] Deploy em nuvem
@@ -296,6 +304,6 @@ Desenvolvedor .NET 🚀
 
 ## 💡 Observações
 
-Este projeto está sendo desenvolvido com foco em aprendizado prático e evolução contínua, simulando um sistema real de produção desde o início.
+Este projeto evoluiu de um backend simples para um sistema completo com autenticação, controle financeiro e tempo real, aproximando-se de um produto real de mercado.
 
 ---
