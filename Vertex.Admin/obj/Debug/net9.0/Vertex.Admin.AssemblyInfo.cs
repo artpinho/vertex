@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vertex.Admin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e473d0532295bf27a5ea6ac563230885940fe51")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+085d0520adf8f7ff9e9347a17a93bc7c8c6d9e40")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vertex.Admin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vertex.Admin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

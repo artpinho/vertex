@@ -11,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{41736198-CB6F-48F1-AF2F-9F6816392846}|Vertex.Admin\\Vertex.Admin.csproj|solutionrelative:vertex.admin\\wwwroot\\js\\dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{41736198-CB6F-48F1-AF2F-9F6816392846}|Vertex.Admin\\Vertex.Admin.csproj|g:\\vertex\\vertex\\vertex.admin\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41736198-CB6F-48F1-AF2F-9F6816392846}|Vertex.Admin\\Vertex.Admin.csproj|solutionrelative:vertex.admin\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41736198-CB6F-48F1-AF2F-9F6816392846}|Vertex.Admin\\Vertex.Admin.csproj|g:\\vertex\\vertex\\vertex.admin\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{41736198-CB6F-48F1-AF2F-9F6816392846}|Vertex.Admin\\Vertex.Admin.csproj|solutionrelative:vertex.admin\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|g:\\vertex\\vertex\\vertex.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C7CF96-A240-4190-B677-3C3EF0194D09}|Vertex.API\\Vertex.API.csproj|solutionrelative:vertex.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41736198-CB6F-48F1-AF2F-9F6816392846}|Vertex.Admin\\Vertex.Admin.csproj|g:\\vertex\\vertex\\vertex.admin\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,8 +54,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Admin\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Vertex.Admin\\wwwroot\\css\\site.css",
+              "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Admin\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Vertex.Admin\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAABgAAAAAAAAAAAAwwCgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-05T17:10:16.406Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -60,14 +77,14 @@
               "RelativeDocumentMoniker": "Vertex.Admin\\wwwroot\\js\\dashboard.js",
               "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Admin\\wwwroot\\js\\dashboard.js",
               "RelativeToolTip": "Vertex.Admin\\wwwroot\\js\\dashboard.js",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAxwKAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-04-05T16:50:27.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Admin\\Pages\\Dashboard\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Vertex.Admin\\Pages\\Dashboard\\Index.cshtml.cs",
@@ -86,14 +103,14 @@
               "RelativeDocumentMoniker": "Vertex.Admin\\Pages\\Dashboard\\Index.cshtml",
               "ToolTip": "G:\\Vertex\\Vertex\\Vertex.Admin\\Pages\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "Vertex.Admin\\Pages\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-05T16:50:36.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Admin\\Program.cs",
               "RelativeDocumentMoniker": "Vertex.Admin\\Program.cs",
@@ -101,12 +118,11 @@
               "RelativeToolTip": "Vertex.Admin\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T16:29:38.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T16:29:38.221Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Admin\\Pages\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Vertex.Admin\\Pages\\Login.cshtml.cs",
@@ -114,12 +130,11 @@
               "RelativeToolTip": "Vertex.Admin\\Pages\\Login.cshtml.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwCAAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T16:23:59.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T16:23:59.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Login.cshtml",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Admin\\Pages\\Login.cshtml",
               "RelativeDocumentMoniker": "Vertex.Admin\\Pages\\Login.cshtml",
@@ -127,12 +142,11 @@
               "RelativeToolTip": "Vertex.Admin\\Pages\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-05T16:23:27.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T16:23:27.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Session.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.Domain\\Entities\\Session.cs",
               "RelativeDocumentMoniker": "Vertex.Domain\\Entities\\Session.cs",
@@ -140,12 +154,11 @@
               "RelativeToolTip": "Vertex.Domain\\Entities\\Session.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T20:00:53.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-04T20:00:53.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SessionsController.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\SessionsController.cs",
               "RelativeDocumentMoniker": "Vertex.API\\Controllers\\SessionsController.cs",
@@ -157,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Vertex.API\\Controllers\\DashboardController.cs",
@@ -165,12 +178,11 @@
               "RelativeToolTip": "Vertex.API\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T19:34:07.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-04T19:34:07.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Vertex\\Vertex\\Vertex.API\\Program.cs",
               "RelativeDocumentMoniker": "Vertex.API\\Program.cs",

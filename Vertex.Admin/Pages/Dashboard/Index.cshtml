@@ -1,31 +1,89 @@
 ﻿@page
 @model DashboardModel
 
-<h2>Vertex Dashboard</h2>
-
-<div>
-    <p>Total Customers: <span id="totalCustomers"></span></p>
-    <p>Total Stations: <span id="totalStations"></span></p>
-    <p>Stations In Use: <span id="stationsInUse"></span></p>
-    <p>Active Sessions: <span id="activeSessions"></span></p>
-    <p>Today Revenue: <span id="todayRevenue"></span></p>
+<div class="d-flex justify-content-between align-items-center mb-3">
+    
 </div>
 
-<hr />
+<div class="container mt-4">
 
-<h3>Stations</h3>
+    <!-- Titulo -->
+    <div>
+        <h2>📊 Vertex Dashboard</h2>
+        <button class="btn btn-outline-secondary" onclick="toggleDarkMode()">
+            🌙 Toggle Theme
+        </button>
+    </div>
+    
 
-<table border="1">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody id="stationsTable">
-    </tbody>
-</table>
+    <!-- KPIs -->
+    <div class="row g-3">
 
-<script> const token = '@HttpContext.Session.GetString("JWT")'; </script>
+        <div class="col-md-3">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <h6>Total Customers</h6>
+                    <h3 id="totalCustomers">0</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <h6>Total Stations</h6>
+                    <h3 id="totalStations">0</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <h6>Stations In Use</h6>
+                    <h3 id="stationsInUse">0</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <h6>Revenue Today</h6>
+                    <h3 id="todayRevenue">0</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Stations -->
+    <div class="mt-5">
+        <h4>💻 Stations</h4>
+
+        <table class="table table-striped table-hover mt-3">
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="stationsTable"></tbody>
+        </table>
+    </div>
+
+    <!-- Chart -->
+    <div class="mt-5">
+        <h4>📈 Revenue Chart</h4>
+        <canvas id="revenueChart"></canvas>
+    </div>
+
+</div>
+
+<script>
+    const token = '@HttpContext.Session.GetString("JWT")';
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
 <script src="/js/dashboard.js"></script>
