@@ -13,3 +13,4 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\refint\Vertex.Application.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.Application.pdb
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\ref\Vertex.Application.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.Application.sourcelink.json

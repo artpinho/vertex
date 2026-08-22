@@ -22,3 +22,4 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Client\obj\Debug\net9.0-wind
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Client\obj\Debug\net9.0-windows\Vertex.Client.pdb
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Client\obj\Debug\net9.0-windows\Vertex.Client.genruntimeconfig.cache
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Client\obj\Debug\net9.0-windows\ref\Vertex.Client.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Client\obj\Debug\net9.0-windows\Vertex.Client.sourcelink.json

@@ -100,3 +100,4 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Domain.Tests\obj\Debug\net
 F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Domain.Tests\obj\Debug\net9.0\Vertex.Domain.Tests.pdb
 F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Domain.Tests\obj\Debug\net9.0\Vertex.Domain.Tests.genruntimeconfig.cache
 F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Domain.Tests\obj\Debug\net9.0\ref\Vertex.Domain.Tests.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Domain.Tests\obj\Debug\net9.0\Vertex.Domain.Tests.sourcelink.json

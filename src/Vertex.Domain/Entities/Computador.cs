@@ -17,6 +17,7 @@ namespace Vertex.Domain.Entities
         public string? ClienteVersao { get; private set; }
         public DateTime? UltimoHeartbeat { get; private set; }
         public StatusComputador Status { get; private set; }
+        public ComputadorCredential? Credential { get; private set; }
 
         protected Computador() 
         {
@@ -71,6 +72,18 @@ namespace Vertex.Domain.Entities
             MacAddress = macAddress;
             SistemaOperacional = sistemaOperacional;
             ClienteVersao = clienteVersao;
+        }
+
+        public void AssociarCredential(
+            ComputadorCredential credential)
+        {
+            ArgumentNullException.ThrowIfNull(credential);
+
+            if (credential.ComputadorId != Id)
+                throw new InvalidOperationException(
+                    "A credencial não pertence a este computador.");
+
+            Credential = credential;
         }
     }
 }

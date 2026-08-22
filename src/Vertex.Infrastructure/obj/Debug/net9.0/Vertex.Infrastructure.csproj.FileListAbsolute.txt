@@ -17,3 +17,4 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Infrastructure\obj\Debug\net
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Infrastructure\obj\Debug\net9.0\ref\Vertex.Infrastructure.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Infrastructure\bin\Debug\net9.0\Vertex.Infrastructure.runtimeconfig.json
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.genruntimeconfig.cache
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Infrastructure\obj\Debug\net9.0\Vertex.Infrastructure.sourcelink.json

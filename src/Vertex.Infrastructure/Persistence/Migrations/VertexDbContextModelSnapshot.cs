@@ -94,7 +94,53 @@ namespace Vertex.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("HostName")
+                        .IsUnique();
+
+                    b.HasIndex("MacAddress")
+                        .IsUnique()
+                        .HasFilter("[MacAddress] IS NOT NULL");
+
                     b.ToTable("Computadores", (string)null);
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.ComputadorCredential", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ClientId")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<Guid>("ComputadorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DataCriacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataRevogacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("SecretHash")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClientId")
+                        .IsUnique();
+
+                    b.HasIndex("ComputadorId")
+                        .IsUnique();
+
+                    b.ToTable("ComputadorCredentials", (string)null);
                 });
 
             modelBuilder.Entity("Vertex.Domain.Entities.Estacao", b =>
@@ -162,6 +208,15 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.ToTable("Sessoes", (string)null);
                 });
 
+            modelBuilder.Entity("Vertex.Domain.Entities.ComputadorCredential", b =>
+                {
+                    b.HasOne("Vertex.Domain.Entities.Computador", null)
+                        .WithOne("Credential")
+                        .HasForeignKey("Vertex.Domain.Entities.ComputadorCredential", "ComputadorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.Estacao", b =>
                 {
                     b.HasOne("Vertex.Domain.Entities.Computador", null)
@@ -183,6 +238,11 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                         .HasForeignKey("EstacaoId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.Computador", b =>
+                {
+                    b.Navigation("Credential");
                 });
 #pragma warning restore 612, 618
         }

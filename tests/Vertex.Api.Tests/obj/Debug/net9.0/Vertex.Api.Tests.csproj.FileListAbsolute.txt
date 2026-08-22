@@ -155,3 +155,7 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Api.Tests\bin\Debug\net9.0
 F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Api.Tests\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Api.Tests\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Api.Tests\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Api.Tests\obj\Debug\net9.0\Vertex.Api.Tests.sourcelink.json
+F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Api.Tests\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Api.Tests\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Api.Tests\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

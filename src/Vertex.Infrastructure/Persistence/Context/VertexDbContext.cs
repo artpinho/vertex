@@ -24,6 +24,9 @@ namespace Vertex.Infrastructure.Persistence.Context
 
         public DbSet<Sessao> Sessoes => Set<Sessao>();
 
+        public DbSet<ComputadorCredential> ComputadorCredentials =>
+            Set<ComputadorCredential>();
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

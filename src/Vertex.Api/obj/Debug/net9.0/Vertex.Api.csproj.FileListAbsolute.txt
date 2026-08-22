@@ -159,3 +159,7 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\ru\Micr
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\obj\Debug\net9.0\Vertex.Api.sourcelink.json
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -9,3 +9,4 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\Vert
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\refint\Vertex.Domain.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.pdb
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\ref\Vertex.Domain.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.sourcelink.json

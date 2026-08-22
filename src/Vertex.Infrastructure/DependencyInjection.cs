@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Vertex.Infrastructure.Persistence.Context;
 using Vertex.Infrastructure.Persistence.Repositories;
 using Vertex.Application.Abstractions.Persistence;
+using Vertex.Application.Abstractions.Security;
+using Vertex.Infrastructure.Security;
 
 namespace Vertex.Infrastructure
 {
@@ -33,6 +35,8 @@ namespace Vertex.Infrastructure
             });
 
             services.AddScoped<IComputadorRepository, ComputadorRepository>();
+            services.AddScoped<IComputadorCredentialRepository, ComputadorCredentialRepository>();
+            services.AddScoped<IComputerCredentialGenerator, ComputerCredentialGenerator>();
 
             return services;
         }

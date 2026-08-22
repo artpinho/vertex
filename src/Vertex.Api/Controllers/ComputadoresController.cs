@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
+using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.DTOs;
 using Vertex.Application.Computers.Queries;
@@ -15,17 +16,20 @@ namespace Vertex.Api.Controllers
         private readonly ListarComputadoresHandler _listarHandler;
         private readonly ObterComputadorHandler _obterHandler;
         private readonly ProcessarHeartbeatHandler _heartbeatHandler;
+        private readonly ProvisionarComputadorCredentialHandler _provisionarCredentialHandler;
 
         public ComputadoresController(
         RegistrarComputadorHandler registrarHandler,
         ListarComputadoresHandler listarHandler,
         ObterComputadorHandler obterHandler,
-        ProcessarHeartbeatHandler heartbeatHandler)
+        ProcessarHeartbeatHandler heartbeatHandler,
+        ProvisionarComputadorCredentialHandler provisionarCredentialHandler)
         {
             _registrarHandler = registrarHandler;
             _listarHandler = listarHandler;
             _obterHandler = obterHandler;
             _heartbeatHandler = heartbeatHandler;
+            _provisionarCredentialHandler = provisionarCredentialHandler;
         }
 
         [HttpPost]
@@ -139,6 +143,45 @@ namespace Vertex.Api.Controllers
             catch (KeyNotFoundException ex)
             {
                 return NotFound(new
+                {
+                    message = ex.Message
+                });
+            }
+        }
+
+        [HttpPost("{id:guid}/credentials")]
+        [ProducesResponseType(
+            typeof(ProvisionarComputadorCredentialResponse),
+            StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
+        public async Task<
+            ActionResult<ProvisionarComputadorCredentialResponse>>
+            ProvisionarCredential(
+                Guid id,
+                CancellationToken cancellationToken)
+        {
+            try
+            {
+                var response =
+                    await _provisionarCredentialHandler.HandleAsync(
+                        new ProvisionarComputadorCredentialCommand(id),
+                        cancellationToken);
+
+                return Created(
+                    $"/api/v1/computadores/{id}/credentials",
+                    response);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new
+                {
+                    message = ex.Message
+                });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return Conflict(new
                 {
                     message = ex.Message
                 });

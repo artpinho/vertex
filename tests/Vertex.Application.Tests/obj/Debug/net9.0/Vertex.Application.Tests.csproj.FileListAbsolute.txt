@@ -102,3 +102,4 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Application.Tests\obj\Debu
 F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Application.Tests\obj\Debug\net9.0\Vertex.Application.Tests.pdb
 F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Application.Tests\obj\Debug\net9.0\Vertex.Application.Tests.genruntimeconfig.cache
 F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Application.Tests\obj\Debug\net9.0\ref\Vertex.Application.Tests.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\tests\Vertex.Application.Tests\obj\Debug\net9.0\Vertex.Application.Tests.sourcelink.json

@@ -9,3 +9,4 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\V
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\refint\Vertex.Contracts.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\Vertex.Contracts.pdb
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\ref\Vertex.Contracts.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\Vertex.Contracts.sourcelink.json
