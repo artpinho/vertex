@@ -1,0 +1,11 @@
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\bin\Debug\net9.0\Vertex.Domain.deps.json
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\bin\Debug\net9.0\Vertex.Domain.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\bin\Debug\net9.0\Vertex.Domain.pdb
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.AssemblyInfoInputs.cache
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.AssemblyInfo.cs
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.csproj.CoreCompileInputs.cache
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\refint\Vertex.Domain.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\Vertex.Domain.pdb
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Domain\obj\Debug\net9.0\ref\Vertex.Domain.dll

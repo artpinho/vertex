@@ -1,0 +1,6 @@
+@Vertex.Api_HostAddress = http://localhost:5250
+
+GET {{Vertex.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

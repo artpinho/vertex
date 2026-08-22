@@ -1,0 +1,11 @@
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\bin\Debug\net9.0\Vertex.Contracts.deps.json
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\bin\Debug\net9.0\Vertex.Contracts.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\bin\Debug\net9.0\Vertex.Contracts.pdb
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\Vertex.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\Vertex.Contracts.AssemblyInfoInputs.cache
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\Vertex.Contracts.AssemblyInfo.cs
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\Vertex.Contracts.csproj.CoreCompileInputs.cache
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\Vertex.Contracts.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\refint\Vertex.Contracts.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\Vertex.Contracts.pdb
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Contracts\obj\Debug\net9.0\ref\Vertex.Contracts.dll

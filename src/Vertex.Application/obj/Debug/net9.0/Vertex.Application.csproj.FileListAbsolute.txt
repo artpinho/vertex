@@ -1,0 +1,15 @@
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\bin\Debug\net9.0\Vertex.Application.deps.json
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\bin\Debug\net9.0\Vertex.Application.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\bin\Debug\net9.0\Vertex.Application.pdb
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\bin\Debug\net9.0\Vertex.Domain.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\bin\Debug\net9.0\Vertex.Domain.pdb
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.Application.csproj.AssemblyReference.cache
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.Application.AssemblyInfoInputs.cache
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.Application.AssemblyInfo.cs
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.Application.csproj.CoreCompileInputs.cache
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.A.C12873C8.Up2Date
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.Application.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\refint\Vertex.Application.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\Vertex.Application.pdb
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Application\obj\Debug\net9.0\ref\Vertex.Application.dll
