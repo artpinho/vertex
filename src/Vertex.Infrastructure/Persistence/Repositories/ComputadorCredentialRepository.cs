@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Vertex.Application.Abstractions.Persistence;
 using Vertex.Domain.Entities;
+using Vertex.Domain.Enums;
 using Vertex.Infrastructure.Persistence.Context;
-using Microsoft.EntityFrameworkCore;
 
 namespace Vertex.Infrastructure.Persistence.Repositories;
 
@@ -21,13 +22,15 @@ public sealed class ComputadorCredentialRepository
         _context = context;
     }
 
-    public async Task<ComputadorCredential?> ObterPorComputadorIdAsync(
-        Guid computadorId,
-        CancellationToken cancellationToken = default)
+    public async Task<ComputadorCredential?> ObterAtivaPorComputadorIdAsync(
+      Guid computadorId,
+      CancellationToken cancellationToken = default)
     {
         return await _context.ComputadorCredentials
             .FirstOrDefaultAsync(
-                x => x.ComputadorId == computadorId,
+                x =>
+                    x.ComputadorId == computadorId &&
+                    x.Status == StatusCredential.Ativa,
                 cancellationToken);
     }
 

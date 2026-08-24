@@ -137,8 +137,7 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.HasIndex("ClientId")
                         .IsUnique();
 
-                    b.HasIndex("ComputadorId")
-                        .IsUnique();
+                    b.HasIndex("ComputadorId");
 
                     b.ToTable("ComputadorCredentials", (string)null);
                 });
@@ -211,8 +210,8 @@ namespace Vertex.Infrastructure.Persistence.Migrations
             modelBuilder.Entity("Vertex.Domain.Entities.ComputadorCredential", b =>
                 {
                     b.HasOne("Vertex.Domain.Entities.Computador", null)
-                        .WithOne("Credential")
-                        .HasForeignKey("Vertex.Domain.Entities.ComputadorCredential", "ComputadorId")
+                        .WithMany()
+                        .HasForeignKey("ComputadorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -238,11 +237,6 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                         .HasForeignKey("EstacaoId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Vertex.Domain.Entities.Computador", b =>
-                {
-                    b.Navigation("Credential");
                 });
 #pragma warning restore 612, 618
         }

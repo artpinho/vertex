@@ -13,4 +13,7 @@ public interface IComputerCredentialGenerator
     string GenerateClientSecret();
 
     string HashSecret(string secret);
+    bool VerifySecret(
+        string secret,
+        string hash);
 }

@@ -38,13 +38,11 @@ namespace Vertex.Infrastructure.Persistence.Configurations
             builder.HasIndex(x => x.ClientId)
                 .IsUnique();
 
-            builder.HasIndex(x => x.ComputadorId)
-                .IsUnique();
+            builder.HasIndex(x => x.ComputadorId);
 
             builder.HasOne<Computador>()
-                .WithOne(x => x.Credential)
-                .HasForeignKey<ComputadorCredential>(
-                    x => x.ComputadorId)
+                .WithMany()
+                .HasForeignKey(x => x.ComputadorId)
                 .OnDelete(DeleteBehavior.Cascade);
         }
     }

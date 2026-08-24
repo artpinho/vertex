@@ -11,6 +11,10 @@ namespace Vertex.Infrastructure.Security;
 public sealed class ComputerCredentialGenerator
     : IComputerCredentialGenerator
 {
+    private const int SaltSize = 16;
+    private const int KeySize = 32;
+    private const int Iterations = 100_000;
+
     public string GenerateClientId()
     {
         return $"vtx_{Convert.ToHexString(
@@ -28,10 +32,67 @@ public sealed class ComputerCredentialGenerator
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(secret);
 
-        var bytes = SHA256.HashData(
-            Encoding.UTF8.GetBytes(secret));
+        var salt = RandomNumberGenerator.GetBytes(SaltSize);
 
-        return Convert.ToHexString(bytes)
-            .ToLowerInvariant();
+        var hash = Rfc2898DeriveBytes.Pbkdf2(
+            Encoding.UTF8.GetBytes(secret),
+            salt,
+            Iterations,
+            HashAlgorithmName.SHA256,
+            KeySize);
+
+        return string.Join(
+            ".",
+            "pbkdf2",
+            Iterations,
+            Convert.ToBase64String(salt),
+            Convert.ToBase64String(hash));
+    }
+
+    public bool VerifySecret(
+        string secret,
+        string hash)
+    {
+        if (string.IsNullOrWhiteSpace(secret) ||
+            string.IsNullOrWhiteSpace(hash))
+        {
+            return false;
+        }
+
+        var parts = hash.Split('.');
+
+        if (parts.Length != 4 ||
+            parts[0] != "pbkdf2")
+        {
+            return false;
+        }
+
+        if (!int.TryParse(
+                parts[1],
+                out var iterations))
+        {
+            return false;
+        }
+
+        try
+        {
+            var salt = Convert.FromBase64String(parts[2]);
+            var expectedHash = Convert.FromBase64String(parts[3]);
+
+            var actualHash = Rfc2898DeriveBytes.Pbkdf2(
+                Encoding.UTF8.GetBytes(secret),
+                salt,
+                iterations,
+                HashAlgorithmName.SHA256,
+                expectedHash.Length);
+
+            return CryptographicOperations.FixedTimeEquals(
+                actualHash,
+                expectedHash);
+        }
+        catch (FormatException)
+        {
+            return false;
+        }
     }
 }

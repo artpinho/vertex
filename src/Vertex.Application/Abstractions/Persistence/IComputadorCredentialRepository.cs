@@ -9,7 +9,7 @@ namespace Vertex.Application.Abstractions.Persistence;
 
 public interface IComputadorCredentialRepository
 {
-    Task<ComputadorCredential?> ObterPorComputadorIdAsync(
+    Task<ComputadorCredential?> ObterAtivaPorComputadorIdAsync(
         Guid computadorId,
         CancellationToken cancellationToken = default);
 

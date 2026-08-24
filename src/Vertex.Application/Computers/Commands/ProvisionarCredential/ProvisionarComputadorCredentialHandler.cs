@@ -40,7 +40,7 @@ public sealed class ProvisionarComputadorCredentialHandler
         }
 
         var credentialExistente =
-            await _credentialRepository.ObterPorComputadorIdAsync(
+            await _credentialRepository.ObterAtivaPorComputadorIdAsync(
                 command.ComputadorId,
                 cancellationToken);
 
@@ -58,8 +58,6 @@ public sealed class ProvisionarComputadorCredentialHandler
             computador.Id,
             clientId,
             secretHash);
-
-        computador.AssociarCredential(credential);
 
         await _credentialRepository.AdicionarAsync(
             credential,

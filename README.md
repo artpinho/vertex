@@ -7,7 +7,7 @@
 ![EF Core](https://img.shields.io/badge/Entity%20Framework%20Core-9.0-512BD4?logo=dotnet&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927?logo=microsoftsqlserver&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-13-239120?logo=csharp&logoColor=white)
-![Tests](https://img.shields.io/badge/tests-24%20passing-brightgreen)
+![Tests](https://img.shields.io/badge/tests-29%20passing-brightgreen)
 
 ---
 
