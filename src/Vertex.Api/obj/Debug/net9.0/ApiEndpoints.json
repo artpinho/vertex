@@ -1,5 +1,40 @@
 [
   {
+    "ContainingType": "Vertex.Api.Controllers.AuthController",
+    "Method": "AuthenticateComputer",
+    "RelativePath": "api/v1/auth/computers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Vertex.Contracts.Auth.ComputerAuthenticationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vertex.Contracts.Auth.ComputerAuthenticationResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      }
+    ]
+  },
+  {
     "ContainingType": "Vertex.Api.Controllers.ComputadoresController",
     "Method": "Registrar",
     "RelativePath": "api/v1/computadores",
@@ -95,6 +130,94 @@
           "text/json"
         ],
         "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.ComputadoresController",
+    "Method": "ProvisionarCredential",
+    "RelativePath": "api/v1/computadores/{id}/credentials",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vertex.Application.Computers.Commands.ProvisionarCredential.ProvisionarComputadorCredentialResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.ComputadoresController",
+    "Method": "RotacionarCredential",
+    "RelativePath": "api/v1/computadores/{id}/credentials/rotate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vertex.Application.Computers.Commands.RotacionarCredential.RotacionarComputadorCredentialResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
       }
     ]
   },

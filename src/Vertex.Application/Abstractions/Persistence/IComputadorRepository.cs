@@ -32,5 +32,6 @@ namespace Vertex.Application.Abstractions.Persistence
         Task AtualizarAsync(
             Computador computador,
             CancellationToken cancellationToken = default);
+
     }
 }

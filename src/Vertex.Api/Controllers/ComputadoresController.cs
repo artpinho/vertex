@@ -2,6 +2,7 @@
 using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
+using Vertex.Application.Computers.Commands.RotacionarCredential;
 using Vertex.Application.Computers.DTOs;
 using Vertex.Application.Computers.Queries;
 using Vertex.Contracts.Computers;
@@ -17,19 +18,22 @@ namespace Vertex.Api.Controllers
         private readonly ObterComputadorHandler _obterHandler;
         private readonly ProcessarHeartbeatHandler _heartbeatHandler;
         private readonly ProvisionarComputadorCredentialHandler _provisionarCredentialHandler;
+        private readonly RotacionarComputadorCredentialHandler _rotacionarCredentialHandler;
 
         public ComputadoresController(
         RegistrarComputadorHandler registrarHandler,
         ListarComputadoresHandler listarHandler,
         ObterComputadorHandler obterHandler,
         ProcessarHeartbeatHandler heartbeatHandler,
-        ProvisionarComputadorCredentialHandler provisionarCredentialHandler)
+        ProvisionarComputadorCredentialHandler provisionarCredentialHandler,
+        RotacionarComputadorCredentialHandler rotacionarCredentialHandler)
         {
             _registrarHandler = registrarHandler;
             _listarHandler = listarHandler;
             _obterHandler = obterHandler;
             _heartbeatHandler = heartbeatHandler;
             _provisionarCredentialHandler = provisionarCredentialHandler;
+            _rotacionarCredentialHandler = rotacionarCredentialHandler;
         }
 
         [HttpPost]
@@ -171,6 +175,43 @@ namespace Vertex.Api.Controllers
                 return Created(
                     $"/api/v1/computadores/{id}/credentials",
                     response);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new
+                {
+                    message = ex.Message
+                });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return Conflict(new
+                {
+                    message = ex.Message
+                });
+            }
+        }
+
+        [HttpPost("{id:guid}/credentials/rotate")]
+        [ProducesResponseType(
+            typeof(RotacionarComputadorCredentialResponse),
+            StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
+            public async Task<
+                ActionResult<RotacionarComputadorCredentialResponse>>
+                RotacionarCredential(
+                    Guid id,
+                    CancellationToken cancellationToken)
+        {
+            try
+            {
+                var response =
+                    await _rotacionarCredentialHandler.HandleAsync(
+                        new RotacionarComputadorCredentialCommand(id),
+                        cancellationToken);
+
+                return Ok(response);
             }
             catch (KeyNotFoundException ex)
             {

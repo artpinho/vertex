@@ -3,6 +3,7 @@ using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.Queries;
 using Vertex.Infrastructure;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
+using Vertex.Application.Computers.Commands.RotacionarCredential;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,7 @@ builder.Services.AddScoped<ListarComputadoresHandler>();
 builder.Services.AddScoped<ObterComputadorHandler>();
 builder.Services.AddScoped<ProcessarHeartbeatHandler>();
 builder.Services.AddScoped<ProvisionarComputadorCredentialHandler>();
+builder.Services.AddScoped<RotacionarComputadorCredentialHandler>();
 
 var app = builder.Build();
 

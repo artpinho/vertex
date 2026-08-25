@@ -20,4 +20,9 @@ public interface IComputadorCredentialRepository
     Task AdicionarAsync(
         ComputadorCredential credential,
         CancellationToken cancellationToken = default);
+
+    Task SalvarRotacaoAsync(
+            ComputadorCredential credentialAtual,
+            ComputadorCredential novaCredential,
+            CancellationToken cancellationToken = default);
 }

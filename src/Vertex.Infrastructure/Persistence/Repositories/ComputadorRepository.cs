@@ -78,5 +78,6 @@ namespace Vertex.Infrastructure.Persistence.Repositories
 
             await _context.SaveChangesAsync(cancellationToken);
         }
+
     }
 }

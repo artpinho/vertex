@@ -163,3 +163,4 @@ F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\obj\Debug\net9.0\Vertex.
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Usuários\Werner Pinho\Desktop\Vertex\src\Vertex.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

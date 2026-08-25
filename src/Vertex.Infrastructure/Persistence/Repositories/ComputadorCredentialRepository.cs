@@ -55,4 +55,15 @@ public sealed class ComputadorCredentialRepository
         await _context.SaveChangesAsync(
             cancellationToken);
     }
+
+    public async Task SalvarRotacaoAsync(
+    ComputadorCredential credentialAtual,
+    ComputadorCredential novaCredential,
+    CancellationToken cancellationToken = default)
+    {
+        _context.ComputadorCredentials.Add(novaCredential);
+
+        await _context.SaveChangesAsync(
+            cancellationToken);
+    }
 }
