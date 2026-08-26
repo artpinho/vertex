@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
@@ -105,6 +106,7 @@ namespace Vertex.Api.Controllers
             return Ok(response);
         }
 
+        [Authorize]
         [HttpPost("{id:guid}/heartbeat")]
         [ProducesResponseType(
             typeof(HeartbeatResponse),
@@ -115,6 +117,24 @@ namespace Vertex.Api.Controllers
             [FromBody] HeartbeatRequest request,
             CancellationToken cancellationToken)
         {
+            var computadorIdClaim =
+                User.FindFirst("computadorId")?.Value;
+
+            if (!Guid.TryParse(
+                    computadorIdClaim,
+                    out var computadorIdToken))
+            {
+                return Unauthorized(new
+                {
+                    message = "Token não contém um computador válido."
+                });
+            }
+
+            if (computadorIdToken != id)
+            {
+                return Forbid();
+            }
+
             if (id != request.ComputadorId)
             {
                 return BadRequest(new

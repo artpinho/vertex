@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.Abstractions.Security;
 using Vertex.Contracts.Auth;
 
@@ -9,11 +10,14 @@ namespace Vertex.Api.Controllers;
 public sealed class AuthController : ControllerBase
 {
     private readonly IComputerAuthenticator _authenticator;
+    private readonly IJwtTokenService _jwtTokenService;
 
     public AuthController(
-        IComputerAuthenticator authenticator)
+     IComputerAuthenticator authenticator,
+     IJwtTokenService jwtTokenService)
     {
         _authenticator = authenticator;
+        _jwtTokenService = jwtTokenService;
     }
 
     [HttpPost("computers")]
@@ -41,9 +45,35 @@ public sealed class AuthController : ControllerBase
             });
         }
 
+        var accessToken = _jwtTokenService.GenerateToken(
+            computadorId.Value,
+            request.ClientId);
+
         return Ok(
             new ComputerAuthenticationResponse(
                 computadorId.Value,
-                true));
+                true,
+                accessToken,
+                "Bearer",
+                3600));
+    }
+
+    [Authorize]
+    [HttpGet("me")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    public IActionResult Me()
+    {
+        return Ok(new
+        {
+            computadorId =
+                User.FindFirst("computadorId")?.Value,
+
+            clientId =
+                User.FindFirst("clientId")?.Value,
+
+            tipo =
+                User.FindFirst("tipo")?.Value
+        });
     }
 }
