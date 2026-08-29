@@ -11,13 +11,16 @@ public sealed class AuthController : ControllerBase
 {
     private readonly IComputerAuthenticator _authenticator;
     private readonly IJwtTokenService _jwtTokenService;
+    private readonly ICurrentComputer _currentComputer;
 
     public AuthController(
      IComputerAuthenticator authenticator,
-     IJwtTokenService jwtTokenService)
+     IJwtTokenService jwtTokenService,
+     ICurrentComputer currentComputer)
     {
         _authenticator = authenticator;
         _jwtTokenService = jwtTokenService;
+        _currentComputer = currentComputer;
     }
 
     [HttpPost("computers")]
@@ -66,14 +69,9 @@ public sealed class AuthController : ControllerBase
     {
         return Ok(new
         {
-            computadorId =
-                User.FindFirst("computadorId")?.Value,
-
-            clientId =
-                User.FindFirst("clientId")?.Value,
-
-            tipo =
-                User.FindFirst("tipo")?.Value
+            computadorId = _currentComputer.ComputadorId,
+            clientId = _currentComputer.ClientId,
+            tipo = "computador"
         });
     }
 }

@@ -8,6 +8,8 @@ using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.Commands.RotacionarCredential;
 using Vertex.Application.Computers.Queries;
 using Vertex.Infrastructure;
+using Vertex.Api.Security;
+using Vertex.Application.Abstractions.Security;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -105,6 +107,12 @@ builder.Services
     });
 
 builder.Services.AddAuthorization();
+
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddScoped<
+    ICurrentComputer,
+    CurrentComputer>();
 
 var app = builder.Build();
 

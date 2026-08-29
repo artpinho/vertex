@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Vertex.Application.Abstractions.Security;
 using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
@@ -20,6 +21,7 @@ namespace Vertex.Api.Controllers
         private readonly ProcessarHeartbeatHandler _heartbeatHandler;
         private readonly ProvisionarComputadorCredentialHandler _provisionarCredentialHandler;
         private readonly RotacionarComputadorCredentialHandler _rotacionarCredentialHandler;
+        private readonly ICurrentComputer _currentComputer;
 
         public ComputadoresController(
         RegistrarComputadorHandler registrarHandler,
@@ -27,7 +29,8 @@ namespace Vertex.Api.Controllers
         ObterComputadorHandler obterHandler,
         ProcessarHeartbeatHandler heartbeatHandler,
         ProvisionarComputadorCredentialHandler provisionarCredentialHandler,
-        RotacionarComputadorCredentialHandler rotacionarCredentialHandler)
+        RotacionarComputadorCredentialHandler rotacionarCredentialHandler,
+        ICurrentComputer currentComputer)
         {
             _registrarHandler = registrarHandler;
             _listarHandler = listarHandler;
@@ -35,6 +38,7 @@ namespace Vertex.Api.Controllers
             _heartbeatHandler = heartbeatHandler;
             _provisionarCredentialHandler = provisionarCredentialHandler;
             _rotacionarCredentialHandler = rotacionarCredentialHandler;
+            _currentComputer = currentComputer;
         }
 
         [HttpPost]
@@ -117,18 +121,8 @@ namespace Vertex.Api.Controllers
             [FromBody] HeartbeatRequest request,
             CancellationToken cancellationToken)
         {
-            var computadorIdClaim =
-                User.FindFirst("computadorId")?.Value;
-
-            if (!Guid.TryParse(
-                    computadorIdClaim,
-                    out var computadorIdToken))
-            {
-                return Unauthorized(new
-                {
-                    message = "Token não contém um computador válido."
-                });
-            }
+            var computadorIdToken =
+                _currentComputer.ComputadorId;
 
             if (computadorIdToken != id)
             {
