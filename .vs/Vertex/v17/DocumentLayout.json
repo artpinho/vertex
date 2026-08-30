@@ -3,224 +3,64 @@
   "WorkspaceRootPath": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\controllers\\computadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\controllers\\computadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\controllers\\estacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\controllers\\estacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\security\\currentcomputer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\security\\currentcomputer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\queries\\obterestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\queries\\obterestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\abstractions\\security\\icurrentcomputer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\abstractions\\security\\icurrentcomputer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\queries\\listarestacoeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\queries\\listarestacoeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\security\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\security\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\queries\\estacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\queries\\estacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\abstractions\\security\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\abstractions\\security\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.contracts\\auth\\computerauthenticationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|solutionrelative:src\\vertex.contracts\\auth\\computerauthenticationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.contracts\\auth\\computerauthenticationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|solutionrelative:src\\vertex.contracts\\auth\\computerauthenticationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\repositories\\estacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\repositories\\estacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\repositories\\computadorcredentialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\repositories\\computadorcredentialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\abstractions\\persistence\\iestacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\abstractions\\persistence\\iestacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\repositories\\computadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\repositories\\computadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\abstractions\\persistence\\icomputadorcredentialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\abstractions\\persistence\\icomputadorcredentialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\abstractions\\persistence\\icomputadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\abstractions\\persistence\\icomputadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\commands\\rotacionarcredencial\\rotacionarcomputadorcredentialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\commands\\rotacionarcredencial\\rotacionarcomputadorcredentialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\commands\\rotacionarcredencial\\rotacionarcomputadorcredentialresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\commands\\rotacionarcredencial\\rotacionarcomputadorcredentialresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\commands\\rotacionarcredencial\\rotacionarcomputadorcredentialcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\commands\\rotacionarcredencial\\rotacionarcomputadorcredentialcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\commands\\provisionarcredential\\provisionarcomputadorcredentialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\commands\\provisionarcredential\\provisionarcomputadorcredentialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\configurations\\computadorcredentialconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\configurations\\computadorcredentialconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\abstractions\\security\\icomputercredentialgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\abstractions\\security\\icomputercredentialgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\configurations\\estacaoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\configurations\\estacaoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.domain\\entities\\computador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:src\\vertex.domain\\entities\\computador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD548D18-D964-4B88-8008-8CEEAAEC9A8C}|tests\\Vertex.Application.Tests\\Vertex.Application.Tests.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\tests\\vertex.application.tests\\fakes\\fakecomputercredentialgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD548D18-D964-4B88-8008-8CEEAAEC9A8C}|tests\\Vertex.Application.Tests\\Vertex.Application.Tests.csproj|solutionrelative:tests\\vertex.application.tests\\fakes\\fakecomputercredentialgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\security\\computerauthenticator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\security\\computerauthenticator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\abstractions\\security\\computercredentialgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\abstractions\\security\\computercredentialgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\abstractions\\security\\icomputerauthenticator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\abstractions\\security\\icomputerauthenticator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\commands\\provisionarcredential\\provisionarcomputadorcredentialresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\commands\\provisionarcredential\\provisionarcomputadorcredentialresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\commands\\provisionarcredential\\provisionarcomputadorcredentialcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\commands\\provisionarcredential\\provisionarcomputadorcredentialcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\context\\vertexdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\context\\vertexdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.domain\\enums\\statuscredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:src\\vertex.domain\\enums\\statuscredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:src\\vertex.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD548D18-D964-4B88-8008-8CEEAAEC9A8C}|tests\\Vertex.Application.Tests\\Vertex.Application.Tests.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\tests\\vertex.application.tests\\computers\\processarheartbeathandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD548D18-D964-4B88-8008-8CEEAAEC9A8C}|tests\\Vertex.Application.Tests\\Vertex.Application.Tests.csproj|solutionrelative:tests\\vertex.application.tests\\computers\\processarheartbeathandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD548D18-D964-4B88-8008-8CEEAAEC9A8C}|tests\\Vertex.Application.Tests\\Vertex.Application.Tests.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\tests\\vertex.application.tests\\fakes\\fakecomputadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD548D18-D964-4B88-8008-8CEEAAEC9A8C}|tests\\Vertex.Application.Tests\\Vertex.Application.Tests.csproj|solutionrelative:tests\\vertex.application.tests\\fakes\\fakecomputadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD548D18-D964-4B88-8008-8CEEAAEC9A8C}|tests\\Vertex.Application.Tests\\Vertex.Application.Tests.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\tests\\vertex.application.tests\\computers\\registrarcomputadorhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD548D18-D964-4B88-8008-8CEEAAEC9A8C}|tests\\Vertex.Application.Tests\\Vertex.Application.Tests.csproj|solutionrelative:tests\\vertex.application.tests\\computers\\registrarcomputadorhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.contracts\\computers\\heartbeatresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|solutionrelative:src\\vertex.contracts\\computers\\heartbeatresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.contracts\\computers\\heartbeatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|solutionrelative:src\\vertex.contracts\\computers\\heartbeatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\commands\\registrarcomputador\\registrarcomputadorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\commands\\registrarcomputador\\registrarcomputadorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\queries\\obtercomputadorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\queries\\obtercomputadorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\queries\\listarcomputadoreshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\queries\\listarcomputadoreshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\dtos\\computadorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\dtos\\computadorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\queries\\listarcomputadoresquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\queries\\listarcomputadoresquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\queries\\obtercomputadorquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\queries\\obtercomputadorquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\computers\\commands\\registrarcomputador\\registrarcomputadorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\computers\\commands\\registrarcomputador\\registrarcomputadorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\configurations\\computadorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\configurations\\computadorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\configurations\\sessaoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\configurations\\sessaoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\configurations\\clienteconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\configurations\\clienteconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.domain\\common\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:src\\vertex.domain\\common\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F85CC7CA-C361-4606-991F-5AB5718A393C}|tests\\Vertex.Domain.Tests\\Vertex.Domain.Tests.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\tests\\vertex.domain.tests\\entities\\sessaotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F85CC7CA-C361-4606-991F-5AB5718A393C}|tests\\Vertex.Domain.Tests\\Vertex.Domain.Tests.csproj|solutionrelative:tests\\vertex.domain.tests\\entities\\sessaotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F85CC7CA-C361-4606-991F-5AB5718A393C}|tests\\Vertex.Domain.Tests\\Vertex.Domain.Tests.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\tests\\vertex.domain.tests\\entities\\estacaotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F85CC7CA-C361-4606-991F-5AB5718A393C}|tests\\Vertex.Domain.Tests\\Vertex.Domain.Tests.csproj|solutionrelative:tests\\vertex.domain.tests\\entities\\estacaotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.domain\\entities\\estacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:src\\vertex.domain\\entities\\estacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F85CC7CA-C361-4606-991F-5AB5718A393C}|tests\\Vertex.Domain.Tests\\Vertex.Domain.Tests.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\tests\\vertex.domain.tests\\entities\\clientetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F85CC7CA-C361-4606-991F-5AB5718A393C}|tests\\Vertex.Domain.Tests\\Vertex.Domain.Tests.csproj|solutionrelative:tests\\vertex.domain.tests\\entities\\clientetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.domain\\entities\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:src\\vertex.domain\\entities\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:src\\vertex.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F85CC7CA-C361-4606-991F-5AB5718A393C}|tests\\Vertex.Domain.Tests\\Vertex.Domain.Tests.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\tests\\vertex.domain.tests\\common\\entitytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F85CC7CA-C361-4606-991F-5AB5718A393C}|tests\\Vertex.Domain.Tests\\Vertex.Domain.Tests.csproj|solutionrelative:tests\\vertex.domain.tests\\common\\entitytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -230,49 +70,180 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CurrentComputer.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Security\\CurrentComputer.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Api\\Security\\CurrentComputer.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Security\\CurrentComputer.cs",
-              "RelativeToolTip": "src\\Vertex.Api\\Security\\CurrentComputer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ObterEstacaoHandler.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\ObterEstacaoHandler.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Queries\\ObterEstacaoHandler.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\ObterEstacaoHandler.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Queries\\ObterEstacaoHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAswCcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T19:19:26.444Z",
+              "WhenOpened": "2026-08-30T15:51:54.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListarEstacoesHandler.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\ListarEstacoesHandler.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Queries\\ListarEstacoesHandler.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\ListarEstacoesHandler.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Queries\\ListarEstacoesHandler.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T15:51:38.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ICurrentComputer.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\ICurrentComputer.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Abstractions\\Security\\ICurrentComputer.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\ICurrentComputer.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Abstractions\\Security\\ICurrentComputer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Title": "EstacaoResponse.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\EstacaoResponse.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Queries\\EstacaoResponse.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\EstacaoResponse.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Queries\\EstacaoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T19:17:40.368Z",
+              "WhenOpened": "2026-08-30T15:51:19.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EstacoesController.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\EstacoesController.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Api\\Controllers\\EstacoesController.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\EstacoesController.cs",
+              "RelativeToolTip": "src\\Vertex.Api\\Controllers\\EstacoesController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T15:41:50.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CriarEstacaoHandler.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoHandler.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoHandler.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoHandler.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoHandler.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAADwvw0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T15:38:28.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IJwtTokenService.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\IJwtTokenService.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Abstractions\\Security\\IJwtTokenService.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\IJwtTokenService.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Abstractions\\Security\\IJwtTokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Title": "CriarEstacaoCommand.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoCommand.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoCommand.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoCommand.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T02:10:14.48Z"
+              "WhenOpened": "2026-08-30T15:36:22.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Api\\Program.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Program.cs",
+              "RelativeToolTip": "src\\Vertex.Api\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T19:23:15.365Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "CriarEstacaoResponse.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoResponse.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoResponse.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoResponse.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T15:36:59.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ComputadorRepository.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorRepository.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorRepository.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorRepository.cs",
+              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T15:32:48.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IEstacaoRepository.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Persistence\\IEstacaoRepository.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Abstractions\\Persistence\\IEstacaoRepository.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Persistence\\IEstacaoRepository.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Abstractions\\Persistence\\IEstacaoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T15:29:01.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EstacaoRepository.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\EstacaoRepository.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\EstacaoRepository.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\EstacaoRepository.cs",
+              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\EstacaoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T15:24:23.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Estacao.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Estacao.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Domain\\Entities\\Estacao.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Estacao.cs",
+              "RelativeToolTip": "src\\Vertex.Domain\\Entities\\Estacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T02:30:33.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EstacaoConfiguration.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\EstacaoConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\EstacaoConfiguration.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\EstacaoConfiguration.cs",
+              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\EstacaoConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T02:37:40.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\appsettings.json",
               "RelativeDocumentMoniker": "src\\Vertex.Api\\appsettings.json",
@@ -284,618 +255,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Api\\Program.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Program.cs",
-              "RelativeToolTip": "src\\Vertex.Api\\Program.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:23:15.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ComputadoresController.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\ComputadoresController.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Api\\Controllers\\ComputadoresController.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\ComputadoresController.cs",
-              "RelativeToolTip": "src\\Vertex.Api\\Controllers\\ComputadoresController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:30:59.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Api\\Controllers\\AuthController.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "src\\Vertex.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAowEwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T02:37:52.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JwtTokenService.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Security\\JwtTokenService.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Security\\JwtTokenService.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Security\\JwtTokenService.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Security\\JwtTokenService.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowFQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T02:10:44.237Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ComputerAuthenticationResponse.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\Auth\\ComputerAuthenticationResponse.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Contracts\\Auth\\ComputerAuthenticationResponse.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\Auth\\ComputerAuthenticationResponse.cs",
-              "RelativeToolTip": "src\\Vertex.Contracts\\Auth\\ComputerAuthenticationResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T02:37:26.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "RelativeToolTip": "src\\Vertex.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T02:41:32.124Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ComputerAuthenticationRequest.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\Auth\\ComputerAuthenticationRequest.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Contracts\\Auth\\ComputerAuthenticationRequest.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\Auth\\ComputerAuthenticationRequest.cs",
-              "RelativeToolTip": "src\\Vertex.Contracts\\Auth\\ComputerAuthenticationRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T02:37:09.329Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ComputadorCredentialRepository.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorCredentialRepository.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorCredentialRepository.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorCredentialRepository.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorCredentialRepository.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:25:23.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IComputadorCredentialRepository.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Persistence\\IComputadorCredentialRepository.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Abstractions\\Persistence\\IComputadorCredentialRepository.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Persistence\\IComputadorCredentialRepository.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Abstractions\\Persistence\\IComputadorCredentialRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:24:53.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IComputadorRepository.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Persistence\\IComputadorRepository.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Abstractions\\Persistence\\IComputadorRepository.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Persistence\\IComputadorRepository.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Abstractions\\Persistence\\IComputadorRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T23:23:38.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ComputadorRepository.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorRepository.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorRepository.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorRepository.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorRepository.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAuwFAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T02:59:46.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RotacionarComputadorCredentialResponse.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialResponse.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialResponse.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialResponse.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T23:28:33.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RotacionarComputadorCredentialHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialHandler.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowEcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T23:28:48.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RotacionarComputadorCredentialCommand.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialCommand.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialCommand.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialCommand.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Commands\\RotacionarCredencial\\RotacionarComputadorCredentialCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T23:28:07.182Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ProvisionarComputadorCredentialHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialHandler.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwCcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:26:32.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Computador.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Computador.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Domain\\Entities\\Computador.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Computador.cs",
-              "RelativeToolTip": "src\\Vertex.Domain\\Entities\\Computador.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAIA0wEwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:30:28.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IComputerCredentialGenerator.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\IComputerCredentialGenerator.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Abstractions\\Security\\IComputerCredentialGenerator.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\IComputerCredentialGenerator.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Abstractions\\Security\\IComputerCredentialGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:22:11.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ComputadorCredentialConfiguration.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\ComputadorCredentialConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\ComputadorCredentialConfiguration.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\ComputadorCredentialConfiguration.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\ComputadorCredentialConfiguration.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAMwC0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:16:04.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FakeComputerCredentialGenerator.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Application.Tests\\Fakes\\FakeComputerCredentialGenerator.cs",
-              "RelativeDocumentMoniker": "tests\\Vertex.Application.Tests\\Fakes\\FakeComputerCredentialGenerator.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Application.Tests\\Fakes\\FakeComputerCredentialGenerator.cs",
-              "RelativeToolTip": "tests\\Vertex.Application.Tests\\Fakes\\FakeComputerCredentialGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T02:35:26.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "EstacaoConfiguration.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\EstacaoConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\EstacaoConfiguration.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\EstacaoConfiguration.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\EstacaoConfiguration.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAnwCQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T02:37:40.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ComputerAuthenticator.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Security\\ComputerAuthenticator.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Security\\ComputerAuthenticator.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Security\\ComputerAuthenticator.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Security\\ComputerAuthenticator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T02:33:52.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IComputerAuthenticator.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\IComputerAuthenticator.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Abstractions\\Security\\IComputerAuthenticator.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\IComputerAuthenticator.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Abstractions\\Security\\IComputerAuthenticator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T02:33:05.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ProvisionarComputadorCredentialResponse.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialResponse.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialResponse.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialResponse.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:26:26.648Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ProvisionarComputadorCredentialCommand.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialCommand.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialCommand.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialCommand.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Commands\\ProvisionarCredential\\ProvisionarComputadorCredentialCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:26:20.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ComputerCredentialGenerator.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\ComputerCredentialGenerator.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Abstractions\\Security\\ComputerCredentialGenerator.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Security\\ComputerCredentialGenerator.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Abstractions\\Security\\ComputerCredentialGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T19:22:27.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "StatusCredential.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Enums\\StatusCredential.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Domain\\Enums\\StatusCredential.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Enums\\StatusCredential.cs",
-              "RelativeToolTip": "src\\Vertex.Domain\\Enums\\StatusCredential.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T18:54:22.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ProcessarHeartbeatHandlerTests.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Application.Tests\\Computers\\ProcessarHeartbeatHandlerTests.cs",
-              "RelativeDocumentMoniker": "tests\\Vertex.Application.Tests\\Computers\\ProcessarHeartbeatHandlerTests.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Application.Tests\\Computers\\ProcessarHeartbeatHandlerTests.cs",
-              "RelativeToolTip": "tests\\Vertex.Application.Tests\\Computers\\ProcessarHeartbeatHandlerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T03:20:13.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "RegistrarComputadorHandlerTests.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Application.Tests\\Computers\\RegistrarComputadorHandlerTests.cs",
-              "RelativeDocumentMoniker": "tests\\Vertex.Application.Tests\\Computers\\RegistrarComputadorHandlerTests.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Application.Tests\\Computers\\RegistrarComputadorHandlerTests.cs",
-              "RelativeToolTip": "tests\\Vertex.Application.Tests\\Computers\\RegistrarComputadorHandlerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T03:20:17.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "VertexDbContext.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Context\\VertexDbContext.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Context\\VertexDbContext.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Context\\VertexDbContext.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Context\\VertexDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T02:35:19.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FakeComputadorRepository.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Application.Tests\\Fakes\\FakeComputadorRepository.cs",
-              "RelativeDocumentMoniker": "tests\\Vertex.Application.Tests\\Fakes\\FakeComputadorRepository.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Application.Tests\\Fakes\\FakeComputadorRepository.cs",
-              "RelativeToolTip": "tests\\Vertex.Application.Tests\\Fakes\\FakeComputadorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T03:20:57.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Cliente.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Domain\\Entities\\Cliente.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Cliente.cs",
-              "RelativeToolTip": "src\\Vertex.Domain\\Entities\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:30:23.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "HeartbeatResponse.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\Computers\\HeartbeatResponse.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Contracts\\Computers\\HeartbeatResponse.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\Computers\\HeartbeatResponse.cs",
-              "RelativeToolTip": "src\\Vertex.Contracts\\Computers\\HeartbeatResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T02:55:35.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "HeartbeatRequest.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\Computers\\HeartbeatRequest.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Contracts\\Computers\\HeartbeatRequest.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\Computers\\HeartbeatRequest.cs",
-              "RelativeToolTip": "src\\Vertex.Contracts\\Computers\\HeartbeatRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T02:54:28.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ObterComputadorHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Queries\\ObterComputadorHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Queries\\ObterComputadorHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Queries\\ObterComputadorHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Queries\\ObterComputadorHandler.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAUwCgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T01:32:01.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ListarComputadoresHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Queries\\ListarComputadoresHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Queries\\ListarComputadoresHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Queries\\ListarComputadoresHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Queries\\ListarComputadoresHandler.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAUwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T01:27:04.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "RegistrarComputadorHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RegistrarComputador\\RegistrarComputadorHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Commands\\RegistrarComputador\\RegistrarComputadorHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RegistrarComputador\\RegistrarComputadorHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Commands\\RegistrarComputador\\RegistrarComputadorHandler.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowEkAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T01:03:58.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "ComputadorResponse.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\DTOs\\ComputadorResponse.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\DTOs\\ComputadorResponse.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\DTOs\\ComputadorResponse.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\DTOs\\ComputadorResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T01:04:07.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ListarComputadoresQuery.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Queries\\ListarComputadoresQuery.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Queries\\ListarComputadoresQuery.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Queries\\ListarComputadoresQuery.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Queries\\ListarComputadoresQuery.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T01:27:00.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "ObterComputadorQuery.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Queries\\ObterComputadorQuery.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Queries\\ObterComputadorQuery.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Queries\\ObterComputadorQuery.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Queries\\ObterComputadorQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T01:27:11.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "RegistrarComputadorCommand.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RegistrarComputador\\RegistrarComputadorCommand.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Computers\\Commands\\RegistrarComputador\\RegistrarComputadorCommand.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Computers\\Commands\\RegistrarComputador\\RegistrarComputadorCommand.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Computers\\Commands\\RegistrarComputador\\RegistrarComputadorCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-22T01:03:47.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "SessaoConfiguration.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\SessaoConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\SessaoConfiguration.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\SessaoConfiguration.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\SessaoConfiguration.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T02:38:04.536Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ComputadorConfiguration.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\ComputadorConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\ComputadorConfiguration.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\ComputadorConfiguration.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\ComputadorConfiguration.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T02:36:49.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "ClienteConfiguration.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\ClienteConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\ClienteConfiguration.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Configurations\\ClienteConfiguration.cs",
-              "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\ClienteConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T02:36:21.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "ClienteTests.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Domain.Tests\\Entities\\ClienteTests.cs",
-              "RelativeDocumentMoniker": "tests\\Vertex.Domain.Tests\\Entities\\ClienteTests.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Domain.Tests\\Entities\\ClienteTests.cs",
-              "RelativeToolTip": "tests\\Vertex.Domain.Tests\\Entities\\ClienteTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:59:42.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "EstacaoTests.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Domain.Tests\\Entities\\EstacaoTests.cs",
-              "RelativeDocumentMoniker": "tests\\Vertex.Domain.Tests\\Entities\\EstacaoTests.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Domain.Tests\\Entities\\EstacaoTests.cs",
-              "RelativeToolTip": "tests\\Vertex.Domain.Tests\\Entities\\EstacaoTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:59:55.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Sessao.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Sessao.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Domain\\Entities\\Sessao.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Sessao.cs",
-              "RelativeToolTip": "src\\Vertex.Domain\\Entities\\Sessao.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAmwBMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:30:37.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Estacao.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Estacao.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Domain\\Entities\\Estacao.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\Estacao.cs",
-              "RelativeToolTip": "src\\Vertex.Domain\\Entities\\Estacao.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:30:33.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "SessaoTests.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Domain.Tests\\Entities\\SessaoTests.cs",
-              "RelativeDocumentMoniker": "tests\\Vertex.Domain.Tests\\Entities\\SessaoTests.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Domain.Tests\\Entities\\SessaoTests.cs",
-              "RelativeToolTip": "tests\\Vertex.Domain.Tests\\Entities\\SessaoTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T03:00:02.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "EntityTests.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Domain.Tests\\Common\\EntityTests.cs",
-              "RelativeDocumentMoniker": "tests\\Vertex.Domain.Tests\\Common\\EntityTests.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\tests\\Vertex.Domain.Tests\\Common\\EntityTests.cs",
-              "RelativeToolTip": "tests\\Vertex.Domain.Tests\\Common\\EntityTests.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:23:24.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "AggregateRoot.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Common\\AggregateRoot.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Domain\\Common\\AggregateRoot.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Common\\AggregateRoot.cs",
-              "RelativeToolTip": "src\\Vertex.Domain\\Common\\AggregateRoot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:22:30.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Common\\Entity.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Domain\\Common\\Entity.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Common\\Entity.cs",
-              "RelativeToolTip": "src\\Vertex.Domain\\Common\\Entity.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:21:47.991Z"
+              "WhenOpened": "2026-08-19T02:41:32.124Z",
+              "EditorCaption": ""
             }
           ]
         }

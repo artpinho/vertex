@@ -39,6 +39,7 @@ namespace Vertex.Infrastructure
             services.AddScoped<IComputerCredentialGenerator, ComputerCredentialGenerator>();
             services.AddScoped<IComputerAuthenticator, ComputerAuthenticator>();
             services.AddScoped<IJwtTokenService, JwtTokenService>();
+            services.AddScoped<IEstacaoRepository, EstacaoRepository>();
 
             return services;
         }
