@@ -26,4 +26,9 @@ public interface IEstacaoRepository
 
     Task SalvarAlteracoesAsync(
         CancellationToken cancellationToken);
+
+    Task<bool> ExisteComComputadorAsync(
+        Guid computadorId,
+        Guid estacaoId,
+        CancellationToken cancellationToken);
 }

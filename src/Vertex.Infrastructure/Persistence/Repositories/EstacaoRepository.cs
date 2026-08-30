@@ -62,4 +62,16 @@ public class EstacaoRepository : IEstacaoRepository
     {
         await _context.SaveChangesAsync(cancellationToken);
     }
+
+    public async Task<bool> ExisteComComputadorAsync(
+        Guid computadorId,
+        Guid estacaoId,
+        CancellationToken cancellationToken)
+    {
+        return await _context.Estacoes
+            .AnyAsync(
+                x => x.ComputadorId == computadorId
+                     && x.Id != estacaoId,
+                cancellationToken);
+    }
 }

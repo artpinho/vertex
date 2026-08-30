@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Vertex.Application.Stations.Commands.AssociarComputador;
 using Vertex.Application.Stations.Commands.CriarEstacao;
 using Vertex.Application.Stations.Queries;
 
@@ -11,15 +12,18 @@ namespace Vertex.Api.Controllers
         private readonly CriarEstacaoHandler _criarEstacaoHandler;
         private readonly ListarEstacoesHandler _listarEstacoesHandler;
         private readonly ObterEstacaoHandler _obterEstacaoHandler;
+        private readonly AssociarComputadorHandler _associarComputadorHandler;
 
         public EstacoesController(
             CriarEstacaoHandler criarEstacaoHandler,
             ListarEstacoesHandler listarEstacoesHandler,
-            ObterEstacaoHandler obterEstacaoHandler)
+            ObterEstacaoHandler obterEstacaoHandler,
+            AssociarComputadorHandler associarComputadorHandler)
         {
             _criarEstacaoHandler = criarEstacaoHandler;
             _listarEstacoesHandler = listarEstacoesHandler;
             _obterEstacaoHandler = obterEstacaoHandler;
+            _associarComputadorHandler = associarComputadorHandler;
         }
 
         [HttpPost]
@@ -97,6 +101,48 @@ namespace Vertex.Api.Controllers
                     cancellationToken);
 
             return Ok(response);
+        }
+
+        [HttpPost("{id:guid}/associar-computador")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
+        public async Task<IActionResult> AssociarComputador(
+            Guid id,
+        [FromBody] AssociarComputadorCommand command,
+            CancellationToken cancellationToken)
+        {
+            if (id != command.EstacaoId)
+            {
+                return BadRequest(new
+                {
+                    message =
+                        "O ID da rota não corresponde ao ID da estação."
+                });
+            }
+
+            try
+            {
+                await _associarComputadorHandler.HandleAsync(
+                    command,
+                    cancellationToken);
+
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new
+                {
+                    message = ex.Message
+                });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return Conflict(new
+                {
+                    message = ex.Message
+                });
+            }
         }
     }
 }

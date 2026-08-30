@@ -10,6 +10,7 @@ using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.Commands.RotacionarCredential;
 using Vertex.Application.Computers.Queries;
+using Vertex.Application.Stations.Commands.AssociarComputador;
 using Vertex.Application.Stations.Commands.CriarEstacao;
 using Vertex.Application.Stations.Queries;
 using Vertex.Infrastructure;
@@ -66,6 +67,7 @@ builder.Services.AddScoped<RotacionarComputadorCredentialHandler>();
 builder.Services.AddScoped<CriarEstacaoHandler>();
 builder.Services.AddScoped<ListarEstacoesHandler>();
 builder.Services.AddScoped<ObterEstacaoHandler>();
+builder.Services.AddScoped<AssociarComputadorHandler>();
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]
