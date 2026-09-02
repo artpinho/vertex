@@ -10,6 +10,8 @@ using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.Commands.RotacionarCredential;
 using Vertex.Application.Computers.Queries;
+using Vertex.Application.Sessions.Commands.IniciarSessao;
+using Vertex.Application.Stations.Commands.AlterarStatus;
 using Vertex.Application.Stations.Commands.AssociarComputador;
 using Vertex.Application.Stations.Commands.CriarEstacao;
 using Vertex.Application.Stations.Queries;
@@ -68,6 +70,8 @@ builder.Services.AddScoped<CriarEstacaoHandler>();
 builder.Services.AddScoped<ListarEstacoesHandler>();
 builder.Services.AddScoped<ObterEstacaoHandler>();
 builder.Services.AddScoped<AssociarComputadorHandler>();
+builder.Services.AddScoped<AlterarStatusEstacaoHandler>();
+builder.Services.AddScoped<IniciarSessaoHandler>();
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]
@@ -88,6 +92,19 @@ var jwtAudience =
     builder.Configuration["Jwt:Audience"]
     ?? throw new InvalidOperationException(
         "Jwt:Audience não configurado.");
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("SwaggerPolicy", policy =>
+    {
+        policy
+            .WithOrigins(
+                "http://localhost:5250",
+                "https://localhost:7098")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -121,6 +138,7 @@ builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddScoped<ICurrentComputer,CurrentComputer>();
 builder.Services.AddScoped<IEstacaoRepository,EstacaoRepository>();
+builder.Services.AddScoped<ISessaoRepository, SessaoRepository>();
 
 var app = builder.Build();
 
@@ -132,6 +150,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("SwaggerPolicy");
 
 app.UseAuthentication();
 

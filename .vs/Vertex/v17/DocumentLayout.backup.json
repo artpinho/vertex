@@ -3,48 +3,48 @@
   "WorkspaceRootPath": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\controllers\\estacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\controllers\\estacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\queries\\obterestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\queries\\obterestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\controllers\\estacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\controllers\\estacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\queries\\listarestacoeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\queries\\listarestacoeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\alterarstatus\\alterarstatusestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\alterarstatus\\alterarstatusestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\queries\\estacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\queries\\estacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\alterarstatus\\alterarstatusestacaocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\alterarstatus\\alterarstatusestacaocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\criarestacao\\criarestacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\alterarstatus\\operacaoestacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\alterarstatus\\operacaoestacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\repositories\\estacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\persistence\\repositories\\estacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\commands\\associarcomputador\\associarcomputadorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\commands\\associarcomputador\\associarcomputadorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\abstractions\\persistence\\iestacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\abstractions\\persistence\\iestacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\stations\\queries\\estacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\stations\\queries\\estacaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\repositories\\computadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,37 +70,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ObterEstacaoHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\ObterEstacaoHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Queries\\ObterEstacaoHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\ObterEstacaoHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Queries\\ObterEstacaoHandler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAswCcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T15:51:54.276Z",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\Vertex.Api\\Properties\\launchSettings.json",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\Vertex.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-02T01:13:24.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ListarEstacoesHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\ListarEstacoesHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Queries\\ListarEstacoesHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\ListarEstacoesHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Queries\\ListarEstacoesHandler.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCQAAAAFAAAAAAAAAA==",
+              "Title": "AlterarStatusEstacaoHandler.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\AlterarStatusEstacaoHandler.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\AlterarStatusEstacaoHandler.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\AlterarStatusEstacaoHandler.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\AlterarStatusEstacaoHandler.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowEUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T15:51:38.527Z",
+              "WhenOpened": "2026-09-02T01:03:31.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AlterarStatusEstacaoCommand.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\AlterarStatusEstacaoCommand.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\AlterarStatusEstacaoCommand.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\AlterarStatusEstacaoCommand.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\AlterarStatusEstacaoCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T01:03:14.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OperacaoEstacao.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\OperacaoEstacao.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\OperacaoEstacao.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\OperacaoEstacao.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\AlterarStatus\\OperacaoEstacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T01:02:39.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AssociarComputadorHandler.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\AssociarComputador\\AssociarComputadorHandler.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\AssociarComputador\\AssociarComputadorHandler.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\AssociarComputador\\AssociarComputadorHandler.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\AssociarComputador\\AssociarComputadorHandler.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwCgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T16:01:01.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "EstacaoResponse.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Queries\\EstacaoResponse.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Queries\\EstacaoResponse.cs",
@@ -108,46 +146,19 @@
               "RelativeToolTip": "src\\Vertex.Application\\Stations\\Queries\\EstacaoResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T15:51:19.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T15:51:19.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EstacoesController.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\EstacoesController.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Api\\Controllers\\EstacoesController.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\EstacoesController.cs",
               "RelativeToolTip": "src\\Vertex.Api\\Controllers\\EstacoesController.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAwwGYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAADwv2EAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-30T15:41:50.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CriarEstacaoHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoHandler.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAADwvw0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T15:38:28.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CriarEstacaoCommand.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoCommand.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoCommand.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoCommand.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T15:36:22.286Z",
               "EditorCaption": ""
             },
             {
@@ -158,22 +169,9 @@
               "RelativeDocumentMoniker": "src\\Vertex.Api\\Program.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Program.cs",
               "RelativeToolTip": "src\\Vertex.Api\\Program.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAEMAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-22T19:23:15.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CriarEstacaoResponse.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoResponse.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoResponse.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoResponse.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Stations\\Commands\\CriarEstacao\\CriarEstacaoResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T15:36:59.639Z",
               "EditorCaption": ""
             },
             {
@@ -186,34 +184,31 @@
               "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\ComputadorRepository.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T15:32:48.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T15:32:48.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "IEstacaoRepository.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Persistence\\IEstacaoRepository.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Application\\Abstractions\\Persistence\\IEstacaoRepository.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Abstractions\\Persistence\\IEstacaoRepository.cs",
               "RelativeToolTip": "src\\Vertex.Application\\Abstractions\\Persistence\\IEstacaoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T15:29:01.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T15:29:01.52Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "EstacaoRepository.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\EstacaoRepository.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\EstacaoRepository.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Repositories\\EstacaoRepository.cs",
               "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Repositories\\EstacaoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T15:24:23.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T15:24:23.627Z"
             },
             {
               "$type": "Document",
@@ -225,8 +220,7 @@
               "RelativeToolTip": "src\\Vertex.Domain\\Entities\\Estacao.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T02:30:33.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-18T02:30:33.13Z"
             },
             {
               "$type": "Document",
@@ -238,8 +232,7 @@
               "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Configurations\\EstacaoConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T02:37:40.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-19T02:37:40.308Z"
             },
             {
               "$type": "Document",
@@ -255,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\DependencyInjection.cs",
@@ -263,8 +256,7 @@
               "RelativeToolTip": "src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T02:41:32.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-19T02:41:32.124Z"
             }
           ]
         }
