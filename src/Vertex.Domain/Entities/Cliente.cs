@@ -56,4 +56,22 @@ public class Cliente : Entity
     {
         Ativo = true;
     }
+
+    public void AtualizarDados(
+    string nome,
+    string? cpf,
+    string? email,
+    string? telefone,
+    DateTime? dataNascimento)
+    {
+        if (string.IsNullOrWhiteSpace(nome))
+            throw new ArgumentException(
+                "O nome do cliente é obrigatório.");
+
+        Nome = nome.Trim();
+        CPF = cpf;
+        Email = email;
+        Telefone = telefone;
+        DataNascimento = dataNascimento;
+    }
 }

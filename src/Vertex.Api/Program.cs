@@ -5,11 +5,16 @@ using System.Text;
 using Vertex.Api.Security;
 using Vertex.Application.Abstractions.Persistence;
 using Vertex.Application.Abstractions.Security;
+using Vertex.Application.Clients.Commands.AlterarStatus;
+using Vertex.Application.Clients.Commands.AtualizarCliente;
+using Vertex.Application.Clients.Commands.CriarCliente;
+using Vertex.Application.Clients.Queries;
 using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.Commands.RotacionarCredential;
 using Vertex.Application.Computers.Queries;
+using Vertex.Application.Sessions.Commands.EncerrarSessao;
 using Vertex.Application.Sessions.Commands.IniciarSessao;
 using Vertex.Application.Stations.Commands.AlterarStatus;
 using Vertex.Application.Stations.Commands.AssociarComputador;
@@ -72,6 +77,12 @@ builder.Services.AddScoped<ObterEstacaoHandler>();
 builder.Services.AddScoped<AssociarComputadorHandler>();
 builder.Services.AddScoped<AlterarStatusEstacaoHandler>();
 builder.Services.AddScoped<IniciarSessaoHandler>();
+builder.Services.AddScoped<EncerrarSessaoHandler>();
+builder.Services.AddScoped<CriarClienteHandler>();
+builder.Services.AddScoped<ListarClientesHandler>();
+builder.Services.AddScoped<ObterClienteHandler>();
+builder.Services.AddScoped<AtualizarClienteHandler>();
+builder.Services.AddScoped<AlterarStatusClienteHandler>();
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]
@@ -139,6 +150,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<ICurrentComputer,CurrentComputer>();
 builder.Services.AddScoped<IEstacaoRepository,EstacaoRepository>();
 builder.Services.AddScoped<ISessaoRepository, SessaoRepository>();
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 
 var app = builder.Build();
 

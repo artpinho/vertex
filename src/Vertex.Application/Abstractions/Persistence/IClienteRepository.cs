@@ -12,5 +12,15 @@ namespace Vertex.Application.Abstractions.Persistence
         Task<Cliente?> ObterPorIdAsync(
             Guid id,
             CancellationToken cancellationToken);
+
+        Task AdicionarAsync(
+            Cliente cliente,
+            CancellationToken cancellationToken);
+
+        Task SalvarAlteracoesAsync(
+            CancellationToken cancellationToken);
+
+        Task<IReadOnlyList<Cliente>> ListarAsync(
+            CancellationToken cancellationToken);
     }
 }
