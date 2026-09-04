@@ -16,6 +16,7 @@ using Vertex.Application.Computers.Commands.RotacionarCredential;
 using Vertex.Application.Computers.Queries;
 using Vertex.Application.Sessions.Commands.EncerrarSessao;
 using Vertex.Application.Sessions.Commands.IniciarSessao;
+using Vertex.Application.Sessions.Queries;
 using Vertex.Application.Stations.Commands.AlterarStatus;
 using Vertex.Application.Stations.Commands.AssociarComputador;
 using Vertex.Application.Stations.Commands.CriarEstacao;
@@ -83,6 +84,8 @@ builder.Services.AddScoped<ListarClientesHandler>();
 builder.Services.AddScoped<ObterClienteHandler>();
 builder.Services.AddScoped<AtualizarClienteHandler>();
 builder.Services.AddScoped<AlterarStatusClienteHandler>();
+builder.Services.AddScoped<ListarSessoesHandler>();
+builder.Services.AddScoped<ObterSessaoHandler>();
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]

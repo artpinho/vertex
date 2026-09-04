@@ -13,6 +13,9 @@ namespace Vertex.Application.Abstractions.Persistence
             Guid id,
             CancellationToken cancellationToken);
 
+        Task<IReadOnlyList<Sessao>> ListarAsync(
+            CancellationToken cancellationToken);
+
         Task<bool> ExisteSessaoAtivaPorClienteAsync(
             Guid clienteId,
             CancellationToken cancellationToken);

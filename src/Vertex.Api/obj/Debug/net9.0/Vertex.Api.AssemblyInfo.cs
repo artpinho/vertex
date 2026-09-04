@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vertex.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec7f18dc2b5337f7ed2f549f74e036641baec593")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e354c68badf1d0b58fedbfdd437e201fdef1cc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vertex.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vertex.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

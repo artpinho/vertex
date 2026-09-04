@@ -66,5 +66,12 @@ namespace Vertex.Infrastructure.Persistence.Repositories
         {
             await _context.SaveChangesAsync(cancellationToken);
         }
+
+        public async Task<IReadOnlyList<Sessao>> ListarAsync(
+            CancellationToken cancellationToken)
+            => await _context.Sessoes
+        .AsNoTracking()
+        .OrderByDescending(x => x.Inicio)
+        .ToListAsync(cancellationToken);
     }
 }

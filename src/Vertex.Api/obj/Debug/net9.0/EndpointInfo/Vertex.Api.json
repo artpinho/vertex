@@ -1305,6 +1305,16 @@
             }
           }
         }
+      },
+      "get": {
+        "tags": [
+          "Sessoes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/v1/sessoes/{id}/encerrar": {
@@ -1383,6 +1393,29 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/v1/sessoes/{id}": {
+      "get": {
+        "tags": [
+          "Sessoes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
