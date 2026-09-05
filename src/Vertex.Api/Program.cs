@@ -16,6 +16,8 @@ using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.Commands.RotacionarCredential;
 using Vertex.Application.Computers.Queries;
+using Vertex.Application.MachineTypes.Commands.AlterarStatusTipoMaquina;
+using Vertex.Application.MachineTypes.Commands.AtualizarTipoMaquina;
 using Vertex.Application.MachineTypes.Commands.CriarTipoMaquina;
 using Vertex.Application.MachineTypes.Queries.ListarTiposMaquina;
 using Vertex.Application.MachineTypes.Queries.ObterTipoMaquina;
@@ -96,6 +98,8 @@ builder.Services.AddScoped<AlterarStatusComputadorHandler>();
 builder.Services.AddScoped<CriarTipoMaquinaHandler>();
 builder.Services.AddScoped<ListarTiposMaquinaHandler>();
 builder.Services.AddScoped<ObterTipoMaquinaHandler>();
+builder.Services.AddScoped<AtualizarTipoMaquinaHandler>();
+builder.Services.AddScoped<AlterarStatusTipoMaquinaHandler>();
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]

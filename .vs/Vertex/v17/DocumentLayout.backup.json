@@ -11,6 +11,14 @@
       "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\machinetypes\\commands\\alterarstatustipomaquina\\alterarstatustipomaquinahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\machinetypes\\commands\\alterarstatustipomaquina\\alterarstatustipomaquinahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\machinetypes\\commands\\atualizartipomaquina\\atualizartipomaquinahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\machinetypes\\commands\\atualizartipomaquina\\atualizartipomaquinahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.domain\\entities\\tipomaquina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03886F7B-14A2-4D5D-8851-9586E2AA4A93}|src\\Vertex.Domain\\Vertex.Domain.csproj|solutionrelative:src\\vertex.domain\\entities\\tipomaquina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,8 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlterarStatusTipoMaquinaHandler.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\MachineTypes\\Commands\\AlterarStatusTipoMaquina\\AlterarStatusTipoMaquinaHandler.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\MachineTypes\\Commands\\AlterarStatusTipoMaquina\\AlterarStatusTipoMaquinaHandler.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\MachineTypes\\Commands\\AlterarStatusTipoMaquina\\AlterarStatusTipoMaquinaHandler.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\MachineTypes\\Commands\\AlterarStatusTipoMaquina\\AlterarStatusTipoMaquinaHandler.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T20:44:51.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AtualizarTipoMaquinaHandler.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\MachineTypes\\Commands\\AtualizarTipoMaquina\\AtualizarTipoMaquinaHandler.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\MachineTypes\\Commands\\AtualizarTipoMaquina\\AtualizarTipoMaquinaHandler.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\MachineTypes\\Commands\\AtualizarTipoMaquina\\AtualizarTipoMaquinaHandler.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\MachineTypes\\Commands\\AtualizarTipoMaquina\\AtualizarTipoMaquinaHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T20:42:00.016Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,7 +74,7 @@
               "RelativeDocumentMoniker": "src\\Vertex.Api\\Controllers\\TiposMaquinaController.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\TiposMaquinaController.cs",
               "RelativeToolTip": "src\\Vertex.Api\\Controllers\\TiposMaquinaController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAUwEYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswGsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-05T19:12:16.568Z",
               "EditorCaption": ""
@@ -53,14 +87,14 @@
               "RelativeDocumentMoniker": "src\\Vertex.Api\\Program.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Program.cs",
               "RelativeToolTip": "src\\Vertex.Api\\Program.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGEAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAGUAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-05T19:01:43.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TipoMaquina.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Domain\\Entities\\TipoMaquina.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Domain\\Entities\\TipoMaquina.cs",
@@ -68,12 +102,11 @@
               "RelativeToolTip": "src\\Vertex.Domain\\Entities\\TipoMaquina.cs",
               "ViewState": "AgIAABgAAAAAAAAAAADwvzcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T18:50:00.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-05T18:50:00.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\appsettings.json",
               "RelativeDocumentMoniker": "src\\Vertex.Api\\appsettings.json",
@@ -85,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\DependencyInjection.cs",

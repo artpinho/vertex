@@ -929,5 +929,67 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.TiposMaquinaController",
+    "Method": "Atualizar",
+    "RelativePath": "api/v1/tipos-maquina/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Vertex.Application.MachineTypes.Commands.AtualizarTipoMaquina.AtualizarTipoMaquinaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vertex.Application.MachineTypes.Commands.AtualizarTipoMaquina.AtualizarTipoMaquinaResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.TiposMaquinaController",
+    "Method": "AlterarStatus",
+    "RelativePath": "api/v1/tipos-maquina/{id}/status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Vertex.Application.MachineTypes.Commands.AlterarStatusTipoMaquina.AlterarStatusTipoMaquinaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vertex.Application.MachineTypes.Commands.AlterarStatusTipoMaquina.AlterarStatusTipoMaquinaResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
