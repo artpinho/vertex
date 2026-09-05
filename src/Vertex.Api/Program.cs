@@ -9,6 +9,8 @@ using Vertex.Application.Clients.Commands.AlterarStatus;
 using Vertex.Application.Clients.Commands.AtualizarCliente;
 using Vertex.Application.Clients.Commands.CriarCliente;
 using Vertex.Application.Clients.Queries;
+using Vertex.Application.Computers.Commands.AlterarStatus;
+using Vertex.Application.Computers.Commands.AtualizarComputador;
 using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
@@ -86,6 +88,8 @@ builder.Services.AddScoped<AtualizarClienteHandler>();
 builder.Services.AddScoped<AlterarStatusClienteHandler>();
 builder.Services.AddScoped<ListarSessoesHandler>();
 builder.Services.AddScoped<ObterSessaoHandler>();
+builder.Services.AddScoped<AtualizarComputadorHandler>();
+builder.Services.AddScoped<AlterarStatusComputadorHandler>();
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]
@@ -137,10 +141,10 @@ builder.Services
 
                 IssuerSigningKey =
                     new SymmetricSecurityKey(
-                    Encoding.UTF8.GetBytes(jwtKey))
-                {
-                    KeyId = jwtKeyId
-                },
+                        Encoding.UTF8.GetBytes(jwtKey))
+                    {
+                        KeyId = jwtKeyId
+                    },
 
                 ClockSkew = TimeSpan.FromSeconds(30)
             };

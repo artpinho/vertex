@@ -43,7 +43,12 @@ namespace Vertex.Domain.Entities
             ClienteVersao = clienteVersao;
 
             UltimoHeartbeat = DateTime.UtcNow;
-            Status = StatusComputador.Online;
+
+            if (Status == StatusComputador.Offline ||
+                Status == StatusComputador.Online)
+            {
+                Status = StatusComputador.Online;
+            }
         }
 
         public void MarcarOffline()

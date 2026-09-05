@@ -68,4 +68,10 @@ public sealed class FakeComputadorRepository : IComputadorRepository
     {
         return Task.CompletedTask;
     }
+
+    public Task SalvarAlteracoesAsync(
+        CancellationToken cancellationToken)
+    {
+        return Task.CompletedTask;
+    }
 }

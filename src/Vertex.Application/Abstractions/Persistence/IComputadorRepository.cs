@@ -33,5 +33,8 @@ namespace Vertex.Application.Abstractions.Persistence
             Computador computador,
             CancellationToken cancellationToken = default);
 
+        Task SalvarAlteracoesAsync(
+            CancellationToken cancellationToken);
+
     }
 }

@@ -40,8 +40,7 @@ namespace Vertex.Application.Computers.Commands.ProcessarHeartbeat
                 command.SistemaOperacional,
                 command.ClienteVersao);
 
-            await _repository.AtualizarAsync(
-                computador,
+            await _repository.SalvarAlteracoesAsync(
                 cancellationToken);
 
             return computador.UltimoHeartbeat!.Value;

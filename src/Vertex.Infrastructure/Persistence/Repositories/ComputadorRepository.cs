@@ -64,7 +64,6 @@ namespace Vertex.Infrastructure.Persistence.Repositories
             CancellationToken cancellationToken = default)
         {
             return await _context.Computadores
-                .AsNoTracking()
                 .FirstOrDefaultAsync(
                     x => x.Id == id,
                     cancellationToken);
@@ -76,6 +75,12 @@ namespace Vertex.Infrastructure.Persistence.Repositories
         {
             _context.Computadores.Update(computador);
 
+            await _context.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task SalvarAlteracoesAsync(
+            CancellationToken cancellationToken)
+        {
             await _context.SaveChangesAsync(cancellationToken);
         }
 

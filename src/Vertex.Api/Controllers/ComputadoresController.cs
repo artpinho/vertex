@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.Abstractions.Security;
+using Vertex.Application.Computers.Commands.AlterarStatus;
+using Vertex.Application.Computers.Commands.AtualizarComputador;
 using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
@@ -22,6 +24,8 @@ namespace Vertex.Api.Controllers
         private readonly ProvisionarComputadorCredentialHandler _provisionarCredentialHandler;
         private readonly RotacionarComputadorCredentialHandler _rotacionarCredentialHandler;
         private readonly ICurrentComputer _currentComputer;
+        private readonly AtualizarComputadorHandler _atualizarHandler;
+        private readonly AlterarStatusComputadorHandler _alterarStatusHandler;
 
         public ComputadoresController(
         RegistrarComputadorHandler registrarHandler,
@@ -30,7 +34,9 @@ namespace Vertex.Api.Controllers
         ProcessarHeartbeatHandler heartbeatHandler,
         ProvisionarComputadorCredentialHandler provisionarCredentialHandler,
         RotacionarComputadorCredentialHandler rotacionarCredentialHandler,
-        ICurrentComputer currentComputer)
+        AlterarStatusComputadorHandler alterarStatusHandler,
+        ICurrentComputer currentComputer,
+        AtualizarComputadorHandler atualizarHandler)
         {
             _registrarHandler = registrarHandler;
             _listarHandler = listarHandler;
@@ -39,6 +45,8 @@ namespace Vertex.Api.Controllers
             _provisionarCredentialHandler = provisionarCredentialHandler;
             _rotacionarCredentialHandler = rotacionarCredentialHandler;
             _currentComputer = currentComputer;
+            _atualizarHandler = atualizarHandler;
+            _alterarStatusHandler = alterarStatusHandler;
         }
 
         [HttpPost]
@@ -237,6 +245,75 @@ namespace Vertex.Api.Controllers
             catch (InvalidOperationException ex)
             {
                 return Conflict(new
+                {
+                    message = ex.Message
+                });
+            }
+        }
+
+        [HttpPut("{id:guid}")]
+        [ProducesResponseType(
+            typeof(ComputadorResponse),
+            StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<ComputadorResponse>> Atualizar(
+            Guid id,
+        [FromBody] AtualizarComputadorCommand command,
+            CancellationToken cancellationToken)
+        {
+            if (id != command.ComputadorId)
+            {
+                return BadRequest(new
+                {
+                    message = "O ID da rota não corresponde ao ID do computador."
+                });
+            }
+
+            var response = await _atualizarHandler.HandleAsync(
+                command,
+                cancellationToken);
+
+            if (response is null)
+                return NotFound();
+
+            return Ok(response);
+        }
+
+        [HttpPost("{id:guid}/status")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> AlterarStatus(
+    Guid id,
+    [FromBody] AlterarStatusComputadorCommand command,
+    CancellationToken cancellationToken)
+        {
+            if (id != command.ComputadorId)
+            {
+                return BadRequest(new
+                {
+                    message = "O ID da rota não corresponde ao ID do computador."
+                });
+            }
+
+            try
+            {
+                await _alterarStatusHandler.HandleAsync(
+                    command,
+                    cancellationToken);
+
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new
+                {
+                    message = ex.Message
+                });
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                return BadRequest(new
                 {
                     message = ex.Message
                 });
