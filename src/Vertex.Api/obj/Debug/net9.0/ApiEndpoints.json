@@ -857,5 +857,77 @@
         "StatusCode": 404
       }
     ]
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.TiposMaquinaController",
+    "Method": "Criar",
+    "RelativePath": "api/v1/tipos-maquina",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Vertex.Application.MachineTypes.Commands.CriarTipoMaquina.CriarTipoMaquinaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vertex.Application.MachineTypes.Commands.CriarTipoMaquina.CriarTipoMaquinaResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.TiposMaquinaController",
+    "Method": "Listar",
+    "RelativePath": "api/v1/tipos-maquina",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[Vertex.Application.MachineTypes.Queries.ListarTiposMaquina.ListarTiposMaquinaResponse, Vertex.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.TiposMaquinaController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/v1/tipos-maquina/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vertex.Application.MachineTypes.Queries.ObterTipoMaquina.ObterTipoMaquinaResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

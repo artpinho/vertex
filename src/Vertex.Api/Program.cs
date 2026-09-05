@@ -16,6 +16,9 @@ using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.Commands.RotacionarCredential;
 using Vertex.Application.Computers.Queries;
+using Vertex.Application.MachineTypes.Commands.CriarTipoMaquina;
+using Vertex.Application.MachineTypes.Queries.ListarTiposMaquina;
+using Vertex.Application.MachineTypes.Queries.ObterTipoMaquina;
 using Vertex.Application.Sessions.Commands.EncerrarSessao;
 using Vertex.Application.Sessions.Commands.IniciarSessao;
 using Vertex.Application.Sessions.Queries;
@@ -90,6 +93,9 @@ builder.Services.AddScoped<ListarSessoesHandler>();
 builder.Services.AddScoped<ObterSessaoHandler>();
 builder.Services.AddScoped<AtualizarComputadorHandler>();
 builder.Services.AddScoped<AlterarStatusComputadorHandler>();
+builder.Services.AddScoped<CriarTipoMaquinaHandler>();
+builder.Services.AddScoped<ListarTiposMaquinaHandler>();
+builder.Services.AddScoped<ObterTipoMaquinaHandler>();
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]
@@ -158,6 +164,7 @@ builder.Services.AddScoped<ICurrentComputer,CurrentComputer>();
 builder.Services.AddScoped<IEstacaoRepository,EstacaoRepository>();
 builder.Services.AddScoped<ISessaoRepository, SessaoRepository>();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<ITipoMaquinaRepository, TipoMaquinaRepository>();
 
 var app = builder.Build();
 

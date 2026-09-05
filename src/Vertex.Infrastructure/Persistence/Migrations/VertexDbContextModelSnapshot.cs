@@ -207,6 +207,35 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.ToTable("Sessoes", (string)null);
                 });
 
+            modelBuilder.Entity("Vertex.Domain.Entities.TipoMaquina", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descricao")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Nome")
+                        .IsUnique();
+
+                    b.ToTable("TiposMaquina", (string)null);
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.ComputadorCredential", b =>
                 {
                     b.HasOne("Vertex.Domain.Entities.Computador", null)

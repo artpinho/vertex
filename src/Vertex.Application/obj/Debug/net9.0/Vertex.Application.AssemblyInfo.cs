@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vertex.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50f49c2c0e81bbbe23ac2119455465c07d3df77e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbe15a4edfe5b3032cd0439d9f965a0786581bb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vertex.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vertex.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

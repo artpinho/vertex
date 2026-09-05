@@ -34,5 +34,7 @@ namespace Vertex.Infrastructure.Persistence.Context
             modelBuilder.ApplyConfigurationsFromAssembly(
                 typeof(VertexDbContext).Assembly);
         }
+
+        public DbSet<TipoMaquina> TiposMaquina => Set<TipoMaquina>();
     }
 }
