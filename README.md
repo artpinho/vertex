@@ -356,6 +356,19 @@ POST /api/v1/auth/computers
 # Autorização
 Os endpoints protegidos utilizam **JWT Bearer Authentication**.
 O Swagger está configurado com o botão **Authorize** para testes autenticados.
+
+# Tarifação
+
+```http
+POST /api/v1/faixas-horario-tarifacao
+GET /api/v1/faixas-horario-tarifacao?configuracaoTarifacaoId={id}
+GET /api/v1/faixas-horario-tarifacao/{id}
+PUT /api/v1/faixas-horario-tarifacao/{id}
+POST /api/v1/faixas-horario-tarifacao/{id}/status
+```
+
+As faixas possuem validação de sobreposição de horários e podem ser
+ativadas ou desativadas sem alterar o histórico da configuração.
 ```
 
 ---
@@ -440,6 +453,23 @@ ConfiguracaoTarifacao
 ├── Ativo
 └── DataCadastro
 ```
+
+## Faixa de horário da tarifação
+
+```text
+FaixaHorarioTarifacao
+├── Id
+├── ConfiguracaoTarifacaoId
+├── DiaSemana
+├── HoraInicio
+├── HoraFim
+├── ValorHora
+├── Ativo
+└── DataCadastro
+```
+
+As faixas permitem definir valores específicos por dia e período,
+com proteção contra sobreposição de horários dentro da mesma configuração.
 
 ---
 
@@ -616,7 +646,9 @@ REST será utilizado para operações tradicionais e persistência. SignalR ser�
 - [x] Tipos de máquina.
 - [x] Configurações de tarifação.
 - [x] Ativação/desativação de tarifas.
-- [ ] Faixas de horário.
+- [x] Faixas de horário.
+- [x] Validação de sobreposição de faixas.
+- [x] Ativação/desativação de faixas.
 - [ ] Planos.
 - [ ] Créditos.
 - [ ] Promoções.
@@ -683,6 +715,7 @@ Estacoes
 Sessoes
 TiposMaquina
 ConfiguracoesTarifacao
+FaixasHorarioTarifacao
 __EFMigrationsHistory
 ```
 
@@ -788,8 +821,8 @@ Estações                            ██████████████
 Clientes                            ███████████████████ 100%
 Sessões                             ███████████████████ 100%
 Tipos de máquina                    ███████████████████ 100%
-Configuração de tarifação           █████████████████░░  90%
-Faixas de horário                   ░░░░░░░░░░░░░░░░░░░  0%
+Configuração de tarifação           ███████████████████ 100%
+Faixas de horário                   ███████████████████ 100%
 Créditos / Pagamentos               ░░░░░░░░░░░░░░░░░░░  0%
 Produtos / Vendas                   ░░░░░░░░░░░░░░░░░░░  0%
 WPF                                 █░░░░░░░░░░░░░░░░░░  5%
@@ -811,9 +844,11 @@ Dashboard                           █░░░░░░░░░░░░░�
 
 🚧 **Em desenvolvimento ativo**
 
-A fundação da API, persistência, Swagger, JWT Bearer, gerenciamento de computadores, heartbeat, estações, clientes, sessões, tipos de máquina e configuração básica de tarifação já estão implementados.
+A fundação da API, persistência, Swagger, JWT Bearer, gerenciamento de computadores, heartbeat, estações, clientes, sessões, tipos de máquina, configuração de tarifação e faixas de horário já estão implementados.
 
-**Próxima grande etapa:** implementar as **faixas de horário da tarifação**, preparando o cálculo de sessões que atravessam diferentes períodos e, posteriormente, créditos, promoções e pagamentos.
+As faixas de horário possuem CRUD administrativo, ativação/desativação e proteção contra sobreposição de períodos.
+
+**Próxima grande etapa:** implementar **promoções e descontos**, preparando o conjunto completo de regras para o futuro motor de cálculo de sessões, créditos e pagamentos.
 
 ---
 
