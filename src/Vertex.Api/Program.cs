@@ -28,6 +28,11 @@ using Vertex.Application.Stations.Commands.AlterarStatus;
 using Vertex.Application.Stations.Commands.AssociarComputador;
 using Vertex.Application.Stations.Commands.CriarEstacao;
 using Vertex.Application.Stations.Queries;
+using Vertex.Application.TariffConfigurations.Commands.AlterarStatusConfiguracaoTarifacao;
+using Vertex.Application.TariffConfigurations.Commands.AtualizarConfiguracaoTarifacao;
+using Vertex.Application.TariffConfigurations.Commands.CriarConfiguracaoTarifacao;
+using Vertex.Application.TariffConfigurations.Queries.ListarConfiguracoesTarifacao;
+using Vertex.Application.TariffConfigurations.Queries.ObterConfiguracaoTarifacao;
 using Vertex.Infrastructure;
 using Vertex.Infrastructure.Persistence.Repositories;
 
@@ -100,6 +105,11 @@ builder.Services.AddScoped<ListarTiposMaquinaHandler>();
 builder.Services.AddScoped<ObterTipoMaquinaHandler>();
 builder.Services.AddScoped<AtualizarTipoMaquinaHandler>();
 builder.Services.AddScoped<AlterarStatusTipoMaquinaHandler>();
+builder.Services.AddScoped<CriarConfiguracaoTarifacaoHandler>();
+builder.Services.AddScoped<ObterConfiguracaoTarifacaoHandler>();
+builder.Services.AddScoped<ListarConfiguracoesTarifacaoHandler>();
+builder.Services.AddScoped<AtualizarConfiguracaoTarifacaoHandler>();
+builder.Services.AddScoped<AlterarStatusConfiguracaoTarifacaoHandler>();
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]
@@ -169,6 +179,7 @@ builder.Services.AddScoped<IEstacaoRepository,EstacaoRepository>();
 builder.Services.AddScoped<ISessaoRepository, SessaoRepository>();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<ITipoMaquinaRepository, TipoMaquinaRepository>();
+builder.Services.AddScoped<ITarifacaoRepository, ConfiguracaoTarifacaoRepository>();
 
 var app = builder.Build();
 

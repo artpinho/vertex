@@ -556,6 +556,90 @@
     ]
   },
   {
+    "ContainingType": "Vertex.Api.Controllers.ConfiguracoesTarifacaoController",
+    "Method": "Criar",
+    "RelativePath": "api/v1/configuracoes-tarifacao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Vertex.Contracts.TariffConfigurations.CriarConfiguracaoTarifacaoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.ConfiguracoesTarifacaoController",
+    "Method": "Listar",
+    "RelativePath": "api/v1/configuracoes-tarifacao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.ConfiguracoesTarifacaoController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/v1/configuracoes-tarifacao/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.ConfiguracoesTarifacaoController",
+    "Method": "Atualizar",
+    "RelativePath": "api/v1/configuracoes-tarifacao/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Vertex.Contracts.TariffConfigurations.AtualizarConfiguracaoTarifacaoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.ConfiguracoesTarifacaoController",
+    "Method": "AlterarStatus",
+    "RelativePath": "api/v1/configuracoes-tarifacao/{id}/status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Vertex.Contracts.TariffConfigurations.AlterarStatusConfiguracaoTarifacaoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Vertex.Api.Controllers.EstacoesController",
     "Method": "Criar",
     "RelativePath": "api/v1/estacoes",

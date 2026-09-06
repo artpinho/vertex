@@ -24,8 +24,8 @@ namespace Vertex.Infrastructure.Persistence.Context
 
         public DbSet<Sessao> Sessoes => Set<Sessao>();
 
-        public DbSet<ComputadorCredential> ComputadorCredentials =>
-            Set<ComputadorCredential>();
+        public DbSet<ComputadorCredential> ComputadorCredentials 
+            => Set<ComputadorCredential>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,6 +35,10 @@ namespace Vertex.Infrastructure.Persistence.Context
                 typeof(VertexDbContext).Assembly);
         }
 
-        public DbSet<TipoMaquina> TiposMaquina => Set<TipoMaquina>();
+        public DbSet<TipoMaquina> TiposMaquina 
+            => Set<TipoMaquina>();
+
+        public DbSet<ConfiguracaoTarifacao> ConfiguracoesTarifacao
+            => Set<ConfiguracaoTarifacao>();
     }
 }

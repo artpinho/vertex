@@ -142,6 +142,50 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.ToTable("ComputadorCredentials", (string)null);
                 });
 
+            modelBuilder.Entity("Vertex.Domain.Entities.ConfiguracaoTarifacao", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataFim")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataInicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descricao")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("Prioridade")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("TipoMaquinaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("ValorHora")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TipoMaquinaId", "Ativo", "DataInicio");
+
+                    b.ToTable("ConfiguracoesTarifacao", (string)null);
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.Estacao", b =>
                 {
                     b.Property<Guid>("Id")
@@ -242,6 +286,15 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                         .WithMany()
                         .HasForeignKey("ComputadorId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.ConfiguracaoTarifacao", b =>
+                {
+                    b.HasOne("Vertex.Domain.Entities.TipoMaquina", null)
+                        .WithMany()
+                        .HasForeignKey("TipoMaquinaId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
