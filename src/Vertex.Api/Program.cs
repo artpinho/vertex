@@ -33,6 +33,11 @@ using Vertex.Application.TariffConfigurations.Commands.AtualizarConfiguracaoTari
 using Vertex.Application.TariffConfigurations.Commands.CriarConfiguracaoTarifacao;
 using Vertex.Application.TariffConfigurations.Queries.ListarConfiguracoesTarifacao;
 using Vertex.Application.TariffConfigurations.Queries.ObterConfiguracaoTarifacao;
+using Vertex.Application.TariffTimeBands.Commands.AlterarStatusFaixaHorarioTarifacao;
+using Vertex.Application.TariffTimeBands.Commands.AtualizarFaixaHorarioTarifacao;
+using Vertex.Application.TariffTimeBands.Commands.CriarFaixaHorarioTarifacao;
+using Vertex.Application.TariffTimeBands.Queries.ListarFaixasHorarioTarifacao;
+using Vertex.Application.TariffTimeBands.Queries.ObterFaixaHorarioTarifacao;
 using Vertex.Infrastructure;
 using Vertex.Infrastructure.Persistence.Repositories;
 
@@ -110,6 +115,11 @@ builder.Services.AddScoped<ObterConfiguracaoTarifacaoHandler>();
 builder.Services.AddScoped<ListarConfiguracoesTarifacaoHandler>();
 builder.Services.AddScoped<AtualizarConfiguracaoTarifacaoHandler>();
 builder.Services.AddScoped<AlterarStatusConfiguracaoTarifacaoHandler>();
+builder.Services.AddScoped<CriarFaixaHorarioTarifacaoHandler>();
+builder.Services.AddScoped<ListarFaixasHorarioTarifacaoHandler>();
+builder.Services.AddScoped<ObterFaixaHorarioTarifacaoHandler>();
+builder.Services.AddScoped<AtualizarFaixaHorarioTarifacaoHandler>();
+builder.Services.AddScoped<AlterarStatusFaixaHorarioTarifacaoHandler>();
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]
@@ -180,6 +190,7 @@ builder.Services.AddScoped<ISessaoRepository, SessaoRepository>();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<ITipoMaquinaRepository, TipoMaquinaRepository>();
 builder.Services.AddScoped<ITarifacaoRepository, ConfiguracaoTarifacaoRepository>();
+builder.Services.AddScoped<IFaixaHorarioTarifacaoRepository, FaixaHorarioTarifacaoRepository>();
 
 var app = builder.Build();
 

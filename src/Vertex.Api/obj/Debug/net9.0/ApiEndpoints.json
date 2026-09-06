@@ -829,6 +829,96 @@
     ]
   },
   {
+    "ContainingType": "Vertex.Api.Controllers.FaixasHorarioTarifacaoController",
+    "Method": "Criar",
+    "RelativePath": "api/v1/faixas-horario-tarifacao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Vertex.Contracts.TariffTimeBands.CriarFaixaHorarioTarifacaoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.FaixasHorarioTarifacaoController",
+    "Method": "Listar",
+    "RelativePath": "api/v1/faixas-horario-tarifacao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "configuracaoTarifacaoId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.FaixasHorarioTarifacaoController",
+    "Method": "Obter",
+    "RelativePath": "api/v1/faixas-horario-tarifacao/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.FaixasHorarioTarifacaoController",
+    "Method": "Atualizar",
+    "RelativePath": "api/v1/faixas-horario-tarifacao/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Vertex.Contracts.TariffTimeBands.AtualizarFaixaHorarioTarifacaoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.FaixasHorarioTarifacaoController",
+    "Method": "AlterarStatus",
+    "RelativePath": "api/v1/faixas-horario-tarifacao/{id}/status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Vertex.Contracts.TariffTimeBands.AlterarStatusFaixaHorarioTarifacaoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Vertex.Api.Controllers.SessoesController",
     "Method": "Iniciar",
     "RelativePath": "api/v1/sessoes",

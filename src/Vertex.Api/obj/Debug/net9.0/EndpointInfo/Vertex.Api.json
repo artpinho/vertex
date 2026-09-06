@@ -1524,6 +1524,162 @@
         }
       }
     },
+    "/api/v1/faixas-horario-tarifacao": {
+      "post": {
+        "tags": [
+          "FaixasHorarioTarifacao"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarFaixaHorarioTarifacaoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarFaixaHorarioTarifacaoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarFaixaHorarioTarifacaoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "FaixasHorarioTarifacao"
+        ],
+        "parameters": [
+          {
+            "name": "configuracaoTarifacaoId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/faixas-horario-tarifacao/{id}": {
+      "get": {
+        "tags": [
+          "FaixasHorarioTarifacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "FaixasHorarioTarifacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarFaixaHorarioTarifacaoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarFaixaHorarioTarifacaoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarFaixaHorarioTarifacaoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/faixas-horario-tarifacao/{id}/status": {
+      "post": {
+        "tags": [
+          "FaixasHorarioTarifacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlterarStatusFaixaHorarioTarifacaoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlterarStatusFaixaHorarioTarifacaoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlterarStatusFaixaHorarioTarifacaoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/sessoes": {
       "post": {
         "tags": [
@@ -2017,6 +2173,16 @@
         },
         "additionalProperties": false
       },
+      "AlterarStatusFaixaHorarioTarifacaoRequest": {
+        "type": "object",
+        "properties": {
+          "operacao": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "AlterarStatusTipoMaquinaCommand": {
         "type": "object",
         "properties": {
@@ -2191,6 +2357,28 @@
           "prioridade": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtualizarFaixaHorarioTarifacaoRequest": {
+        "type": "object",
+        "properties": {
+          "diaSemana": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "horaInicio": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "horaFim": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "valorHora": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
@@ -2492,6 +2680,32 @@
             "type": "string",
             "format": "uuid",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CriarFaixaHorarioTarifacaoRequest": {
+        "type": "object",
+        "properties": {
+          "configuracaoTarifacaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "diaSemana": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "horaInicio": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "horaFim": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "valorHora": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

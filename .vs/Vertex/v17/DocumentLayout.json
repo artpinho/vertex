@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\tariffconfigurations\\commands\\alterarstatusconfiguracaotarifacao\\alterarstatusconfiguracaotarifacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\tariffconfigurations\\commands\\alterarstatusconfiguracaotarifacao\\alterarstatusconfiguracaotarifacaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\controllers\\configuracoestarifacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\controllers\\configuracoestarifacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.contracts\\tariffconfigurations\\alterarstatusconfiguracaotarifacaorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E13A71AC-BE99-440A-A903-45B833F87E2D}|src\\Vertex.Contracts\\Vertex.Contracts.csproj|solutionrelative:src\\vertex.contracts\\tariffconfigurations\\alterarstatusconfiguracaotarifacaorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\controllers\\faixashorariotarifacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\controllers\\faixashorariotarifacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,58 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AlterarStatusConfiguracaoTarifacaoHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\TariffConfigurations\\Commands\\AlterarStatusConfiguracaoTarifacao\\AlterarStatusConfiguracaoTarifacaoHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\TariffConfigurations\\Commands\\AlterarStatusConfiguracaoTarifacao\\AlterarStatusConfiguracaoTarifacaoHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\TariffConfigurations\\Commands\\AlterarStatusConfiguracaoTarifacao\\AlterarStatusConfiguracaoTarifacaoHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\TariffConfigurations\\Commands\\AlterarStatusConfiguracaoTarifacao\\AlterarStatusConfiguracaoTarifacaoHandler.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowBsAAAANAAAAAAAAAA==",
+              "Title": "FaixasHorarioTarifacaoController.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\FaixasHorarioTarifacaoController.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Api\\Controllers\\FaixasHorarioTarifacaoController.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\FaixasHorarioTarifacaoController.cs",
+              "RelativeToolTip": "src\\Vertex.Api\\Controllers\\FaixasHorarioTarifacaoController.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAqwKoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-06T20:17:30.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AlterarStatusConfiguracaoTarifacaoRequest.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\TariffConfigurations\\AlterarStatusConfiguracaoTarifacaoRequest.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Contracts\\TariffConfigurations\\AlterarStatusConfiguracaoTarifacaoRequest.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Contracts\\TariffConfigurations\\AlterarStatusConfiguracaoTarifacaoRequest.cs",
-              "RelativeToolTip": "src\\Vertex.Contracts\\TariffConfigurations\\AlterarStatusConfiguracaoTarifacaoRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-06T20:15:46.136Z",
+              "WhenOpened": "2026-09-06T21:54:28.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConfiguracoesTarifacaoController.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\ConfiguracoesTarifacaoController.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Api\\Controllers\\ConfiguracoesTarifacaoController.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\ConfiguracoesTarifacaoController.cs",
-              "RelativeToolTip": "src\\Vertex.Api\\Controllers\\ConfiguracoesTarifacaoController.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAQwKoAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-06T20:06:33.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Program.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Api\\Program.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Program.cs",
               "RelativeToolTip": "src\\Vertex.Api\\Program.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAAG8AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAqwHkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-05T19:01:43.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\appsettings.json",
               "RelativeDocumentMoniker": "src\\Vertex.Api\\appsettings.json",
@@ -102,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\DependencyInjection.cs",
@@ -110,8 +76,7 @@
               "RelativeToolTip": "src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwCoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T02:41:32.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-19T02:41:32.124Z"
             }
           ]
         }
