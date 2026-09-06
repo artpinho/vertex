@@ -15,12 +15,21 @@ using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
 using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.Commands.RotacionarCredential;
-using Vertex.Application.Computers.Queries;
+using Vertex.Application.Computers.Queries.ListarComputadores;
+using Vertex.Application.Computers.Queries.ObterComputador;
 using Vertex.Application.MachineTypes.Commands.AlterarStatusTipoMaquina;
 using Vertex.Application.MachineTypes.Commands.AtualizarTipoMaquina;
 using Vertex.Application.MachineTypes.Commands.CriarTipoMaquina;
 using Vertex.Application.MachineTypes.Queries.ListarTiposMaquina;
 using Vertex.Application.MachineTypes.Queries.ObterTipoMaquina;
+using Vertex.Application.Promotions.Commands.AlterarStatusPromocao;
+using Vertex.Application.Promotions.Commands.AssociarPromocaoTipoMaquina;
+using Vertex.Application.Promotions.Commands.AtualizarPromocao;
+using Vertex.Application.Promotions.Commands.CriarPromocao;
+using Vertex.Application.Promotions.Commands.RemoverPromocaoTipoMaquina;
+using Vertex.Application.Promotions.Queries.ListarPromocoes;
+using Vertex.Application.Promotions.Queries.ListarTiposMaquinaPromocao;
+using Vertex.Application.Promotions.Queries.ObterPromocao;
 using Vertex.Application.Sessions.Commands.EncerrarSessao;
 using Vertex.Application.Sessions.Commands.IniciarSessao;
 using Vertex.Application.Sessions.Queries;
@@ -120,6 +129,17 @@ builder.Services.AddScoped<ListarFaixasHorarioTarifacaoHandler>();
 builder.Services.AddScoped<ObterFaixaHorarioTarifacaoHandler>();
 builder.Services.AddScoped<AtualizarFaixaHorarioTarifacaoHandler>();
 builder.Services.AddScoped<AlterarStatusFaixaHorarioTarifacaoHandler>();
+builder.Services.AddScoped<CriarPromocaoHandler>();
+builder.Services.AddScoped<ListarPromocoesHandler>();
+builder.Services.AddScoped<ObterPromocaoHandler>();
+builder.Services.AddScoped<AtualizarPromocaoHandler>();
+builder.Services.AddScoped<AlterarStatusPromocaoHandler>();
+builder.Services.AddScoped<AssociarPromocaoTipoMaquinaHandler>();
+builder.Services.AddScoped<RemoverPromocaoTipoMaquinaHandler>();
+builder.Services.AddScoped<ListarTiposMaquinaPromocaoHandler>();
+
+
+
 
 var jwtKey =
     builder.Configuration["Jwt:Key"]
@@ -191,6 +211,9 @@ builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<ITipoMaquinaRepository, TipoMaquinaRepository>();
 builder.Services.AddScoped<ITarifacaoRepository, ConfiguracaoTarifacaoRepository>();
 builder.Services.AddScoped<IFaixaHorarioTarifacaoRepository, FaixaHorarioTarifacaoRepository>();
+builder.Services.AddScoped<IPromocaoTipoMaquinaRepository, PromocaoTipoMaquinaRepository>();
+builder.Services.AddScoped<IPromocaoRepository, PromocaoRepository>();
+builder.Services.AddScoped<IPromocaoTipoMaquinaRepository, PromocaoTipoMaquinaRepository>();
 
 var app = builder.Build();
 

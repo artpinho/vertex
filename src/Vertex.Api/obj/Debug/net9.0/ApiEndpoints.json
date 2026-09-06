@@ -919,6 +919,148 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "Criar",
+    "RelativePath": "api/v1/promocoes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Vertex.Application.Promotions.Commands.CriarPromocao.CriarPromocaoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "Listar",
+    "RelativePath": "api/v1/promocoes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/v1/promocoes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "Atualizar",
+    "RelativePath": "api/v1/promocoes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Vertex.Application.Promotions.Commands.AtualizarPromocao.AtualizarPromocaoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "AlterarStatus",
+    "RelativePath": "api/v1/promocoes/{id}/status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Vertex.Application.Promotions.Commands.AlterarStatusPromocao.AlterarStatusPromocaoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "ListarTiposMaquina",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/tipos-maquina",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "AssociarTipoMaquina",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/tipos-maquina/{tipoMaquinaId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "tipoMaquinaId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "RemoverTipoMaquina",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/tipos-maquina/{tipoMaquinaId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "tipoMaquinaId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Vertex.Api.Controllers.SessoesController",
     "Method": "Iniciar",
     "RelativePath": "api/v1/sessoes",

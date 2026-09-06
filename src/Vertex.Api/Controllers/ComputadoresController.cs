@@ -9,6 +9,8 @@ using Vertex.Application.Computers.Commands.RegistrarComputador;
 using Vertex.Application.Computers.Commands.RotacionarCredential;
 using Vertex.Application.Computers.DTOs;
 using Vertex.Application.Computers.Queries;
+using Vertex.Application.Computers.Queries.ListarComputadores;
+using Vertex.Application.Computers.Queries.ObterComputador;
 using Vertex.Contracts.Computers;
 
 namespace Vertex.Api.Controllers

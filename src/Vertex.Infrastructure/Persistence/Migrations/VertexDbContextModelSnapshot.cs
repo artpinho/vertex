@@ -257,6 +257,76 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.ToTable("FaixasHorarioTarifacao", (string)null);
                 });
 
+            modelBuilder.Entity("Vertex.Domain.Entities.Promocao", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataFim")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataInicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descricao")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<decimal?>("PercentualDesconto")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<int>("Prioridade")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("TodosTiposMaquina")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal?>("ValorDescontoHora")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Ativo", "DataInicio", "DataFim", "Prioridade");
+
+                    b.ToTable("Promocoes", (string)null);
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.PromocaoTipoMaquina", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PromocaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("TipoMaquinaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TipoMaquinaId");
+
+                    b.HasIndex("PromocaoId", "TipoMaquinaId")
+                        .IsUnique();
+
+                    b.ToTable("PromocoesTiposMaquina", (string)null);
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.Sessao", b =>
                 {
                     b.Property<Guid>("Id")
@@ -347,6 +417,21 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.HasOne("Vertex.Domain.Entities.ConfiguracaoTarifacao", null)
                         .WithMany()
                         .HasForeignKey("ConfiguracaoTarifacaoId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.PromocaoTipoMaquina", b =>
+                {
+                    b.HasOne("Vertex.Domain.Entities.Promocao", null)
+                        .WithMany()
+                        .HasForeignKey("PromocaoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Vertex.Domain.Entities.TipoMaquina", null)
+                        .WithMany()
+                        .HasForeignKey("TipoMaquinaId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });

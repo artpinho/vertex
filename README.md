@@ -369,6 +369,26 @@ POST /api/v1/faixas-horario-tarifacao/{id}/status
 
 As faixas possuem validação de sobreposição de horários e podem ser
 ativadas ou desativadas sem alterar o histórico da configuração.
+
+# Promoções
+
+```http
+POST /api/v1/promocoes
+GET /api/v1/promocoes
+GET /api/v1/promocoes/{id}
+PUT /api/v1/promocoes/{id}
+POST /api/v1/promocoes/{id}/status
+
+POST /api/v1/promocoes/{promocaoId}/tipos-maquina/{tipoMaquinaId}
+GET /api/v1/promocoes/{promocaoId}/tipos-maquina
+DELETE /api/v1/promocoes/{promocaoId}/tipos-maquina/{tipoMaquinaId}
+```
+
+As promoções possuem suporte a desconto percentual ou valor fixo por hora,
+vigência, prioridade e aplicação global ou restrita a tipos de máquina.
+A associação Promoção × Tipo de Máquina possui proteção contra duplicidade,
+promoções inativas, tipos de máquina inativos e configurações incompatíveis
+com `TodosTiposMaquina`.
 ```
 
 ---
@@ -471,6 +491,40 @@ FaixaHorarioTarifacao
 As faixas permitem definir valores específicos por dia e período,
 com proteção contra sobreposição de horários dentro da mesma configuração.
 
+## Promoção
+
+```text
+Promocao
+├── Id
+├── Nome
+├── Descricao
+├── PercentualDesconto
+├── ValorDescontoHora
+├── DataInicio
+├── DataFim
+├── Prioridade
+├── TodosTiposMaquina
+├── Ativo
+└── DataCadastro
+```
+
+Uma promoção pode utilizar desconto percentual ou valor fixo por hora,
+possui período de vigência, prioridade e pode ser aplicada a todos os
+tipos de máquina ou somente a tipos associados.
+
+## Promoção × Tipo de máquina
+
+```text
+PromocaoTipoMaquina
+├── Id
+├── PromocaoId
+└── TipoMaquinaId
+```
+
+A relação permite restringir uma promoção a tipos específicos de máquina.
+Associações duplicadas são bloqueadas e a relação pode ser removida sem
+alterar o histórico financeiro das sessões.
+
 ---
 
 # Funcionalidades planejadas
@@ -524,12 +578,17 @@ com proteção contra sobreposição de horários dentro da mesma configuração
 
 ## Promoções
 
-- Desconto percentual.
-- Desconto fixo.
-- Horário promocional.
-- Dias da semana.
-- Pacotes.
-- Cupons.
+- [x] Desconto percentual.
+- [x] Desconto fixo por hora.
+- [x] Período de vigência.
+- [x] Prioridade.
+- [x] Aplicação a todos os tipos de máquina.
+- [x] Aplicação a tipos específicos de máquina.
+- [x] Ativação/desativação.
+- [ ] Horário promocional.
+- [ ] Dias da semana.
+- [ ] Pacotes.
+- [ ] Cupons.
 
 ## Pagamentos e caixa
 
@@ -651,7 +710,9 @@ REST será utilizado para operações tradicionais e persistência. SignalR ser�
 - [x] Ativação/desativação de faixas.
 - [ ] Planos.
 - [ ] Créditos.
-- [ ] Promoções.
+- [x] Promoções — cadastro, vigência, prioridade e descontos.
+- [x] Promoções × Tipos de máquina.
+- [ ] Horários e dias das promoções.
 - [ ] Pagamentos.
 - [ ] Caixa.
 - [ ] Produtos.
@@ -716,6 +777,8 @@ Sessoes
 TiposMaquina
 ConfiguracoesTarifacao
 FaixasHorarioTarifacao
+Promocoes
+PromocoesTiposMaquina
 __EFMigrationsHistory
 ```
 
@@ -810,7 +873,7 @@ https://localhost:<porta>/swagger
 
 # Progresso atual
 
-Aproximadamente **55%** da fundação e dos módulos centrais planejados já estão implementados.
+Aproximadamente **60%** da fundação e dos módulos centrais planejados já estão implementados.
 
 ```text
 Arquitetura / infraestrutura       ██████████████████░░  90%
@@ -823,6 +886,7 @@ Sessões                             ██████████████�
 Tipos de máquina                    ███████████████████ 100%
 Configuração de tarifação           ███████████████████ 100%
 Faixas de horário                   ███████████████████ 100%
+Promoções                           ███████████░░░░░░░░  60%
 Créditos / Pagamentos               ░░░░░░░░░░░░░░░░░░░  0%
 Produtos / Vendas                   ░░░░░░░░░░░░░░░░░░░  0%
 WPF                                 █░░░░░░░░░░░░░░░░░░  5%
@@ -844,11 +908,13 @@ Dashboard                           █░░░░░░░░░░░░░�
 
 🚧 **Em desenvolvimento ativo**
 
-A fundação da API, persistência, Swagger, JWT Bearer, gerenciamento de computadores, heartbeat, estações, clientes, sessões, tipos de máquina, configuração de tarifação e faixas de horário já estão implementados.
+A fundação da API, persistência, Swagger, JWT Bearer, gerenciamento de computadores, heartbeat, estações, clientes, sessões, tipos de máquina, configuração de tarifação, faixas de horário e a base de promoções já estão implementados.
 
 As faixas de horário possuem CRUD administrativo, ativação/desativação e proteção contra sobreposição de períodos.
 
-**Próxima grande etapa:** implementar **promoções e descontos**, preparando o conjunto completo de regras para o futuro motor de cálculo de sessões, créditos e pagamentos.
+As promoções possuem CRUD, ativação/desativação, desconto percentual ou fixo por hora, vigência, prioridade e associação com tipos específicos de máquina, com as principais proteções de integridade já validadas.
+
+**Próxima etapa:** completar as regras de aplicação das promoções por **dias da semana e horários**, preparando o conjunto necessário para o futuro motor de cálculo de sessões, créditos e pagamentos.
 
 ---
 

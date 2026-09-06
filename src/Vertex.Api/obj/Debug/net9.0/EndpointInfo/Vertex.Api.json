@@ -1680,6 +1680,237 @@
         }
       }
     },
+    "/api/v1/promocoes": {
+      "post": {
+        "tags": [
+          "Promocoes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarPromocaoCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarPromocaoCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarPromocaoCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Promocoes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/promocoes/{id}": {
+      "get": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarPromocaoCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarPromocaoCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarPromocaoCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/promocoes/{id}/status": {
+      "post": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlterarStatusPromocaoCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlterarStatusPromocaoCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlterarStatusPromocaoCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/promocoes/{promocaoId}/tipos-maquina/{tipoMaquinaId}": {
+      "post": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "tipoMaquinaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "tipoMaquinaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/promocoes/{promocaoId}/tipos-maquina": {
+      "get": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/sessoes": {
       "post": {
         "tags": [
@@ -2183,6 +2414,19 @@
         },
         "additionalProperties": false
       },
+      "AlterarStatusPromocaoCommand": {
+        "type": "object",
+        "properties": {
+          "promocaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "operacao": {
+            "$ref": "#/components/schemas/OperacaoPromocao"
+          }
+        },
+        "additionalProperties": false
+      },
       "AlterarStatusTipoMaquinaCommand": {
         "type": "object",
         "properties": {
@@ -2379,6 +2623,50 @@
           "valorHora": {
             "type": "number",
             "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtualizarPromocaoCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataInicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataFim": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "percentualDesconto": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valorDescontoHora": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prioridade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "todosTiposMaquina": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2710,6 +2998,46 @@
         },
         "additionalProperties": false
       },
+      "CriarPromocaoCommand": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataInicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataFim": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "percentualDesconto": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valorDescontoHora": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prioridade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "todosTiposMaquina": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
       "CriarTipoMaquinaCommand": {
         "type": "object",
         "properties": {
@@ -2979,6 +3307,14 @@
           4,
           5,
           6
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "OperacaoPromocao": {
+        "enum": [
+          1,
+          2
         ],
         "type": "integer",
         "format": "int32"

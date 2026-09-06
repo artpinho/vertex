@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Vertex.Application.Abstractions.Persistence;
 using Vertex.Application.Computers.DTOs;
 
-namespace Vertex.Application.Computers.Queries
+namespace Vertex.Application.Computers.Queries.ObterComputador
 {
     public sealed class ObterComputadorHandler
     {

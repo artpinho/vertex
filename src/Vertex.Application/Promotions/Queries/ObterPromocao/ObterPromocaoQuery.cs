@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vertex.Application.Computers.Queries
+namespace Vertex.Application.Promotions.Queries.ObterPromocao
 {
-    public sealed record ObterComputadorQuery(Guid Id);
-
+    public record ObterPromocaoQuery(
+        Guid Id);
 }

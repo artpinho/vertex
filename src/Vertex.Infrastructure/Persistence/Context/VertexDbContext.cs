@@ -43,5 +43,11 @@ namespace Vertex.Infrastructure.Persistence.Context
 
         public DbSet<FaixaHorarioTarifacao> FaixasHorarioTarifacao
             => Set<FaixaHorarioTarifacao>();
+
+        public DbSet<Promocao> Promocoes
+            => Set<Promocao>();
+
+        public DbSet<PromocaoTipoMaquina> PromocoesTiposMaquina
+            => Set<PromocaoTipoMaquina>();
     }
 }
