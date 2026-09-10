@@ -305,6 +305,26 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.ToTable("Promocoes", (string)null);
                 });
 
+            modelBuilder.Entity("Vertex.Domain.Entities.PromocaoDiaSemana", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("DiaSemana")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("PromocaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PromocaoId", "DiaSemana")
+                        .IsUnique();
+
+                    b.ToTable("PromocoesDiasSemana", (string)null);
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.PromocaoTipoMaquina", b =>
                 {
                     b.Property<Guid>("Id")
@@ -418,6 +438,15 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                         .WithMany()
                         .HasForeignKey("ConfiguracaoTarifacaoId")
                         .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.PromocaoDiaSemana", b =>
+                {
+                    b.HasOne("Vertex.Domain.Entities.Promocao", null)
+                        .WithMany()
+                        .HasForeignKey("PromocaoId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 

@@ -23,10 +23,13 @@ using Vertex.Application.MachineTypes.Commands.CriarTipoMaquina;
 using Vertex.Application.MachineTypes.Queries.ListarTiposMaquina;
 using Vertex.Application.MachineTypes.Queries.ObterTipoMaquina;
 using Vertex.Application.Promotions.Commands.AlterarStatusPromocao;
+using Vertex.Application.Promotions.Commands.AssociarPromocaoDiaSemana;
 using Vertex.Application.Promotions.Commands.AssociarPromocaoTipoMaquina;
 using Vertex.Application.Promotions.Commands.AtualizarPromocao;
 using Vertex.Application.Promotions.Commands.CriarPromocao;
+using Vertex.Application.Promotions.Commands.RemoverPromocaoDiaSemana;
 using Vertex.Application.Promotions.Commands.RemoverPromocaoTipoMaquina;
+using Vertex.Application.Promotions.Queries.ListarDiasSemanaPromocao;
 using Vertex.Application.Promotions.Queries.ListarPromocoes;
 using Vertex.Application.Promotions.Queries.ListarTiposMaquinaPromocao;
 using Vertex.Application.Promotions.Queries.ObterPromocao;
@@ -137,6 +140,9 @@ builder.Services.AddScoped<AlterarStatusPromocaoHandler>();
 builder.Services.AddScoped<AssociarPromocaoTipoMaquinaHandler>();
 builder.Services.AddScoped<RemoverPromocaoTipoMaquinaHandler>();
 builder.Services.AddScoped<ListarTiposMaquinaPromocaoHandler>();
+builder.Services.AddScoped<AssociarPromocaoDiaSemanaHandler>();
+builder.Services.AddScoped<RemoverPromocaoDiaSemanaHandler>();
+builder.Services.AddScoped<ListarDiasSemanaPromocaoHandler>();
 
 
 

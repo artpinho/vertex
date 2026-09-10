@@ -1,15 +1,18 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Vertex.Infrastructure.Persistence.Context;
-using Vertex.Infrastructure.Persistence.Repositories;
 using Vertex.Application.Abstractions.Persistence;
 using Vertex.Application.Abstractions.Security;
+using Vertex.Application.Promotions.Commands.AssociarPromocaoDiaSemana;
+using Vertex.Application.Promotions.Commands.RemoverPromocaoDiaSemana;
+using Vertex.Application.Promotions.Queries.ListarDiasSemanaPromocao;
+using Vertex.Infrastructure.Persistence.Context;
+using Vertex.Infrastructure.Persistence.Repositories;
 using Vertex.Infrastructure.Security;
 
 namespace Vertex.Infrastructure
@@ -41,6 +44,7 @@ namespace Vertex.Infrastructure
             services.AddScoped<IJwtTokenService, JwtTokenService>();
             services.AddScoped<IEstacaoRepository, EstacaoRepository>();
             services.AddScoped<ITarifacaoRepository, ConfiguracaoTarifacaoRepository>();
+            services.AddScoped<IPromocaoDiaSemanaRepository, PromocaoDiaSemanaRepository>();
 
             return services;
         }

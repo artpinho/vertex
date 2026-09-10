@@ -1004,6 +1004,64 @@
   },
   {
     "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "ListarDiasSemana",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/dias-semana",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "AssociarDiaSemana",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/dias-semana/{diaSemana}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "diaSemana",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "RemoverDiaSemana",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/dias-semana/{diaSemana}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "diaSemana",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
     "Method": "ListarTiposMaquina",
     "RelativePath": "api/v1/promocoes/{promocaoId}/tipos-maquina",
     "HttpMethod": "GET",

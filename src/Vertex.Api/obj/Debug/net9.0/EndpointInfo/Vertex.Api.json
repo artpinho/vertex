@@ -1911,6 +1911,91 @@
         }
       }
     },
+    "/api/v1/promocoes/{promocaoId}/dias-semana/{diaSemana}": {
+      "post": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "diaSemana",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "diaSemana",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/promocoes/{promocaoId}/dias-semana": {
+      "get": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/sessoes": {
       "post": {
         "tags": [

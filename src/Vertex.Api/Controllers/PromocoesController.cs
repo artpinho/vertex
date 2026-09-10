@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.Promotions.Commands.AlterarStatusPromocao;
+using Vertex.Application.Promotions.Commands.AssociarPromocaoDiaSemana;
 using Vertex.Application.Promotions.Commands.AssociarPromocaoTipoMaquina;
 using Vertex.Application.Promotions.Commands.AtualizarPromocao;
 using Vertex.Application.Promotions.Commands.CriarPromocao;
+using Vertex.Application.Promotions.Commands.RemoverPromocaoDiaSemana;
 using Vertex.Application.Promotions.Commands.RemoverPromocaoTipoMaquina;
+using Vertex.Application.Promotions.Queries.ListarDiasSemanaPromocao;
 using Vertex.Application.Promotions.Queries.ListarPromocoes;
 using Vertex.Application.Promotions.Queries.ListarTiposMaquinaPromocao;
 using Vertex.Application.Promotions.Queries.ObterPromocao;
@@ -19,15 +22,12 @@ public class PromocoesController : ControllerBase
     private readonly ObterPromocaoHandler _obterPromocaoHandler;
     private readonly AtualizarPromocaoHandler _atualizarPromocaoHandler;
     private readonly AlterarStatusPromocaoHandler _alterarStatusPromocaoHandler;
-
-    private readonly AssociarPromocaoTipoMaquinaHandler
-        _associarPromocaoTipoMaquinaHandler;
-
-    private readonly RemoverPromocaoTipoMaquinaHandler
-        _removerPromocaoTipoMaquinaHandler;
-
-    private readonly ListarTiposMaquinaPromocaoHandler
-        _listarTiposMaquinaPromocaoHandler;
+    private readonly AssociarPromocaoTipoMaquinaHandler _associarPromocaoTipoMaquinaHandler;
+    private readonly RemoverPromocaoTipoMaquinaHandler _removerPromocaoTipoMaquinaHandler;
+    private readonly ListarTiposMaquinaPromocaoHandler _listarTiposMaquinaPromocaoHandler;
+    private readonly AssociarPromocaoDiaSemanaHandler _associarPromocaoDiaSemanaHandler;
+    private readonly RemoverPromocaoDiaSemanaHandler _removerPromocaoDiaSemanaHandler;
+    private readonly ListarDiasSemanaPromocaoHandler _listarDiasSemanaPromocaoHandler;
 
     public PromocoesController(
         CriarPromocaoHandler criarPromocaoHandler,
@@ -37,7 +37,10 @@ public class PromocoesController : ControllerBase
         AlterarStatusPromocaoHandler alterarStatusPromocaoHandler,
         AssociarPromocaoTipoMaquinaHandler associarPromocaoTipoMaquinaHandler,
         RemoverPromocaoTipoMaquinaHandler removerPromocaoTipoMaquinaHandler,
-        ListarTiposMaquinaPromocaoHandler listarTiposMaquinaPromocaoHandler)
+        ListarTiposMaquinaPromocaoHandler listarTiposMaquinaPromocaoHandler,
+        AssociarPromocaoDiaSemanaHandler associarPromocaoDiaSemanaHandler,
+        RemoverPromocaoDiaSemanaHandler removerPromocaoDiaSemanaHandler,
+        ListarDiasSemanaPromocaoHandler listarDiasSemanaPromocaoHandler)
     {
         _criarPromocaoHandler = criarPromocaoHandler;
         _listarPromocoesHandler = listarPromocoesHandler;
@@ -47,6 +50,9 @@ public class PromocoesController : ControllerBase
         _associarPromocaoTipoMaquinaHandler = associarPromocaoTipoMaquinaHandler;
         _removerPromocaoTipoMaquinaHandler = removerPromocaoTipoMaquinaHandler;
         _listarTiposMaquinaPromocaoHandler = listarTiposMaquinaPromocaoHandler;
+        _associarPromocaoDiaSemanaHandler = associarPromocaoDiaSemanaHandler;
+        _removerPromocaoDiaSemanaHandler =  removerPromocaoDiaSemanaHandler;
+        _listarDiasSemanaPromocaoHandler = listarDiasSemanaPromocaoHandler;
     }
 
     [HttpPost]
@@ -288,6 +294,107 @@ public class PromocoesController : ControllerBase
 
             var response =
                 await _listarTiposMaquinaPromocaoHandler.HandleAsync(
+                    query,
+                    cancellationToken);
+
+            return Ok(response);
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new
+            {
+                mensagem = ex.Message
+            });
+        }
+    }
+
+    [HttpPost("{promocaoId:guid}/dias-semana/{diaSemana:int}")]
+    public async Task<IActionResult> AssociarDiaSemana(
+    Guid promocaoId,
+    int diaSemana,
+    CancellationToken cancellationToken)
+    {
+        try
+        {
+            var command = new AssociarPromocaoDiaSemanaCommand(
+                promocaoId,
+                diaSemana);
+
+            await _associarPromocaoDiaSemanaHandler.HandleAsync(
+                command,
+                cancellationToken);
+
+            return NoContent();
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new
+            {
+                mensagem = ex.Message
+            });
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new
+            {
+                mensagem = ex.Message
+            });
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(new
+            {
+                mensagem = ex.Message
+            });
+        }
+    }
+
+    [HttpDelete("{promocaoId:guid}/dias-semana/{diaSemana:int}")]
+    public async Task<IActionResult> RemoverDiaSemana(
+    Guid promocaoId,
+    int diaSemana,
+    CancellationToken cancellationToken)
+    {
+        try
+        {
+            var command = new RemoverPromocaoDiaSemanaCommand(
+                promocaoId,
+                diaSemana);
+
+            await _removerPromocaoDiaSemanaHandler.HandleAsync(
+                command,
+                cancellationToken);
+
+            return NoContent();
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new
+            {
+                mensagem = ex.Message
+            });
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new
+            {
+                mensagem = ex.Message
+            });
+        }
+    }
+
+    [HttpGet("{promocaoId:guid}/dias-semana")]
+    public async Task<IActionResult> ListarDiasSemana(
+    Guid promocaoId,
+    CancellationToken cancellationToken)
+    {
+        try
+        {
+            var query = new ListarDiasSemanaPromocaoQuery(
+                promocaoId);
+
+            var response =
+                await _listarDiasSemanaPromocaoHandler.HandleAsync(
                     query,
                     cancellationToken);
 

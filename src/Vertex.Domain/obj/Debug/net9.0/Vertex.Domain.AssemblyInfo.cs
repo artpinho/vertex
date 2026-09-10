@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vertex.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e001c73e8525eff532cbc87e12ce02aecd64b23f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fe48d0d05b5beffcdf29d1cbf5f90e224adc50f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vertex.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vertex.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
