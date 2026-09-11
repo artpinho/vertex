@@ -1062,6 +1062,90 @@
   },
   {
     "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "AssociarFaixaHorario",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/faixas-horario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Vertex.Application.Promotions.Commands.AssociarPromocaoFaixaHorario.AssociarPromocaoFaixaHorarioCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "ListarFaixasHorario",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/faixas-horario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "AtualizarFaixaHorario",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/faixas-horario/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Vertex.Application.Promotions.Commands.AtualizarPromocaoFaixaHorario.AtualizarPromocaoFaixaHorarioCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
+    "Method": "RemoverFaixaHorario",
+    "RelativePath": "api/v1/promocoes/{promocaoId}/faixas-horario/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promocaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.PromocoesController",
     "Method": "ListarTiposMaquina",
     "RelativePath": "api/v1/promocoes/{promocaoId}/tipos-maquina",
     "HttpMethod": "GET",

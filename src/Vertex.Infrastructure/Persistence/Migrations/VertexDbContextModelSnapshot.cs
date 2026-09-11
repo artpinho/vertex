@@ -325,6 +325,29 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.ToTable("PromocoesDiasSemana", (string)null);
                 });
 
+            modelBuilder.Entity("Vertex.Domain.Entities.PromocaoFaixaHorario", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<TimeSpan>("HoraFim")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("HoraInicio")
+                        .HasColumnType("time");
+
+                    b.Property<Guid>("PromocaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PromocaoId", "HoraInicio", "HoraFim")
+                        .IsUnique();
+
+                    b.ToTable("PromocoesFaixasHorario", (string)null);
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.PromocaoTipoMaquina", b =>
                 {
                     b.Property<Guid>("Id")
@@ -442,6 +465,15 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                 });
 
             modelBuilder.Entity("Vertex.Domain.Entities.PromocaoDiaSemana", b =>
+                {
+                    b.HasOne("Vertex.Domain.Entities.Promocao", null)
+                        .WithMany()
+                        .HasForeignKey("PromocaoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.PromocaoFaixaHorario", b =>
                 {
                     b.HasOne("Vertex.Domain.Entities.Promocao", null)
                         .WithMany()

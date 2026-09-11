@@ -1,12 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.Promotions.Commands.AlterarStatusPromocao;
 using Vertex.Application.Promotions.Commands.AssociarPromocaoDiaSemana;
+using Vertex.Application.Promotions.Commands.AssociarPromocaoFaixaHorario;
 using Vertex.Application.Promotions.Commands.AssociarPromocaoTipoMaquina;
 using Vertex.Application.Promotions.Commands.AtualizarPromocao;
+using Vertex.Application.Promotions.Commands.AtualizarPromocaoFaixaHorario;
 using Vertex.Application.Promotions.Commands.CriarPromocao;
 using Vertex.Application.Promotions.Commands.RemoverPromocaoDiaSemana;
+using Vertex.Application.Promotions.Commands.RemoverPromocaoFaixaHorario;
 using Vertex.Application.Promotions.Commands.RemoverPromocaoTipoMaquina;
 using Vertex.Application.Promotions.Queries.ListarDiasSemanaPromocao;
+using Vertex.Application.Promotions.Queries.ListarFaixasHorarioPromocao;
 using Vertex.Application.Promotions.Queries.ListarPromocoes;
 using Vertex.Application.Promotions.Queries.ListarTiposMaquinaPromocao;
 using Vertex.Application.Promotions.Queries.ObterPromocao;
@@ -28,6 +32,10 @@ public class PromocoesController : ControllerBase
     private readonly AssociarPromocaoDiaSemanaHandler _associarPromocaoDiaSemanaHandler;
     private readonly RemoverPromocaoDiaSemanaHandler _removerPromocaoDiaSemanaHandler;
     private readonly ListarDiasSemanaPromocaoHandler _listarDiasSemanaPromocaoHandler;
+    private readonly AssociarPromocaoFaixaHorarioHandler _associarPromocaoFaixaHorarioHandler;
+    private readonly AtualizarPromocaoFaixaHorarioHandler _atualizarPromocaoFaixaHorarioHandler;
+    private readonly RemoverPromocaoFaixaHorarioHandler _removerPromocaoFaixaHorarioHandler;
+    private readonly ListarFaixasHorarioPromocaoHandler _listarFaixasHorarioPromocaoHandler;
 
     public PromocoesController(
         CriarPromocaoHandler criarPromocaoHandler,
@@ -40,7 +48,11 @@ public class PromocoesController : ControllerBase
         ListarTiposMaquinaPromocaoHandler listarTiposMaquinaPromocaoHandler,
         AssociarPromocaoDiaSemanaHandler associarPromocaoDiaSemanaHandler,
         RemoverPromocaoDiaSemanaHandler removerPromocaoDiaSemanaHandler,
-        ListarDiasSemanaPromocaoHandler listarDiasSemanaPromocaoHandler)
+        ListarDiasSemanaPromocaoHandler listarDiasSemanaPromocaoHandler,
+        AssociarPromocaoFaixaHorarioHandler associarPromocaoFaixaHorarioHandler,
+        AtualizarPromocaoFaixaHorarioHandler atualizarPromocaoFaixaHorarioHandler,
+        RemoverPromocaoFaixaHorarioHandler removerPromocaoFaixaHorarioHandler,
+        ListarFaixasHorarioPromocaoHandler listarFaixasHorarioPromocaoHandler)
     {
         _criarPromocaoHandler = criarPromocaoHandler;
         _listarPromocoesHandler = listarPromocoesHandler;
@@ -53,6 +65,10 @@ public class PromocoesController : ControllerBase
         _associarPromocaoDiaSemanaHandler = associarPromocaoDiaSemanaHandler;
         _removerPromocaoDiaSemanaHandler =  removerPromocaoDiaSemanaHandler;
         _listarDiasSemanaPromocaoHandler = listarDiasSemanaPromocaoHandler;
+        _associarPromocaoFaixaHorarioHandler = associarPromocaoFaixaHorarioHandler;
+        _atualizarPromocaoFaixaHorarioHandler = atualizarPromocaoFaixaHorarioHandler;
+        _removerPromocaoFaixaHorarioHandler = removerPromocaoFaixaHorarioHandler;
+        _listarFaixasHorarioPromocaoHandler = listarFaixasHorarioPromocaoHandler;
     }
 
     [HttpPost]
@@ -403,6 +419,168 @@ public class PromocoesController : ControllerBase
         catch (KeyNotFoundException ex)
         {
             return NotFound(new
+            {
+                mensagem = ex.Message
+            });
+        }
+    }
+
+    [HttpPost("{promocaoId:guid}/faixas-horario")]
+    public async Task<IActionResult> AssociarFaixaHorario(
+    Guid promocaoId,
+    [FromBody] AssociarPromocaoFaixaHorarioCommand command,
+    CancellationToken cancellationToken)
+    {
+        try
+        {
+            if (promocaoId != command.PromocaoId)
+            {
+                return BadRequest(new
+                {
+                    mensagem =
+                        "O ID da promoção informado na rota é diferente do ID da requisição."
+                });
+            }
+
+            await _associarPromocaoFaixaHorarioHandler.HandleAsync(
+                command,
+                cancellationToken);
+
+            return NoContent();
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new
+            {
+                mensagem = ex.Message
+            });
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new
+            {
+                mensagem = ex.Message
+            });
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(new
+            {
+                mensagem = ex.Message
+            });
+        }
+    }
+
+    [HttpGet("{promocaoId:guid}/faixas-horario")]
+    public async Task<IActionResult> ListarFaixasHorario(
+    Guid promocaoId,
+    CancellationToken cancellationToken)
+    {
+        try
+        {
+            var query = new ListarFaixasHorarioPromocaoQuery(
+                promocaoId);
+
+            var response =
+                await _listarFaixasHorarioPromocaoHandler.HandleAsync(
+                    query,
+                    cancellationToken);
+
+            return Ok(response);
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new
+            {
+                mensagem = ex.Message
+            });
+        }
+    }
+
+    [HttpPut("{promocaoId:guid}/faixas-horario/{id:guid}")]
+    public async Task<IActionResult> AtualizarFaixaHorario(
+    Guid promocaoId,
+    Guid id,
+    [FromBody] AtualizarPromocaoFaixaHorarioCommand command,
+    CancellationToken cancellationToken)
+    {
+        try
+        {
+            if (id != command.Id)
+            {
+                return BadRequest(new
+                {
+                    mensagem =
+                        "O ID informado na rota é diferente do ID da requisição."
+                });
+            }
+
+            if (promocaoId != command.PromocaoId)
+            {
+                return BadRequest(new
+                {
+                    mensagem =
+                        "O ID da promoção informado na rota é diferente do ID da requisição."
+                });
+            }
+
+            await _atualizarPromocaoFaixaHorarioHandler.HandleAsync(
+                command,
+                cancellationToken);
+
+            return NoContent();
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new
+            {
+                mensagem = ex.Message
+            });
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new
+            {
+                mensagem = ex.Message
+            });
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(new
+            {
+                mensagem = ex.Message
+            });
+        }
+    }
+
+    [HttpDelete("{promocaoId:guid}/faixas-horario/{id:guid}")]
+    public async Task<IActionResult> RemoverFaixaHorario(
+    Guid promocaoId,
+    Guid id,
+    CancellationToken cancellationToken)
+    {
+        try
+        {
+            var command = new RemoverPromocaoFaixaHorarioCommand(
+                promocaoId,
+                id);
+
+            await _removerPromocaoFaixaHorarioHandler.HandleAsync(
+                command,
+                cancellationToken);
+
+            return NoContent();
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new
+            {
+                mensagem = ex.Message
+            });
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new
             {
                 mensagem = ex.Message
             });

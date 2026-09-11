@@ -1996,6 +1996,150 @@
         }
       }
     },
+    "/api/v1/promocoes/{promocaoId}/faixas-horario": {
+      "post": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssociarPromocaoFaixaHorarioCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssociarPromocaoFaixaHorarioCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssociarPromocaoFaixaHorarioCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/promocoes/{promocaoId}/faixas-horario/{id}": {
+      "put": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarPromocaoFaixaHorarioCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarPromocaoFaixaHorarioCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarPromocaoFaixaHorarioCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Promocoes"
+        ],
+        "parameters": [
+          {
+            "name": "promocaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/sessoes": {
       "post": {
         "tags": [
@@ -2564,6 +2708,24 @@
         },
         "additionalProperties": false
       },
+      "AssociarPromocaoFaixaHorarioCommand": {
+        "type": "object",
+        "properties": {
+          "promocaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "horaInicio": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "horaFim": {
+            "type": "string",
+            "format": "date-span"
+          }
+        },
+        "additionalProperties": false
+      },
       "AtualizarClienteCommand": {
         "type": "object",
         "properties": {
@@ -2752,6 +2914,28 @@
           },
           "todosTiposMaquina": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtualizarPromocaoFaixaHorarioCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "promocaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "horaInicio": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "horaFim": {
+            "type": "string",
+            "format": "date-span"
           }
         },
         "additionalProperties": false

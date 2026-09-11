@@ -11,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{59D7EAF3-BC18-40FE-B91C-DDAD2EC5471C}|src\\Vertex.Api\\Vertex.Api.csproj|solutionrelative:src\\vertex.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\promotions\\commands\\atualizarpromocaofaixahorario\\atualizarpromocaofaixahorariohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\promotions\\commands\\atualizarpromocaofaixahorario\\atualizarpromocaofaixahorariohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|solutionrelative:src\\vertex.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\promotions\\queries\\listardiassemanapromocao\\listardiassemanapromocaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\promotions\\queries\\listardiassemanapromocao\\listardiassemanapromocaohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.application\\promotions\\commands\\atualizarpromocaofaixahorario\\atualizarpromocaofaixahorariocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698DB51D-34FD-455E-89C0-EDB536A96D23}|src\\Vertex.Application\\Vertex.Application.csproj|solutionrelative:src\\vertex.application\\promotions\\commands\\atualizarpromocaofaixahorario\\atualizarpromocaofaixahorariocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A2FF8A-863E-4440-A7D3-39EDDD311375}|src\\Vertex.Infrastructure\\Vertex.Infrastructure.csproj|f:\\usu\u00E1rios\\werner pinho\\desktop\\vertex\\src\\vertex.infrastructure\\persistence\\context\\vertexdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,33 +48,46 @@
               "RelativeDocumentMoniker": "src\\Vertex.Api\\Controllers\\PromocoesController.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Controllers\\PromocoesController.cs",
               "RelativeToolTip": "src\\Vertex.Api\\Controllers\\PromocoesController.cs",
-              "ViewState": "AgIAAHABAAAAAAAAAAAswHEBAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACsCAAAAAAAAAAAswEcCAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T01:35:44.08Z",
+              "WhenOpened": "2026-09-11T01:04:56.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ListarDiasSemanaPromocaoHandler.cs",
-              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Promotions\\Queries\\ListarDiasSemanaPromocao\\ListarDiasSemanaPromocaoHandler.cs",
-              "RelativeDocumentMoniker": "src\\Vertex.Application\\Promotions\\Queries\\ListarDiasSemanaPromocao\\ListarDiasSemanaPromocaoHandler.cs",
-              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Promotions\\Queries\\ListarDiasSemanaPromocao\\ListarDiasSemanaPromocaoHandler.cs",
-              "RelativeToolTip": "src\\Vertex.Application\\Promotions\\Queries\\ListarDiasSemanaPromocao\\ListarDiasSemanaPromocaoHandler.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAqwD0AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AtualizarPromocaoFaixaHorarioHandler.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Promotions\\Commands\\AtualizarPromocaoFaixaHorario\\AtualizarPromocaoFaixaHorarioHandler.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Promotions\\Commands\\AtualizarPromocaoFaixaHorario\\AtualizarPromocaoFaixaHorarioHandler.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Promotions\\Commands\\AtualizarPromocaoFaixaHorario\\AtualizarPromocaoFaixaHorarioHandler.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Promotions\\Commands\\AtualizarPromocaoFaixaHorario\\AtualizarPromocaoFaixaHorarioHandler.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwFAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T01:33:18.182Z",
+              "WhenOpened": "2026-09-11T01:03:01.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AtualizarPromocaoFaixaHorarioCommand.cs",
+              "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Promotions\\Commands\\AtualizarPromocaoFaixaHorario\\AtualizarPromocaoFaixaHorarioCommand.cs",
+              "RelativeDocumentMoniker": "src\\Vertex.Application\\Promotions\\Commands\\AtualizarPromocaoFaixaHorario\\AtualizarPromocaoFaixaHorarioCommand.cs",
+              "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Application\\Promotions\\Commands\\AtualizarPromocaoFaixaHorario\\AtualizarPromocaoFaixaHorarioCommand.cs",
+              "RelativeToolTip": "src\\Vertex.Application\\Promotions\\Commands\\AtualizarPromocaoFaixaHorario\\AtualizarPromocaoFaixaHorarioCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T01:02:54.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "VertexDbContext.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Context\\VertexDbContext.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\Persistence\\Context\\VertexDbContext.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\Persistence\\Context\\VertexDbContext.cs",
               "RelativeToolTip": "src\\Vertex.Infrastructure\\Persistence\\Context\\VertexDbContext.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAcwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-06T22:13:37.001Z",
               "EditorCaption": ""
@@ -83,14 +100,14 @@
               "RelativeDocumentMoniker": "src\\Vertex.Api\\Program.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\Program.cs",
               "RelativeToolTip": "src\\Vertex.Api\\Program.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAAAJMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAAJoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-05T19:01:43.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Api\\appsettings.json",
               "RelativeDocumentMoniker": "src\\Vertex.Api\\appsettings.json",
@@ -102,13 +119,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "ToolTip": "F:\\Usu\u00E1rios\\Werner Pinho\\Desktop\\Vertex\\src\\Vertex.Infrastructure\\DependencyInjection.cs",
               "RelativeToolTip": "src\\Vertex.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwC4AAABcAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADMAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-19T02:41:32.124Z",
               "EditorCaption": ""

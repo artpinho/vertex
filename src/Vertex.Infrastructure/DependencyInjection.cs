@@ -9,8 +9,12 @@ using System.Threading.Tasks;
 using Vertex.Application.Abstractions.Persistence;
 using Vertex.Application.Abstractions.Security;
 using Vertex.Application.Promotions.Commands.AssociarPromocaoDiaSemana;
+using Vertex.Application.Promotions.Commands.AssociarPromocaoFaixaHorario;
+using Vertex.Application.Promotions.Commands.AtualizarPromocaoFaixaHorario;
 using Vertex.Application.Promotions.Commands.RemoverPromocaoDiaSemana;
+using Vertex.Application.Promotions.Commands.RemoverPromocaoFaixaHorario;
 using Vertex.Application.Promotions.Queries.ListarDiasSemanaPromocao;
+using Vertex.Application.Promotions.Queries.ListarFaixasHorarioPromocao;
 using Vertex.Infrastructure.Persistence.Context;
 using Vertex.Infrastructure.Persistence.Repositories;
 using Vertex.Infrastructure.Security;
@@ -45,6 +49,7 @@ namespace Vertex.Infrastructure
             services.AddScoped<IEstacaoRepository, EstacaoRepository>();
             services.AddScoped<ITarifacaoRepository, ConfiguracaoTarifacaoRepository>();
             services.AddScoped<IPromocaoDiaSemanaRepository, PromocaoDiaSemanaRepository>();
+            services.AddScoped<IPromocaoFaixaHorarioRepository, PromocaoFaixaHorarioRepository>();
 
             return services;
         }
