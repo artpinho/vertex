@@ -32,14 +32,12 @@ namespace Vertex.Infrastructure.Persistence.Repositories
         }
 
         public async Task<IReadOnlyList<FaixaHorarioTarifacao>> ListarAsync(
-            Guid configuracaoTarifacaoId,
             CancellationToken cancellationToken = default)
         {
             return await _context.FaixasHorarioTarifacao
                 .AsNoTracking()
-                .Where(x =>
-                    x.ConfiguracaoTarifacaoId == configuracaoTarifacaoId)
-                .OrderBy(x => x.DiaSemana)
+                .OrderBy(x => x.ConfiguracaoTarifacaoId)
+                .ThenBy(x => x.DiaSemana)
                 .ThenBy(x => x.HoraInicio)
                 .ToListAsync(cancellationToken);
         }

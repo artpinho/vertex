@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.Abstractions.Security;
 using Vertex.Application.Computers.Commands.AlterarStatus;
+using Vertex.Application.Computers.Commands.AssociarTipoMaquina;
 using Vertex.Application.Computers.Commands.AtualizarComputador;
 using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
@@ -28,6 +29,7 @@ namespace Vertex.Api.Controllers
         private readonly ICurrentComputer _currentComputer;
         private readonly AtualizarComputadorHandler _atualizarHandler;
         private readonly AlterarStatusComputadorHandler _alterarStatusHandler;
+        private readonly AssociarTipoMaquinaHandler _associarTipoMaquinaHandler;
 
         public ComputadoresController(
         RegistrarComputadorHandler registrarHandler,
@@ -38,7 +40,8 @@ namespace Vertex.Api.Controllers
         RotacionarComputadorCredentialHandler rotacionarCredentialHandler,
         AlterarStatusComputadorHandler alterarStatusHandler,
         ICurrentComputer currentComputer,
-        AtualizarComputadorHandler atualizarHandler)
+        AtualizarComputadorHandler atualizarHandler,
+        AssociarTipoMaquinaHandler associarTipoMaquinaHandler)
         {
             _registrarHandler = registrarHandler;
             _listarHandler = listarHandler;
@@ -49,6 +52,8 @@ namespace Vertex.Api.Controllers
             _currentComputer = currentComputer;
             _atualizarHandler = atualizarHandler;
             _alterarStatusHandler = alterarStatusHandler;
+            _associarTipoMaquinaHandler = associarTipoMaquinaHandler;
+            _associarTipoMaquinaHandler = associarTipoMaquinaHandler;
         }
 
         [HttpPost]
@@ -286,9 +291,9 @@ namespace Vertex.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> AlterarStatus(
-    Guid id,
-    [FromBody] AlterarStatusComputadorCommand command,
-    CancellationToken cancellationToken)
+            Guid id,
+            [FromBody] AlterarStatusComputadorCommand command,
+            CancellationToken cancellationToken)
         {
             if (id != command.ComputadorId)
             {
@@ -318,6 +323,47 @@ namespace Vertex.Api.Controllers
                 return BadRequest(new
                 {
                     message = ex.Message
+                });
+            }
+        }
+
+        [HttpPost("{id}/tipo-maquina")]
+        public async Task<IActionResult> AssociarTipoMaquina(
+            Guid id,
+            [FromBody] AssociarTipoMaquinaRequest request,
+            CancellationToken cancellationToken)
+        {
+            try
+            {
+                var command = new AssociarTipoMaquinaCommand(
+                    id,
+                    request.TipoMaquinaId);
+
+                await _associarTipoMaquinaHandler.HandleAsync(
+                    command,
+                    cancellationToken);
+
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new
+                {
+                    mensagem = ex.Message
+                });
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new
+                {
+                    mensagem = ex.Message
+                });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return UnprocessableEntity(new
+                {
+                    mensagem = ex.Message
                 });
             }
         }

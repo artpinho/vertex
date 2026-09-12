@@ -37,6 +37,7 @@ namespace Vertex.Application.Computers.Queries.ObterComputador
                 computador.SistemaOperacional,
                 computador.ClienteVersao,
                 computador.UltimoHeartbeat,
+                computador.TipoMaquinaId,
                 computador.Status);
         }
     }

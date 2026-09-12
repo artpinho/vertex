@@ -15,9 +15,12 @@ using Vertex.Application.Promotions.Commands.RemoverPromocaoDiaSemana;
 using Vertex.Application.Promotions.Commands.RemoverPromocaoFaixaHorario;
 using Vertex.Application.Promotions.Queries.ListarDiasSemanaPromocao;
 using Vertex.Application.Promotions.Queries.ListarFaixasHorarioPromocao;
+using Vertex.Application.Tariffing.Commands.CalcularTarifacao;
+using Vertex.Application.Tariffing.Services;
 using Vertex.Infrastructure.Persistence.Context;
 using Vertex.Infrastructure.Persistence.Repositories;
 using Vertex.Infrastructure.Security;
+using Vertex.Infrastructure.Tariffing;
 
 namespace Vertex.Infrastructure
 {
@@ -50,6 +53,9 @@ namespace Vertex.Infrastructure
             services.AddScoped<ITarifacaoRepository, ConfiguracaoTarifacaoRepository>();
             services.AddScoped<IPromocaoDiaSemanaRepository, PromocaoDiaSemanaRepository>();
             services.AddScoped<IPromocaoFaixaHorarioRepository, PromocaoFaixaHorarioRepository>();
+            services.AddScoped<ITarifacaoProvider, TarifacaoProvider>();
+            services.AddScoped<IMotorTarifacao, MotorTarifacao>();
+            services.AddScoped<CalcularTarifacaoHandler>();
 
             return services;
         }

@@ -10,6 +10,7 @@ using Vertex.Application.Clients.Commands.AtualizarCliente;
 using Vertex.Application.Clients.Commands.CriarCliente;
 using Vertex.Application.Clients.Queries;
 using Vertex.Application.Computers.Commands.AlterarStatus;
+using Vertex.Application.Computers.Commands.AssociarTipoMaquina;
 using Vertex.Application.Computers.Commands.AtualizarComputador;
 using Vertex.Application.Computers.Commands.ProcessarHeartbeat;
 using Vertex.Application.Computers.Commands.ProvisionarCredential;
@@ -151,8 +152,7 @@ builder.Services.AddScoped<AssociarPromocaoFaixaHorarioHandler>();
 builder.Services.AddScoped<RemoverPromocaoFaixaHorarioHandler>();
 builder.Services.AddScoped<AtualizarPromocaoFaixaHorarioHandler>();
 builder.Services.AddScoped<ListarFaixasHorarioPromocaoHandler>();
-
-
+builder.Services.AddScoped<AssociarTipoMaquinaHandler>();
 
 
 var jwtKey =
@@ -228,6 +228,7 @@ builder.Services.AddScoped<IFaixaHorarioTarifacaoRepository, FaixaHorarioTarifac
 builder.Services.AddScoped<IPromocaoTipoMaquinaRepository, PromocaoTipoMaquinaRepository>();
 builder.Services.AddScoped<IPromocaoRepository, PromocaoRepository>();
 builder.Services.AddScoped<IPromocaoTipoMaquinaRepository, PromocaoTipoMaquinaRepository>();
+builder.Services.AddScoped<IConsumoTarifacaoRepository, ConsumoTarifacaoRepository>();
 
 var app = builder.Build();
 

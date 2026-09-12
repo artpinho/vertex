@@ -89,6 +89,9 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
+                    b.Property<Guid?>("TipoMaquinaId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<DateTime?>("UltimoHeartbeat")
                         .HasColumnType("datetime2");
 
@@ -100,6 +103,8 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.HasIndex("MacAddress")
                         .IsUnique()
                         .HasFilter("[MacAddress] IS NOT NULL");
+
+                    b.HasIndex("TipoMaquinaId");
 
                     b.ToTable("Computadores", (string)null);
                 });
@@ -184,6 +189,51 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.HasIndex("TipoMaquinaId", "Ativo", "DataInicio");
 
                     b.ToTable("ConfiguracoesTarifacao", (string)null);
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.ConsumoTarifacao", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ConfiguracaoTarifacaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Desconto")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("Fim")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Inicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("PromocaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("SessaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Valor")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("ValorHora")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ConfiguracaoTarifacaoId");
+
+                    b.HasIndex("PromocaoId");
+
+                    b.HasIndex("SessaoId", "Inicio", "Fim")
+                        .IsUnique();
+
+                    b.ToTable("ConsumosTarifacao", (string)null);
                 });
 
             modelBuilder.Entity("Vertex.Domain.Entities.Estacao", b =>
@@ -429,6 +479,14 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.ToTable("TiposMaquina", (string)null);
                 });
 
+            modelBuilder.Entity("Vertex.Domain.Entities.Computador", b =>
+                {
+                    b.HasOne("Vertex.Domain.Entities.TipoMaquina", null)
+                        .WithMany()
+                        .HasForeignKey("TipoMaquinaId")
+                        .OnDelete(DeleteBehavior.Restrict);
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.ComputadorCredential", b =>
                 {
                     b.HasOne("Vertex.Domain.Entities.Computador", null)
@@ -443,6 +501,26 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.HasOne("Vertex.Domain.Entities.TipoMaquina", null)
                         .WithMany()
                         .HasForeignKey("TipoMaquinaId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.ConsumoTarifacao", b =>
+                {
+                    b.HasOne("Vertex.Domain.Entities.ConfiguracaoTarifacao", null)
+                        .WithMany()
+                        .HasForeignKey("ConfiguracaoTarifacaoId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Vertex.Domain.Entities.Promocao", null)
+                        .WithMany()
+                        .HasForeignKey("PromocaoId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("Vertex.Domain.Entities.Sessao", null)
+                        .WithMany()
+                        .HasForeignKey("SessaoId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });

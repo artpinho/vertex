@@ -14,8 +14,7 @@ namespace Vertex.Application.Abstractions.Persistence
             CancellationToken cancellationToken = default);
 
         Task<IReadOnlyList<FaixaHorarioTarifacao>> ListarAsync(
-            Guid configuracaoTarifacaoId,
-            CancellationToken cancellationToken = default);
+         CancellationToken cancellationToken = default);
 
         Task<bool> ExisteFaixaAsync(
             Guid configuracaoTarifacaoId,

@@ -8,7 +8,6 @@ using Vertex.Domain.Enums;
 namespace Vertex.Application.Computers.DTOs
 {
     public sealed record ComputadorResponse(
-
         Guid Id,
         string HostName,
         string? Ip,
@@ -16,5 +15,6 @@ namespace Vertex.Application.Computers.DTOs
         string? SistemaOperacional,
         string? ClienteVersao,
         DateTime? UltimoHeartbeat,
+        Guid? TipoMaquinaId,
         StatusComputador Status);
 }

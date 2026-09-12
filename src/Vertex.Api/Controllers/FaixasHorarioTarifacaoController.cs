@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata;
 using Vertex.Application.TariffTimeBands.Commands.AlterarStatusFaixaHorarioTarifacao;
 using Vertex.Application.TariffTimeBands.Commands.AtualizarFaixaHorarioTarifacao;
 using Vertex.Application.TariffTimeBands.Commands.CriarFaixaHorarioTarifacao;
@@ -79,18 +80,14 @@ namespace Vertex.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Listar(
-            [FromQuery] Guid configuracaoTarifacaoId,
+        public async Task<ActionResult> Listar(
             CancellationToken cancellationToken)
         {
-            var query = new ListarFaixasHorarioTarifacaoQuery(
-                configuracaoTarifacaoId);
-
-            var result = await _listarHandler.HandleAsync(
-                query,
+            var response = await _listarHandler.HandleAsync(
+                new ListarFaixasHorarioTarifacaoQuery(),
                 cancellationToken);
 
-            return Ok(result);
+            return Ok(response);
         }
 
         [HttpGet("{id:guid}")]

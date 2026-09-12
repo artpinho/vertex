@@ -34,6 +34,7 @@ namespace Vertex.Application.Computers.Queries.ListarComputadores
                     x.SistemaOperacional,
                     x.ClienteVersao,
                     x.UltimoHeartbeat,
+                    x.TipoMaquinaId,
                     x.Status))
                 .ToList();
         }

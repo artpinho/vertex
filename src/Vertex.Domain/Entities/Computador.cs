@@ -16,6 +16,7 @@ namespace Vertex.Domain.Entities
         public string? SistemaOperacional { get; private set; }
         public string? ClienteVersao { get; private set; }
         public DateTime? UltimoHeartbeat { get; private set; }
+        public Guid? TipoMaquinaId { get; private set; }
         public StatusComputador Status { get; private set; }
 
         protected Computador() 
@@ -78,5 +79,13 @@ namespace Vertex.Domain.Entities
             ClienteVersao = clienteVersao;
         }
 
+        public void AssociarTipoMaquina(Guid tipoMaquinaId)
+        {
+            if (tipoMaquinaId == Guid.Empty)
+                throw new ArgumentException(
+                    "O tipo de máquina informado é inválido.");
+
+            TipoMaquinaId = tipoMaquinaId;
+        }
     }
 }

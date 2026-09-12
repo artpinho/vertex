@@ -6,6 +6,5 @@ using System.Threading.Tasks;
 
 namespace Vertex.Application.TariffTimeBands.Queries.ListarFaixasHorarioTarifacao
 {
-    public sealed record ListarFaixasHorarioTarifacaoQuery(
-        Guid ConfiguracaoTarifacaoId);
+    public sealed record ListarFaixasHorarioTarifacaoQuery;
 }

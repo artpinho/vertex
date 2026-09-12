@@ -46,6 +46,7 @@ namespace Vertex.Application.Computers.Commands.AtualizarComputador
                 computador.SistemaOperacional,
                 computador.ClienteVersao,
                 computador.UltimoHeartbeat,
+                computador.TipoMaquinaId,
                 computador.Status);
         }
     }

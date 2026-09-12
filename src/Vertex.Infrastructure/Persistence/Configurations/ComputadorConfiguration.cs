@@ -45,6 +45,13 @@ namespace Vertex.Infrastructure.Persistence.Configurations
             builder.HasIndex(x => x.MacAddress)
                 .IsUnique()
                 .HasFilter("[MacAddress] IS NOT NULL");
+
+            builder.HasOne<TipoMaquina>()
+                .WithMany()
+                .HasForeignKey(x => x.TipoMaquinaId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasIndex(x => x.TipoMaquinaId);
         }
     }
 }

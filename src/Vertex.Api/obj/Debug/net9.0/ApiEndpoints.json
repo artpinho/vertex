@@ -556,6 +556,27 @@
     ]
   },
   {
+    "ContainingType": "Vertex.Api.Controllers.ComputadoresController",
+    "Method": "AssociarTipoMaquina",
+    "RelativePath": "api/v1/computadores/{id}/tipo-maquina",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Vertex.Application.Computers.Commands.AssociarTipoMaquina.AssociarTipoMaquinaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Vertex.Api.Controllers.ConfiguracoesTarifacaoController",
     "Method": "Criar",
     "RelativePath": "api/v1/configuracoes-tarifacao",
@@ -851,13 +872,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "configuracaoTarifacaoId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -1313,6 +1328,32 @@
           "text/json"
         ],
         "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.TariffingController",
+    "Method": "Calcular",
+    "RelativePath": "api/v1/tarifacao/calcular",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Vertex.Application.Tariffing.Commands.CalcularTarifacao.CalcularTarifacaoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vertex.Application.Tariffing.Commands.CalcularTarifacao.CalcularTarifacaoResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
       }
     ]
   },

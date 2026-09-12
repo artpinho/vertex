@@ -1030,6 +1030,48 @@
         }
       }
     },
+    "/api/v1/computadores/{id}/tipo-maquina": {
+      "post": {
+        "tags": [
+          "Computadores"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssociarTipoMaquinaRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssociarTipoMaquinaRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssociarTipoMaquinaRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/configuracoes-tarifacao": {
       "post": {
         "tags": [
@@ -1557,16 +1599,6 @@
       "get": {
         "tags": [
           "FaixasHorarioTarifacao"
-        ],
-        "parameters": [
-          {
-            "name": "configuracaoTarifacaoId",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -2341,6 +2373,54 @@
         }
       }
     },
+    "/api/v1/tarifacao/calcular": {
+      "post": {
+        "tags": [
+          "Tariffing"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalcularTarifacaoCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalcularTarifacaoCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalcularTarifacaoCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CalcularTarifacaoResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CalcularTarifacaoResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CalcularTarifacaoResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/tipos-maquina": {
       "post": {
         "tags": [
@@ -2726,6 +2806,16 @@
         },
         "additionalProperties": false
       },
+      "AssociarTipoMaquinaRequest": {
+        "type": "object",
+        "properties": {
+          "tipoMaquinaId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
       "AtualizarClienteCommand": {
         "type": "object",
         "properties": {
@@ -2983,6 +3073,45 @@
         },
         "additionalProperties": false
       },
+      "CalcularTarifacaoCommand": {
+        "type": "object",
+        "properties": {
+          "computadorId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "tipoMaquinaId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "inicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fim": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CalcularTarifacaoResponse": {
+        "type": "object",
+        "properties": {
+          "valorTotal": {
+            "type": "number",
+            "format": "double"
+          },
+          "segmentos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SegmentoTarifacaoResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ClienteResponse": {
         "type": "object",
         "properties": {
@@ -3051,6 +3180,11 @@
           "ultimoHeartbeat": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          },
+          "tipoMaquinaId": {
+            "type": "string",
+            "format": "uuid",
             "nullable": true
           },
           "status": {
@@ -3673,6 +3807,41 @@
           "clientSecret": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SegmentoTarifacaoResponse": {
+        "type": "object",
+        "properties": {
+          "inicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fim": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "configuracaoTarifacaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "promocaoId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "valorHora": {
+            "type": "number",
+            "format": "double"
+          },
+          "desconto": {
+            "type": "number",
+            "format": "double"
+          },
+          "valor": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

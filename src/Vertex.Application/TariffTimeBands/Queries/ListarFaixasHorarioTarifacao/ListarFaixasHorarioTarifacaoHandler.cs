@@ -22,7 +22,6 @@ namespace Vertex.Application.TariffTimeBands.Queries.ListarFaixasHorarioTarifaca
             CancellationToken cancellationToken = default)
         {
             var faixas = await _repository.ListarAsync(
-                query.ConfiguracaoTarifacaoId,
                 cancellationToken);
 
             return faixas
