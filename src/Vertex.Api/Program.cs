@@ -41,6 +41,7 @@ using Vertex.Application.Promotions.Queries.ObterPromocao;
 using Vertex.Application.Sessions.Commands.EncerrarSessao;
 using Vertex.Application.Sessions.Commands.IniciarSessao;
 using Vertex.Application.Sessions.Queries;
+using Vertex.Application.Sessions.Queries.ListarConsumosSessao;
 using Vertex.Application.Stations.Commands.AlterarStatus;
 using Vertex.Application.Stations.Commands.AssociarComputador;
 using Vertex.Application.Stations.Commands.CriarEstacao;
@@ -153,6 +154,7 @@ builder.Services.AddScoped<RemoverPromocaoFaixaHorarioHandler>();
 builder.Services.AddScoped<AtualizarPromocaoFaixaHorarioHandler>();
 builder.Services.AddScoped<ListarFaixasHorarioPromocaoHandler>();
 builder.Services.AddScoped<AssociarTipoMaquinaHandler>();
+builder.Services.AddScoped<ListarConsumosSessaoHandler>();
 
 
 var jwtKey =

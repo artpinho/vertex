@@ -2373,6 +2373,66 @@
         }
       }
     },
+    "/api/v1/sessoes/{sessaoId}/consumos": {
+      "get": {
+        "tags": [
+          "Sessoes"
+        ],
+        "parameters": [
+          {
+            "name": "sessaoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConsumosSessaoResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConsumosSessaoResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConsumosSessaoResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/tarifacao/calcular": {
       "post": {
         "tags": [
@@ -3228,6 +3288,70 @@
           "expiresIn": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConsumoTarifacaoResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "sessaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "inicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fim": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "configuracaoTarifacaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "promocaoId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "valorHora": {
+            "type": "number",
+            "format": "double"
+          },
+          "desconto": {
+            "type": "number",
+            "format": "double"
+          },
+          "valor": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConsumosSessaoResponse": {
+        "type": "object",
+        "properties": {
+          "sessaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "valorTotal": {
+            "type": "number",
+            "format": "double"
+          },
+          "consumos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConsumoTarifacaoResponse"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

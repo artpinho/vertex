@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.Sessions.Commands.EncerrarSessao;
 using Vertex.Application.Sessions.Commands.IniciarSessao;
+using Vertex.Application.Sessions.DTOs;
 using Vertex.Application.Sessions.Queries;
+using Vertex.Application.Sessions.Queries.ListarConsumosSessao;
 
 namespace Vertex.Api.Controllers
 {
@@ -13,17 +15,20 @@ namespace Vertex.Api.Controllers
         private readonly EncerrarSessaoHandler _encerrarSessaoHandler;
         private readonly ListarSessoesHandler _listarSessoesHandler;
         private readonly ObterSessaoHandler _obterSessaoHandler;
+        private readonly ListarConsumosSessaoHandler _listarConsumosHandler;
 
         public SessoesController(
             IniciarSessaoHandler iniciarSessaoHandler,
             EncerrarSessaoHandler encerrarSessaoHandler,
             ListarSessoesHandler listarSessoesHandler,
-            ObterSessaoHandler obterSessaoHandler)
+            ObterSessaoHandler obterSessaoHandler,
+            ListarConsumosSessaoHandler listarConsumosHandler)
         {
             _iniciarSessaoHandler = iniciarSessaoHandler;
             _encerrarSessaoHandler = encerrarSessaoHandler;
             _listarSessoesHandler = listarSessoesHandler;
             _obterSessaoHandler = obterSessaoHandler;
+            _listarConsumosHandler = listarConsumosHandler;
         }
 
         [HttpPost]
@@ -121,6 +126,25 @@ namespace Vertex.Api.Controllers
                 return NotFound();
 
             return Ok(resultado);
+        }
+
+        [HttpGet("{sessaoId:guid}/consumos")]
+        [ProducesResponseType(
+            typeof(ConsumosSessaoResponse),
+            StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<ConsumosSessaoResponse>> ListarConsumos(
+            Guid sessaoId,
+            CancellationToken cancellationToken)
+        {
+            var response = await _listarConsumosHandler.HandleAsync(
+                new ListarConsumosSessaoQuery(sessaoId),
+                cancellationToken);
+
+            if (response is null)
+                return NotFound();
+
+            return Ok(response);
         }
     }
 }

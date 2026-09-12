@@ -1332,6 +1332,41 @@
     ]
   },
   {
+    "ContainingType": "Vertex.Api.Controllers.SessoesController",
+    "Method": "ListarConsumos",
+    "RelativePath": "api/v1/sessoes/{sessaoId}/consumos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sessaoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vertex.Application.Sessions.DTOs.ConsumosSessaoResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
     "ContainingType": "Vertex.Api.Controllers.TariffingController",
     "Method": "Calcular",
     "RelativePath": "api/v1/tarifacao/calcular",
