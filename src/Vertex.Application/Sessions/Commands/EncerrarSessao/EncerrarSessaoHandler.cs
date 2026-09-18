@@ -7,6 +7,7 @@ using Vertex.Application.Abstractions.Persistence;
 using Vertex.Application.Tariffing.Models;
 using Vertex.Application.Tariffing.Services;
 using Vertex.Domain.Entities;
+using Vertex.Domain.Enums;
 
 namespace Vertex.Application.Sessions.Commands.EncerrarSessao
 {
@@ -17,19 +18,22 @@ namespace Vertex.Application.Sessions.Commands.EncerrarSessao
         private readonly IComputadorRepository _computadorRepository;
         private readonly IMotorTarifacao _motorTarifacao;
         private readonly IConsumoTarifacaoRepository _consumoTarifacaoRepository;
+        private readonly ICarteiraClienteRepository _carteiraClienteRepository;
 
         public EncerrarSessaoHandler(
             ISessaoRepository sessaoRepository,
             IEstacaoRepository estacaoRepository,
             IComputadorRepository computadorRepository,
             IMotorTarifacao motorTarifacao,
-            IConsumoTarifacaoRepository consumoTarifacaoRepository)
+            IConsumoTarifacaoRepository consumoTarifacaoRepository,
+            ICarteiraClienteRepository carteiraClienteRepository)
         {
             _sessaoRepository = sessaoRepository;
             _estacaoRepository = estacaoRepository;
             _computadorRepository = computadorRepository;
             _motorTarifacao = motorTarifacao;
             _consumoTarifacaoRepository = consumoTarifacaoRepository;
+            _carteiraClienteRepository = carteiraClienteRepository;
         }
 
         public async Task<EncerrarSessaoResponse> HandleAsync(
@@ -108,6 +112,32 @@ namespace Vertex.Application.Sessions.Commands.EncerrarSessao
 
             await _consumoTarifacaoRepository.AdicionarListaAsync(
                 consumos,
+                cancellationToken);
+
+            var carteira =
+            await _carteiraClienteRepository.ObterPorClienteIdAsync(
+                sessao.ClienteId,
+                cancellationToken);
+
+            if (carteira is null)
+            {
+                throw new InvalidOperationException(
+                    "O cliente não possui uma carteira.");
+            }
+
+            var valorConsumo = resultadoTarifacao.ValorTotal;
+
+            carteira.Debitar(valorConsumo);
+
+            var movimentacao = new MovimentacaoCarteira(
+                carteira.Id,
+                valorConsumo,
+                TipoMovimentacaoCarteira.Debito,
+                sessaoId: sessao.Id,
+                descricao: $"Consumo da sessão {sessao.Id}");
+
+            await _carteiraClienteRepository.AdicionarMovimentacaoAsync(
+                movimentacao,
                 cancellationToken);
 
             estacao.Liberar();

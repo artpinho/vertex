@@ -58,5 +58,11 @@ namespace Vertex.Infrastructure.Persistence.Context
 
         public DbSet<ConsumoTarifacao> ConsumosTarifacao 
             => Set<ConsumoTarifacao>();
+
+        public DbSet<CarteiraCliente> CarteirasClientes
+            => Set<CarteiraCliente>();
+
+        public DbSet<MovimentacaoCarteira> MovimentacoesCarteira
+            => Set<MovimentacaoCarteira>();
     }
 }

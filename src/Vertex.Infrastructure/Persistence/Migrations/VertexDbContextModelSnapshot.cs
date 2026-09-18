@@ -22,6 +22,27 @@ namespace Vertex.Infrastructure.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Vertex.Domain.Entities.CarteiraCliente", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ClienteId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Saldo")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId")
+                        .IsUnique();
+
+                    b.ToTable("CarteirasClientes", (string)null);
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.Cliente", b =>
                 {
                     b.Property<Guid>("Id")
@@ -307,6 +328,47 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.ToTable("FaixasHorarioTarifacao", (string)null);
                 });
 
+            modelBuilder.Entity("Vertex.Domain.Entities.MovimentacaoCarteira", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CarteiraClienteId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Data")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descricao")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<Guid?>("SessaoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Tipo")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TipoPagamento")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Valor")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid?>("VendaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarteiraClienteId");
+
+                    b.HasIndex("Data");
+
+                    b.ToTable("MovimentacoesCarteira", (string)null);
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.Promocao", b =>
                 {
                     b.Property<Guid>("Id")
@@ -479,6 +541,15 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.ToTable("TiposMaquina", (string)null);
                 });
 
+            modelBuilder.Entity("Vertex.Domain.Entities.CarteiraCliente", b =>
+                {
+                    b.HasOne("Vertex.Domain.Entities.Cliente", null)
+                        .WithOne()
+                        .HasForeignKey("Vertex.Domain.Entities.CarteiraCliente", "ClienteId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Vertex.Domain.Entities.Computador", b =>
                 {
                     b.HasOne("Vertex.Domain.Entities.TipoMaquina", null)
@@ -538,6 +609,15 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                     b.HasOne("Vertex.Domain.Entities.ConfiguracaoTarifacao", null)
                         .WithMany()
                         .HasForeignKey("ConfiguracaoTarifacaoId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Vertex.Domain.Entities.MovimentacaoCarteira", b =>
+                {
+                    b.HasOne("Vertex.Domain.Entities.CarteiraCliente", null)
+                        .WithMany()
+                        .HasForeignKey("CarteiraClienteId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });

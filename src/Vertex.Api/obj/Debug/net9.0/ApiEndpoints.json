@@ -115,6 +115,27 @@
     ]
   },
   {
+    "ContainingType": "Vertex.Api.Controllers.CarteiraController",
+    "Method": "Recarregar",
+    "RelativePath": "api/v1/clientes/{clienteId}/carteira/recarga",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Vertex.Api.Controllers.RecarregarCarteiraRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Vertex.Api.Controllers.ClientesController",
     "Method": "Obter",
     "RelativePath": "api/v1/clientes/{id}",

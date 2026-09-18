@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vertex.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d39c9215ce46fa45c964db15317e987a0bd9e905")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a85bb1417f6d17a635d382e20aa0c77156a7c4f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vertex.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vertex.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

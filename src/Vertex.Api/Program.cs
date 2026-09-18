@@ -56,6 +56,7 @@ using Vertex.Application.TariffTimeBands.Commands.AtualizarFaixaHorarioTarifacao
 using Vertex.Application.TariffTimeBands.Commands.CriarFaixaHorarioTarifacao;
 using Vertex.Application.TariffTimeBands.Queries.ListarFaixasHorarioTarifacao;
 using Vertex.Application.TariffTimeBands.Queries.ObterFaixaHorarioTarifacao;
+using Vertex.Application.Wallet.Commands.RecarregarCarteira;
 using Vertex.Infrastructure;
 using Vertex.Infrastructure.Persistence.Repositories;
 
@@ -155,6 +156,7 @@ builder.Services.AddScoped<AtualizarPromocaoFaixaHorarioHandler>();
 builder.Services.AddScoped<ListarFaixasHorarioPromocaoHandler>();
 builder.Services.AddScoped<AssociarTipoMaquinaHandler>();
 builder.Services.AddScoped<ListarConsumosSessaoHandler>();
+builder.Services.AddScoped<RecarregarCarteiraHandler>();
 
 
 var jwtKey =
@@ -231,6 +233,7 @@ builder.Services.AddScoped<IPromocaoTipoMaquinaRepository, PromocaoTipoMaquinaRe
 builder.Services.AddScoped<IPromocaoRepository, PromocaoRepository>();
 builder.Services.AddScoped<IPromocaoTipoMaquinaRepository, PromocaoTipoMaquinaRepository>();
 builder.Services.AddScoped<IConsumoTarifacaoRepository, ConsumoTarifacaoRepository>();
+builder.Services.AddScoped<ICarteiraClienteRepository, CarteiraClienteRepository>();
 
 var app = builder.Build();
 
