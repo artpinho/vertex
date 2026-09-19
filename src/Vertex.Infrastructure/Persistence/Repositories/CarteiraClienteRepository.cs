@@ -52,5 +52,16 @@ namespace Vertex.Infrastructure.Persistence.Repositories
         {
             await _context.SaveChangesAsync(cancellationToken);
         }
+
+        public async Task<IReadOnlyList<MovimentacaoCarteira>> ListarMovimentacoesAsync(
+            Guid carteiraClienteId,
+            CancellationToken cancellationToken = default)
+        {
+            return await _context.MovimentacoesCarteira
+                .AsNoTracking()
+                .Where(x => x.CarteiraClienteId == carteiraClienteId)
+                .OrderByDescending(x => x.Data)
+                .ToListAsync(cancellationToken);
+        }
     }
 }

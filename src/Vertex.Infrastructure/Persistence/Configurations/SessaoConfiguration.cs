@@ -43,6 +43,9 @@ namespace Vertex.Infrastructure.Persistence.Configurations
                 .WithMany()
                 .HasForeignKey(x => x.EstacaoId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Property(x => x.TipoCobranca)
+    .           IsRequired();
         }
     }
 }

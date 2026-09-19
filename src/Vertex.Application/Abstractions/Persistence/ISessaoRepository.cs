@@ -30,5 +30,8 @@ namespace Vertex.Application.Abstractions.Persistence
 
         Task SalvarAlteracoesAsync(
             CancellationToken cancellationToken);
+
+        Task<IReadOnlyList<Sessao>> ListarAtivasPrePagasAsync(
+            CancellationToken cancellationToken = default);
     }
 }

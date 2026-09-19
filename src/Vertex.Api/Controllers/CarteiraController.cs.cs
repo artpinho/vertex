@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Vertex.Application.Wallet.Commands.RecarregarCarteira;
+using Vertex.Application.Wallet.Queries.ListarMovimentacoesCarteira;
+using Vertex.Application.Wallet.Queries.ObterCarteira;
 using Vertex.Domain.Enums;
 
 namespace Vertex.Api.Controllers
@@ -11,11 +13,18 @@ namespace Vertex.Api.Controllers
     public class CarteiraController : ControllerBase
     {
         private readonly RecarregarCarteiraHandler _recarregarCarteiraHandler;
+        private readonly ObterCarteiraHandler _obterCarteiraHandler;
+        private readonly ListarMovimentacoesCarteiraHandler
+            _listarMovimentacoesCarteiraHandler;
 
         public CarteiraController(
-            RecarregarCarteiraHandler recarregarCarteiraHandler)
+            RecarregarCarteiraHandler recarregarCarteiraHandler,
+            ObterCarteiraHandler obterCarteiraHandler,
+            ListarMovimentacoesCarteiraHandler listarMovimentacoesCarteiraHandler)
         {
             _recarregarCarteiraHandler = recarregarCarteiraHandler;
+            _obterCarteiraHandler = obterCarteiraHandler;
+            _listarMovimentacoesCarteiraHandler = listarMovimentacoesCarteiraHandler;
         }
 
         [HttpPost("recarga")]
@@ -43,21 +52,67 @@ namespace Vertex.Api.Controllers
             {
                 return NotFound(new
                 {
-                    mensagem = ex.Message
+                    message = ex.Message
                 });
             }
             catch (ArgumentException ex)
             {
                 return BadRequest(new
                 {
-                    mensagem = ex.Message
+                    message = ex.Message
                 });
             }
             catch (InvalidOperationException ex)
             {
                 return Conflict(new
                 {
-                    mensagem = ex.Message
+                    message = ex.Message
+                });
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ObterCarteira(
+            Guid clienteId,
+            CancellationToken cancellationToken)
+        {
+            try
+            {
+                var response =
+                    await _obterCarteiraHandler.HandleAsync(
+                        new ObterCarteiraQuery(clienteId),
+                        cancellationToken);
+
+                return Ok(response);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new
+                {
+                    message = ex.Message
+                });
+            }
+        }
+
+        [HttpGet("movimentacoes")]
+        public async Task<IActionResult> ListarMovimentacoes(
+            Guid clienteId,
+            CancellationToken cancellationToken)
+        {
+            try
+            {
+                var response =
+                    await _listarMovimentacoesCarteiraHandler.HandleAsync(
+                        new ListarMovimentacoesCarteiraQuery(clienteId),
+                        cancellationToken);
+
+                return Ok(response);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new
+                {
+                    message = ex.Message
                 });
             }
         }

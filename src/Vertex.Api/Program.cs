@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Vertex.Api.BackgroundServices;
 using Vertex.Api.Security;
 using Vertex.Application.Abstractions.Persistence;
 using Vertex.Application.Abstractions.Security;
@@ -42,6 +43,7 @@ using Vertex.Application.Sessions.Commands.EncerrarSessao;
 using Vertex.Application.Sessions.Commands.IniciarSessao;
 using Vertex.Application.Sessions.Queries;
 using Vertex.Application.Sessions.Queries.ListarConsumosSessao;
+using Vertex.Application.Sessions.Services;
 using Vertex.Application.Stations.Commands.AlterarStatus;
 using Vertex.Application.Stations.Commands.AssociarComputador;
 using Vertex.Application.Stations.Commands.CriarEstacao;
@@ -57,6 +59,8 @@ using Vertex.Application.TariffTimeBands.Commands.CriarFaixaHorarioTarifacao;
 using Vertex.Application.TariffTimeBands.Queries.ListarFaixasHorarioTarifacao;
 using Vertex.Application.TariffTimeBands.Queries.ObterFaixaHorarioTarifacao;
 using Vertex.Application.Wallet.Commands.RecarregarCarteira;
+using Vertex.Application.Wallet.Queries.ListarMovimentacoesCarteira;
+using Vertex.Application.Wallet.Queries.ObterCarteira;
 using Vertex.Infrastructure;
 using Vertex.Infrastructure.Persistence.Repositories;
 
@@ -157,6 +161,8 @@ builder.Services.AddScoped<ListarFaixasHorarioPromocaoHandler>();
 builder.Services.AddScoped<AssociarTipoMaquinaHandler>();
 builder.Services.AddScoped<ListarConsumosSessaoHandler>();
 builder.Services.AddScoped<RecarregarCarteiraHandler>();
+builder.Services.AddScoped<ObterCarteiraHandler>();
+builder.Services.AddScoped<ListarMovimentacoesCarteiraHandler>();
 
 
 var jwtKey =
@@ -234,6 +240,10 @@ builder.Services.AddScoped<IPromocaoRepository, PromocaoRepository>();
 builder.Services.AddScoped<IPromocaoTipoMaquinaRepository, PromocaoTipoMaquinaRepository>();
 builder.Services.AddScoped<IConsumoTarifacaoRepository, ConsumoTarifacaoRepository>();
 builder.Services.AddScoped<ICarteiraClienteRepository, CarteiraClienteRepository>();
+builder.Services.AddScoped<ILimiteSessaoPrePaga, LimiteSessaoPrePaga>();
+builder.Services.AddScoped<ProcessadorSessaoPrePaga>();
+
+builder.Services.AddHostedService<MonitorSessaoPrePaga>();
 
 var app = builder.Build();
 

@@ -73,5 +73,15 @@ namespace Vertex.Infrastructure.Persistence.Repositories
         .AsNoTracking()
         .OrderByDescending(x => x.Inicio)
         .ToListAsync(cancellationToken);
+
+        public async Task<IReadOnlyList<Sessao>> ListarAtivasPrePagasAsync(
+            CancellationToken cancellationToken = default)
+        {
+            return await _context.Sessoes
+                .Where(x =>
+                    x.Status == StatusSessao.Ativa &&
+                    x.TipoCobranca == TipoCobranca.PrePaga)
+                .ToListAsync(cancellationToken);
+        }
     }
 }

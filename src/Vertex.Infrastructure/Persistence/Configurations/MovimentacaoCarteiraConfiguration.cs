@@ -40,6 +40,10 @@ namespace Vertex.Infrastructure.Persistence.Configurations
                 .WithMany()
                 .HasForeignKey(x => x.CarteiraClienteId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasIndex(x => x.SessaoId)
+                .IsUnique()
+                .HasFilter("[SessaoId] IS NOT NULL AND [Tipo] = 2");
         }
     }
 }

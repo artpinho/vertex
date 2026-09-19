@@ -23,5 +23,9 @@ namespace Vertex.Application.Abstractions.Persistence
 
         Task SalvarAlteracoesAsync(
             CancellationToken cancellationToken = default);
+
+        Task<IReadOnlyList<MovimentacaoCarteira>> ListarMovimentacoesAsync(
+            Guid carteiraClienteId,
+            CancellationToken cancellationToken = default);
     }
 }

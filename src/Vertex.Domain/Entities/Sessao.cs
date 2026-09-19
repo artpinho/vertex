@@ -15,6 +15,7 @@ namespace Vertex.Domain.Entities
         public DateTime Inicio { get; private set; }
         public DateTime? Fim { get; private set; }
         public StatusSessao Status { get; private set; }
+        public TipoCobranca TipoCobranca { get; private set; }
 
         protected Sessao()
         {
@@ -22,7 +23,8 @@ namespace Vertex.Domain.Entities
 
         public Sessao(
             Guid clienteId,
-            Guid estacaoId)
+            Guid estacaoId,
+            TipoCobranca tipoCobranca = TipoCobranca.PrePaga)
         {
             if (clienteId == Guid.Empty)
                 throw new ArgumentException("O cliente informado é inválido.");
@@ -32,18 +34,23 @@ namespace Vertex.Domain.Entities
 
             ClienteId = clienteId;
             EstacaoId = estacaoId;
-
+            TipoCobranca = tipoCobranca;
             Inicio = DateTime.UtcNow;
             Status = StatusSessao.Ativa;
         }
 
-        public void Encerrar()
+        public void Encerrar(DateTime? fim = null)
         {
             if (Status != StatusSessao.Ativa)
                 throw new InvalidOperationException(
                     "Somente uma sessão ativa pode ser encerrada.");
 
-            Fim = DateTime.UtcNow;
+            Fim = fim ?? DateTime.UtcNow;
+
+            if (Fim.Value < Inicio)
+                throw new InvalidOperationException(
+                    "O fim da sessão não pode ser anterior ao início.");
+
             Status = StatusSessao.Encerrada;
         }
 

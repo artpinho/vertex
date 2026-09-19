@@ -116,6 +116,38 @@
   },
   {
     "ContainingType": "Vertex.Api.Controllers.CarteiraController",
+    "Method": "ObterCarteira",
+    "RelativePath": "api/v1/clientes/{clienteId}/carteira",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.CarteiraController",
+    "Method": "ListarMovimentacoes",
+    "RelativePath": "api/v1/clientes/{clienteId}/carteira/movimentacoes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Vertex.Api.Controllers.CarteiraController",
     "Method": "Recarregar",
     "RelativePath": "api/v1/clientes/{clienteId}/carteira/recarga",
     "HttpMethod": "POST",

@@ -366,6 +366,10 @@ namespace Vertex.Infrastructure.Persistence.Migrations
 
                     b.HasIndex("Data");
 
+                    b.HasIndex("SessaoId")
+                        .IsUnique()
+                        .HasFilter("[SessaoId] IS NOT NULL AND [Tipo] = 2");
+
                     b.ToTable("MovimentacoesCarteira", (string)null);
                 });
 
@@ -501,6 +505,9 @@ namespace Vertex.Infrastructure.Persistence.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoCobranca")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

@@ -1,911 +1,674 @@
-# Vertex LAN Manager
+# 🎮 Vertex LAN Manager
 
-> Plataforma de gerenciamento de LAN Houses desenvolvida em .NET 9, com
-> API central, cliente instalado nas estações e arquitetura preparada
-> para monitoramento, controle remoto, sessões, planos, promoções,
-> pagamentos e futura evolução para SaaS.
+Sistema de gerenciamento de **LAN House**, desenvolvido com foco em controle de estações, clientes, sessões, tarifação e operações financeiras.
 
-![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet&logoColor=white)
-![ASP.NET
-Core](https://img.shields.io/badge/ASP.NET%20Core-9.0-512BD4?logo=dotnet&logoColor=white)
-![EF
-Core](https://img.shields.io/badge/Entity%20Framework%20Core-9.0-512BD4?logo=dotnet&logoColor=white)
-![SQL
-Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927?logo=microsoftsqlserver&logoColor=white)
-![C%23](https://img.shields.io/badge/C%23-13-239120?logo=csharp&logoColor=white)
-![Tests](https://img.shields.io/badge/tests-29%20passing-brightgreen)
+O projeto está sendo construído de forma incremental, utilizando **Clean Architecture + Modular Monolith**, mantendo a API como autoridade das regras de negócio.
 
-------------------------------------------------------------------------
+---
 
-## Sobre o projeto
+## 🚀 Tecnologias
 
-O **Vertex LAN Manager** é um sistema de gerenciamento para LAN Houses,
-desenvolvido com foco em arquitetura limpa, separação de
-responsabilidades, segurança e comunicação confiável entre o servidor e
-os computadores das estações.
+![.NET 9](https://img.shields.io/badge/.NET-9.0-512BD4)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-9.0-512BD4)
+![EF Core](https://img.shields.io/badge/EF%20Core-9.0-512BD4)
+![C%23](https://img.shields.io/badge/C%23-13-239120)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927)
+![Tests](https://img.shields.io/badge/Tests-29%20passing-success)
 
-O projeto está sendo reconstruído do zero após uma primeira versão
-experimental. A nova implementação prioriza domínio bem definido,
-persistência organizada, testes automatizados e uma API robusta antes da
-construção das interfaces administrativas e do cliente instalado nas
-estações.
+---
 
-------------------------------------------------------------------------
+## 🏗️ Arquitetura
 
-## Arquitetura
+O Vertex utiliza uma arquitetura modular baseada em Clean Architecture:
 
-O Vertex utiliza **Clean Architecture / Modular Monolith**.
-
-``` text
-                    +---------------------+
-                    |    Vertex.Client    |
-                    |    WPF / Windows    |
-                    +----------+----------+
-                               |
-                         HTTP / SignalR
-                               |
-                               v
-                    +---------------------+
-                    |     Vertex.Api      |
-                    |    ASP.NET Core     |
-                    +----------+----------+
-                               |
-                               v
-                    +---------------------+
-                    |  Vertex.Application |
-                    |    Use Cases / App  |
-                    +----------+----------+
-                               |
-                               v
-                    +---------------------+
-                    |    Vertex.Domain    |
-                    |   Business Rules    |
-                    +---------------------+
-                               ^
-                               |
-                    +----------+----------+
-                    | Vertex.Infrastructure|
-                    | EF Core / SQL Server |
-                    +---------------------+
-
-                    Vertex.Contracts
-                    API communication DTOs
+```text
+Vertex
+│
+├── Vertex.Domain
+├── Vertex.Application
+├── Vertex.Infrastructure
+├── Vertex.Contracts
+├── Vertex.Api
+└── Vertex.Client
 ```
 
-### Princípios
+Princípios adotados:
 
--   Domain não conhece EF Core.
--   Domain não conhece SQL Server.
--   Domain não conhece ASP.NET Core.
--   Controllers permanecem finos.
--   Application coordena casos de uso.
--   Infrastructure implementa persistência e integrações.
--   Contracts concentra contratos compartilhados.
--   Testes protegem regras e fluxos críticos.
--   Dependências apontam para dentro da arquitetura.
+- Domain independente de infraestrutura
+- Controllers enxutos
+- Application responsável pelos casos de uso
+- Infrastructure responsável por persistência e integrações
+- DTOs/Contracts para comunicação
+- EF Core + SQL Server
+- JWT para autenticação
+- Regras financeiras centralizadas
+- Histórico financeiro preservado
 
-------------------------------------------------------------------------
+---
 
-## Estrutura da Solution
+# 🖥️ Funcionalidades Implementadas
 
-``` text
-Vertex/
-│
-├── Vertex.sln
-│
-├── src/
-│   ├── Vertex.Api/
-│   ├── Vertex.Application/
-│   ├── Vertex.Domain/
-│   ├── Vertex.Infrastructure/
-│   ├── Vertex.Contracts/
-│   └── Vertex.Client/
-│
-└── tests/
-    ├── Vertex.Domain.Tests/
-    ├── Vertex.Application.Tests/
-    └── Vertex.Api.Tests/
+## 🏢 Estações
+
+Controle das estações da LAN House.
+
+Cada estação possui:
+
+- Nome
+- Número
+- Status
+- Ativa/Inativa
+- Computador associado
+
+Status:
+
+```text
+Livre
+EmUso
+Bloqueada
+Manutencao
 ```
 
-  -----------------------------------------------------------------------
-  Projeto                             Responsabilidade
-  ----------------------------------- -----------------------------------
-  `Vertex.Domain`                     Entidades e regras de negócio
+Operações:
 
-  `Vertex.Application`                Casos de uso, comandos, queries e
-                                      abstrações
+- Criar
+- Listar
+- Consultar
+- Associar computador
+- Alterar status
+- Ativar/desativar
 
-  `Vertex.Infrastructure`             EF Core, SQL Server, repositories e
-                                      segurança
+Um computador não pode estar associado a mais de uma estação simultaneamente.
 
-  `Vertex.Api`                        API REST, controllers e
-                                      autenticação
+---
 
-  `Vertex.Contracts`                  Contratos de comunicação
+# 💻 Computadores
 
-  `Vertex.Client`                     Cliente WPF instalado nas estações
+Informações:
 
-  `*.Tests`                           Testes automatizados
-  -----------------------------------------------------------------------
+- HostName
+- IP
+- MAC Address
+- Sistema Operacional
+- Versão do cliente
+- Último heartbeat
+- Status
+- Tipo de máquina
 
-------------------------------------------------------------------------
+Status:
 
-# Tecnologias
+```text
+Offline
+Online
+Bloqueado
+Manutencao
+```
 
-  Tecnologia              Versão / Uso
-  ----------------------- -------------------------------------
-  C#                      13
-  .NET                    9.0
-  ASP.NET Core            9.0
-  Entity Framework Core   9.0.0
-  SQL Server              Banco principal
-  Swagger / OpenAPI       Swashbuckle / Swagger UI
-  SignalR                 Comunicação em tempo real planejada
-  WPF                     Cliente Windows planejado
-  xUnit                   Testes
-  Visual Studio           Desenvolvimento
-  Git / GitHub            Versionamento
+Operações:
 
-------------------------------------------------------------------------
+- Cadastro
+- Consulta
+- Atualização
+- Alteração de status
+- Heartbeat
+- Associação de tipo de máquina
+- Provisionamento de credencial
+- Rotação de credencial
 
-# Estado atual do projeto
+---
 
-### Fundação
+# 🔐 Autenticação e Segurança
 
--   [x] Solution.
--   [x] Clean Architecture.
--   [x] Domain.
--   [x] Application.
--   [x] Infrastructure.
--   [x] API.
--   [x] Contracts.
--   [x] Testes automatizados.
--   [x] Swagger UI.
+Fluxo:
 
-### Domínio
+```text
+ClientId + ClientSecret
+        ↓
+      Login
+        ↓
+       JWT
+        ↓
+Endpoints protegidos
+```
 
--   [x] `Entity`
--   [x] `AggregateRoot`
--   [x] `Cliente`
--   [x] `Computador`
--   [x] `Estacao`
--   [x] `Sessao`
--   [x] `ComputadorCredential`
--   [x] `TipoMaquina`
--   [x] `ConfiguracaoTarifacao`
--   [x] `FaixaHorarioTarifacao`
--   [x] `Promocao`
--   [x] `PromocaoDiaSemana`
--   [x] `PromocaoFaixaHorario`
--   [x] `PromocaoTipoMaquina`
--   [x] `ConsumoTarifacao`
--   [x] Estados de computador, estação, sessão e credencial.
--   [x] Heartbeat.
--   [x] Regras básicas de sessão.
+O `ClientSecret` não é armazenado em texto puro.
 
-### Persistência
+Utiliza:
 
--   [x] EF Core 9.0.0.
--   [x] SQL Server.
--   [x] `VertexDbContext`.
--   [x] Configurações por entidade.
--   [x] Repositories.
--   [x] Migrations.
--   [x] Banco `VertexDb`.
--   [x] Histórico de credenciais.
--   [x] Histórico de consumo tarifado.
--   [x] `ClientId` único.
--   [x] `HostName` mantido como padrão de nomenclatura.
+- PBKDF2
+- SHA-256
+- Salt aleatório
+- 100.000 iterações
+- Comparação em tempo constante
+- Histórico de credenciais
 
-### API
+---
 
--   [x] Registro de computadores.
--   [x] Listagem de computadores.
--   [x] Consulta por ID.
--   [x] Associação de tipo de máquina ao computador.
--   [x] Heartbeat.
--   [x] Swagger UI / OpenAPI.
--   [x] Provisionamento de credenciais.
--   [x] Rotação de credenciais.
--   [x] Autenticação por `ClientId + ClientSecret` na camada de
-    Application/Infrastructure.
--   [x] Cálculo de tarifação.
--   [x] Encerramento de sessão integrado ao motor de tarifação.
--   [x] Persistência dos segmentos tarifados.
--   [x] Consulta do histórico de consumo por sessão.
--   [x] Emissão de JWT.
--   [x] Proteção dos endpoints com JWT Bearer.
+# 👤 Clientes
 
-### Testes
+Dados:
+
+- Nome
+- CPF
+- E-mail
+- Telefone
+- Data de nascimento
+- Ativo
+- Data de cadastro
+
+Operações:
+
+- Criar
+- Listar
+- Consultar
+- Atualizar
+- Ativar/desativar
+
+Não existe exclusão física do cliente, preservando o histórico.
+
+---
+
+# 🎮 Sessões
+
+Uma sessão representa o período de utilização de uma estação por um cliente.
+
+Dados:
+
+```text
+Cliente
+Estação
+Início
+Fim
+Status
+Tipo de cobrança
+```
+
+Status:
+
+```text
+Ativa
+Encerrada
+Cancelada
+```
+
+Tipos:
+
+```text
+Pré-paga
+Pós-paga
+```
+
+---
+
+## 💰 Sessão Pré-paga
+
+O cliente utiliza o saldo disponível em sua carteira.
+
+Fluxo:
+
+```text
+Carteira
+   ↓
+Saldo disponível
+   ↓
+Início da sessão
+   ↓
+Cálculo do tempo permitido
+   ↓
+Sessão ativa
+   ↓
+Monitor automático
+   ↓
+Limite atingido
+   ↓
+Encerramento automático
+   ↓
+Tarifação final
+   ↓
+Débito da carteira
+   ↓
+Liberação da estação
+```
+
+Regras implementadas:
+
+- Saldo positivo para iniciar.
+- Não é necessário possuir saldo para uma hora completa.
+- O tempo permitido é calculado pela tarifação vigente.
+- A sessão é encerrada automaticamente quando o limite financeiro é atingido.
+- O encerramento financeiro considera o tempo real utilizado.
+- O consumo tarifado é persistido.
+- O débito da carteira é persistido.
+- A movimentação financeira é persistida.
+- A estação é liberada.
+
+### Monitor automático
+
+A API possui um `BackgroundService`:
+
+```text
+MonitorSessaoPrePaga
+        ↓
+Sessões pré-pagas ativas
+        ↓
+ProcessadorSessaoPrePaga
+        ↓
+Verifica limite permitido
+        ↓
+Encerra quando necessário
+```
+
+O fluxo foi validado com persistência completa no banco.
+
+---
+
+# 💵 Sessão Pós-paga
+
+A modalidade pós-paga permite que uma sessão seja encerrada posteriormente e tenha seu valor calculado ao final.
+
+A utilização dessa modalidade será autorizada somente ao perfil operacional adequado.
+
+O cliente não poderá simplesmente informar `TipoCobranca = PosPaga` para obter uma sessão pós-paga sem autorização.
+
+---
+
+# 💳 Carteira do Cliente
+
+Cada cliente pode possuir uma carteira reutilizável.
+
+```text
+Cliente
+   │
+   └── Carteira
+          │
+          ├── Saldo
+          └── Movimentações
+```
+
+A carteira poderá ser utilizada para:
+
+- Sessões
+- Produtos
+- Outros débitos futuros
+
+---
+
+## 💰 Recargas
+
+A recarga aumenta o saldo da carteira e representa uma entrada financeira.
+
+Tipos de pagamento:
+
+```text
+Dinheiro
+PIX
+Cartão de Débito
+Cartão de Crédito
+```
+
+Toda recarga gera uma movimentação financeira.
+
+---
+
+## 📒 Movimentações da Carteira
+
+Tipos:
+
+```text
+Crédito
+Débito
+Estorno
+```
+
+Uma movimentação registra:
+
+- Valor
+- Tipo
+- Tipo de pagamento
+- Sessão relacionada
+- Venda relacionada
+- Data
+- Descrição
+
+O consumo de uma sessão não representa uma nova entrada de dinheiro.
+
+```text
+Recarga R$ 50,00
+       ↓
+Saldo R$ 50,00
+       ↓
+Sessão R$ 8,00
+       ↓
+Saldo R$ 42,00
+```
+
+---
+
+# 💵 Tarifação
+
+O **Motor de Tarifação** determina o valor de utilização da estação considerando:
+
+- Tipo de máquina
+- Data
+- Dia da semana
+- Horário
+- Configuração de tarifa
+- Prioridade
+- Promoções
+- Faixas de horário
+- Descontos
+
+---
+
+## 🧮 Tarifas
+
+Uma configuração possui:
+
+- Nome
+- Descrição
+- Tipo de máquina
+- Valor por hora
+- Data de início
+- Data de fim
+- Prioridade
+- Status
+
+Exemplo:
+
+```text
+08:00 ───── 17:00   R$ 9/h
+17:00 ───── 18:00   R$ 10/h
+18:00 ───── 22:00   R$ 12/h
+```
+
+---
+
+# ⏱️ Faixas de Horário
+
+Permitem valores diferentes durante o dia e regras por dia da semana.
+
+Faixas adjacentes são permitidas.
+
+Sobreposição de faixas dentro da mesma configuração não é permitida.
+
+---
+
+# 🎁 Promoções
+
+Promoções podem aplicar:
+
+- Percentual de desconto
+- Valor fixo por hora
+- Período de validade
+- Dias da semana
+- Faixas de horário
+- Tipo de máquina
+- Prioridade
+
+Podem valer para todos os tipos ou apenas tipos específicos.
+
+Quando mais de uma promoção é aplicável, a prioridade determina a regra utilizada. Não ocorre empilhamento.
+
+---
+
+# 🧾 Histórico da Tarifação
+
+A tarifação aplicada é persistida através de `ConsumoTarifacao`.
+
+Cada segmento registra:
+
+```text
+Início
+Fim
+Configuração de tarifação
+Promoção
+Valor/hora
+Desconto
+Valor
+```
+
+Alterações futuras nas tarifas não alteram o histórico financeiro das sessões encerradas.
+
+---
+
+# 🧮 Precisão da Cobrança
+
+A cobrança é proporcional ao tempo real utilizado.
+
+Exemplo:
+
+```text
+Tarifa: R$ 10,00/h
+
+1 hora       = R$ 10,00
+1h30         = R$ 15,00
+1h37m42s     = valor proporcional
+```
+
+O motor divide o período sempre que ocorre mudança de:
+
+- tarifa
+- faixa horária
+- promoção
+- período de validade
+
+---
+
+# 🖥️ Tipos de Máquina
+
+Os tipos são dados dinâmicos do banco.
+
+Exemplos:
+
+```text
+Padrão
+VIP
+Premium
+```
+
+O tipo de máquina influencia a tarifação.
+
+Operações:
+
+- Criar
+- Listar
+- Consultar
+- Atualizar
+- Ativar/desativar
+
+Não existe preço fixo por computador.
+
+---
+
+# 📦 Produtos e Vendas
+
+Estrutura prevista:
+
+### Produto
+
+```text
+Id
+Nome
+Descrição
+PreçoVenda
+EstoqueAtual
+EstoqueMinimo
+Ativo
+```
+
+### Venda
+
+```text
+Id
+Cliente
+Data
+ValorTotal
+Status
+```
+
+### ItemVenda
+
+```text
+Id
+Venda
+Produto
+Quantidade
+PrecoUnitario
+Subtotal
+```
+
+O preço unitário é copiado para o item no momento da venda, preservando o histórico.
+
+---
+
+# 🌐 API
+
+Versionamento:
+
+```text
+/api/v1/
+```
+
+Principais grupos:
+
+```text
+/api/v1/clientes
+/api/v1/clientes/{id}/carteira
+/api/v1/computadores
+/api/v1/estacoes
+/api/v1/sessoes
+/api/v1/tipos-maquina
+/api/v1/configuracoes-tarifacao
+/api/v1/faixas-horario-tarifacao
+/api/v1/promocoes
+```
+
+A API é documentada e testada manualmente através do Swagger.
+
+---
+
+# 🧪 Testes
 
 Atualmente:
 
-``` text
+```text
 29 testes
-29 aprovados
+29 passando
 0 falhas
 ```
 
-A estratégia é manter testes focados em regras de negócio, segurança e
-fluxos críticos, sem buscar cobertura artificial de código trivial.
+Os testes são concentrados em regras de negócio, segurança e fluxos críticos.
 
-------------------------------------------------------------------------
+---
 
-# Swagger / OpenAPI
+# 🗄️ Banco de Dados
 
-O Swagger UI é a ferramenta principal para testar a API durante o
-desenvolvimento.
+Banco:
 
-``` text
-https://localhost:<porta>/swagger
+```text
+SQL Server 2022
 ```
 
-Os endpoints podem ser executados diretamente pelo **Try it out**.
+Banco de desenvolvimento:
 
-O Postman continua disponível para cenários específicos, mas o Swagger é
-o fluxo preferencial para desenvolvimento.
-
-Quando o JWT estiver implementado, o Swagger receberá configuração de
-**Bearer Authentication** e o botão **Authorize**, permitindo autenticar
-uma vez e reutilizar o token nas chamadas protegidas.
-
-------------------------------------------------------------------------
-
-# Identidade dos computadores
-
-Cada estação possuirá uma identidade própria para comunicação com a API.
-
-``` text
-Computador
-    │
-    │ 1:N
-    ▼
-ComputadorCredentials
-    ├── Credential antiga → Revogada
-    ├── Credential antiga → Revogada
-    └── Credential atual  → Ativa
-```
-
-Um computador pode possuir várias credenciais históricas, mas somente
-uma deve permanecer ativa.
-
-## Provisionamento
-
-``` http
-POST /api/v1/computadores/{id}/credentials
-```
-
-Resposta:
-
-``` json
-{
-  "computadorId": "...",
-  "clientId": "vtx_...",
-  "clientSecret": "..."
-}
-```
-
-O `clientSecret` é entregue ao administrador no momento do
-provisionamento e não é armazenado em texto puro.
-
-## Segurança do secret
-
-Os secrets são armazenados utilizando:
-
--   PBKDF2;
--   SHA-256;
--   salt aleatório;
--   100.000 iterações;
--   comparação em tempo constante.
-
-O banco armazena somente o material derivado.
-
-## Rotação
-
-``` http
-POST /api/v1/computadores/{id}/credentials/rotate
-```
-
-A credencial atual é revogada e uma nova é criada.
-
-``` text
-Credential antiga
-      │
-      └── Revogada
-
-Nova Credential
-      │
-      └── Ativa
-```
-
-O histórico permanece disponível no banco.
-
-------------------------------------------------------------------------
-
-# Autenticação
-
-A autenticação dos computadores está implementada com
-`ClientId + ClientSecret`, PBKDF2 e JWT Bearer.
-
-Fluxo atual:
-
-``` text
-ClientId + ClientSecret
-        │
-        ▼
-IComputerAuthenticator
-        │
-        ▼
-CredentialRepository
-        │
-        ▼
-PBKDF2
-        │
-        ▼
-ComputadorId
-```
-
-Endpoint planejado:
-
-``` http
-POST /api/v1/auth/computers
-
-# Autorização
-Os endpoints protegidos utilizam **JWT Bearer Authentication**.
-O Swagger está configurado com o botão **Authorize** para testes autenticados.
-```
-
-Próxima evolução:
-
-``` text
-Vertex.Client
-      │
-      │ ClientId + ClientSecret
-      ▼
-POST /api/v1/auth/computers
-      │
-      ▼
-Validação PBKDF2
-      │
-      ▼
-JWT Bearer Token
-      │
-      ├── Heartbeat
-      ├── SignalR
-      └── Comandos
-```
-
-A intenção é manter o desenvolvimento prático pelo Swagger, sem exigir
-cópia manual de tokens a cada requisição.
-
-------------------------------------------------------------------------
-
-# API
-
-Versionamento atual:
-
-``` text
-/api/v1
-```
-
-Endpoints já implementados ou em construção:
-
-``` http
-POST /api/v1/computadores
-GET /api/v1/computadores
-GET /api/v1/computadores/{id}
-POST /api/v1/computadores/{id}/heartbeat
-
-POST /api/v1/computadores/{id}/credentials
-POST /api/v1/computadores/{id}/credentials/rotate
-
-POST /api/v1/auth/computers
-
-# Autorização
-Os endpoints protegidos utilizam **JWT Bearer Authentication**.
-O Swagger está configurado com o botão **Authorize** para testes autenticados.
-```
-
-------------------------------------------------------------------------
-
-# Modelo de domínio
-
-## Cliente
-
-``` text
-Cliente
-├── Id
-├── Nome
-├── CPF
-├── Email
-├── Telefone
-├── DataNascimento
-├── Ativo
-└── DataCadastro
-```
-
-## Computador
-
-``` text
-Computador
-├── Id
-├── HostName
-├── Ip
-├── MacAddress
-├── SistemaOperacional
-├── ClienteVersao
-├── UltimoHeartbeat
-├── TipoMaquinaId
-└── Status
-```
-
-## Estação
-
-``` text
-Estacao
-├── Id
-├── Nome
-├── Numero
-├── Status
-├── Ativa
-└── ComputadorId
-```
-
-## Sessão
-
-``` text
-Sessao
-├── Id
-├── ClienteId
-├── EstacaoId
-├── Inicio
-├── Fim
-└── Status
-```
-
-## Tipo de máquina
-
-``` text
-TipoMaquina
-├── Id
-├── Nome
-├── Descricao
-├── Ativo
-└── DataCadastro
-```
-
-## Configuração de tarifação
-
-``` text
-ConfiguracaoTarifacao
-├── Id
-├── Nome
-├── Descricao
-├── TipoMaquinaId
-├── ValorHora
-├── DataInicio
-├── DataFim
-├── Prioridade
-├── Ativo
-└── DataCadastro
-```
-
-------------------------------------------------------------------------
-
-# Funcionalidades planejadas
-
-## Clientes
-
--   Cadastro.
--   Atualização.
--   Ativação/desativação.
--   Histórico.
--   Créditos.
--   Histórico de consumo.
-
-## Estações
-
--   CRUD.
--   Numeração.
--   Status.
--   Associação computador/estação.
--   Bloqueio.
--   Manutenção.
--   Disponibilidade.
-
-## Tipos de máquina
-
--   CRUD.
--   Ativação/desativação.
--   Configuração tarifária por tipo de máquina.
-
-## Sessões
-
--   Iniciar.
--   Encerrar.
--   Cancelar.
--   Calcular duração.
--   Validação de cliente e estação.
--   Controle de estação em uso.
--   Histórico.
-
-## Planos e tarifas
-
--   Hora avulsa.
--   Pacotes de horas.
--   Créditos.
--   Planos recorrentes.
--   Tarifas diferenciadas.
--   Configuração por tipo de máquina.
--   Período de vigência.
--   Prioridade.
--   Horários promocionais.
-
-## Promoções
-
--   Desconto percentual.
--   Desconto fixo.
--   Horário promocional.
--   Dias da semana.
--   Pacotes.
--   Cupons.
-
-## Pagamentos e caixa
-
--   Dinheiro.
--   PIX.
--   Cartão.
--   Créditos.
--   Histórico financeiro.
--   Caixa.
--   Fechamento.
--   Sangria.
--   Auditoria.
-
-## Produtos e vendas
-
-``` text
-Produto
-├── Nome
-├── Código
-├── Preço
-├── Estoque
-├── Ativo
-└── Categoria
-```
-
-## Monitoramento
-
--   CPU.
--   Memória.
--   Disco.
--   Temperatura.
--   Rede.
--   Processos.
--   Estado do cliente.
--   Versão instalada.
--   Último heartbeat.
-
-------------------------------------------------------------------------
-
-# Controle remoto
-
-Planejamento:
-
-``` text
-Administrador
-     |
-     v
-Vertex.Api
-     |
-     v
-SignalR
-     |
-     v
-Vertex.Client
-     |
-     +-- Bloquear
-     +-- Desbloquear
-     +-- Encerrar sessão
-     +-- Exibir mensagem
-     +-- Atualizar cliente
-     +-- Outros comandos
-```
-
-REST será utilizado para operações tradicionais e persistência. SignalR
-será utilizado para comunicação em tempo real.
-
-------------------------------------------------------------------------
-
-# Roadmap
-
-## Fase 1 --- Fundação
-
--   [x] Solution.
--   [x] Clean Architecture.
--   [x] Domain.
--   [x] EF Core.
--   [x] SQL Server.
--   [x] Migrations.
--   [x] Testes.
--   [x] Swagger UI.
-
-## Fase 2 --- Identidade e computadores
-
--   [x] Registro de computador.
--   [x] Consulta de computadores.
--   [x] Heartbeat.
--   [x] Estado Online/Offline.
--   [x] Credencial do computador.
--   [x] Provisionamento seguro.
--   [x] Rotação.
--   [x] Histórico de credenciais.
--   [x] PBKDF2.
--   [ ] Endpoint de autenticação completo.
--   [ ] JWT.
-
-## Fase 3 --- Estações
-
--   [x] CRUD.
--   [x] Associação computador/estação.
--   [x] Disponibilidade.
--   [x] Bloqueio.
--   [x] Manutenção.
-
-## Fase 4 --- Clientes e sessões
-
--   [x] CRUD de clientes.
--   [x] Iniciar sessão.
--   [x] Encerrar sessão.
--   [x] Cancelar sessão.
--   [x] Cálculo de duração.
--   [x] Histórico.
-
-## Fase 5 --- Operação comercial
-
--   [x] Tipos de máquina.
--   [x] Configurações de tarifação.
--   [x] Ativação/desativação de tarifas.
--   [ ] Faixas de horário.
--   [ ] Planos.
--   [ ] Créditos.
--   [ ] Promoções.
--   [ ] Pagamentos.
--   [ ] Caixa.
--   [ ] Produtos.
--   [ ] Vendas.
-
-## Fase 6 --- Controle remoto
-
--   [ ] SignalR.
--   [ ] Bloqueio remoto.
--   [ ] Desbloqueio.
--   [ ] Mensagens.
--   [ ] Encerramento remoto.
--   [ ] Atualização do cliente.
-
-## Fase 7 --- Monitoramento
-
--   [ ] Telemetria.
--   [ ] Histórico.
--   [ ] Alertas.
--   [ ] Dashboard.
--   [ ] Detecção automática de offline.
-
-## Fase 8 --- Evolução
-
--   [ ] Auditoria.
--   [ ] Relatórios.
--   [ ] Multiunidade.
--   [ ] SaaS.
--   [ ] Observabilidade.
--   [ ] Escalabilidade.
-
-------------------------------------------------------------------------
-
-# Princípios de desenvolvimento
-
-1.  **Domínio primeiro** --- regras de negócio ficam no Domain.
-2.  **Controllers finos** --- Controllers não concentram lógica de
-    negócio.
-3.  **Infrastructure não dita o domínio** --- EF Core e SQL Server são
-    detalhes.
-4.  **Testes com foco em valor** --- testar regras críticas, segurança e
-    fluxos importantes.
-5.  **Sem abstrações desnecessárias** --- novas bibliotecas somente
-    quando agregarem valor real.
-6.  **Segurança desde o início** --- identidade das estações e
-    comunicação serão tratadas como recursos protegidos.
-7.  **Evolução incremental** --- construir, validar e somente então
-    avançar.
-
-------------------------------------------------------------------------
-
-# Banco de dados
-
-Banco atual:
-
-``` text
+```text
 VertexDb
 ```
 
-Tabelas principais:
+O Entity Framework Core 9 é utilizado para:
 
-``` text
-Clientes
-Computadores
-ComputadorCredentials
-Estacoes
-Sessoes
-TiposMaquina
-ConfiguracoesTarifacao
-FaixasHorarioTarifacao
-Promocoes
-PromocoesTiposMaquina
-PromocoesDiasSemana
-PromocoesFaixasHorario
-ConsumosTarifacao
-__EFMigrationsHistory
+- Mapeamento
+- Persistência
+- Migrations
+- Configuração das entidades
+
+O histórico financeiro é preservado independentemente de alterações futuras nas configurações atuais.
+
+---
+
+# 🗺️ Roadmap
+
+## ✅ Concluído
+
+- [x] Estrutura inicial
+- [x] Clean Architecture
+- [x] Modular Monolith
+- [x] Entidades principais
+- [x] Estações
+- [x] Computadores
+- [x] Clientes
+- [x] Sessões
+- [x] Associação computador ↔ estação
+- [x] Tipos de máquina
+- [x] Tarifas
+- [x] Faixas de horário
+- [x] Promoções
+- [x] Dias da semana em promoções
+- [x] Faixas de horário em promoções
+- [x] Motor de tarifação
+- [x] Persistência de consumo tarifado
+- [x] Carteira de clientes
+- [x] Recarga
+- [x] Extrato da carteira
+- [x] Débito de sessão
+- [x] Sessão pré-paga
+- [x] Cálculo do limite da sessão pré-paga
+- [x] Encerramento automático da sessão pré-paga
+- [x] Persistência do encerramento automático
+- [x] Autenticação JWT
+- [x] Credenciais de computador
+- [x] Heartbeat
+- [x] Swagger
+
+## 🔜 Próximos passos
+
+- [ ] Autorização de sessão pós-paga
+- [ ] Produtos
+- [ ] Vendas
+- [ ] Controle de estoque
+- [ ] Integração de vendas com carteira
+- [ ] SignalR para atualização em tempo real
+- [ ] Cliente WPF
+- [ ] Dashboard administrativo
+- [ ] Relatórios financeiros
+- [ ] Fechamento de caixa
+
+---
+
+# 🎯 Objetivo do MVP
+
+O objetivo é permitir que uma LAN House consiga:
+
+```text
+Cadastrar máquinas
+       ↓
+Organizar estações
+       ↓
+Cadastrar clientes
+       ↓
+Controlar carteiras
+       ↓
+Receber recargas
+       ↓
+Iniciar sessões
+       ↓
+Calcular tarifas automaticamente
+       ↓
+Controlar sessões pré-pagas
+       ↓
+Encerrar sessões automaticamente
+       ↓
+Registrar movimentações financeiras
+       ↓
+Preservar todo o histórico
 ```
 
-Criar migration:
+A evolução será feita por módulos, mantendo as regras financeiras centralizadas na API e evitando complexidade desnecessária no MVP.
 
-``` powershell
-dotnet ef migrations add NomeDaMigration `
-    --project .\src\Vertex.Infrastructure\Vertex.Infrastructure.csproj `
-    --startup-project .\src\Vertex.Api\Vertex.Api.csproj `
-    --output-dir Persistence\Migrations
-```
+---
 
-Aplicar:
-
-``` powershell
-dotnet ef database update `
-    --project .\src\Vertex.Infrastructure\Vertex.Infrastructure.csproj `
-    --startup-project .\src\Vertex.Api\Vertex.Api.csproj
-```
-
-------------------------------------------------------------------------
-
-# Executando o projeto
-
-## Pré-requisitos
-
--   .NET 9 SDK.
--   Visual Studio 2022 ou VS Code.
--   SQL Server.
--   Git.
--   Entity Framework Core CLI 9.0.0.
-
-Verifique:
-
-``` powershell
-dotnet --version
-dotnet ef --version
-```
-
-## Build
-
-``` powershell
-dotnet restore
-dotnet build
-```
-
-## Testes
-
-``` powershell
-dotnet test
-```
-
-## Executar API
-
-``` powershell
-dotnet run --project src\Vertex.Api
-```
-
-Swagger:
-
-``` text
-https://localhost:<porta>/swagger
-```
-
-------------------------------------------------------------------------
-
-# Fluxo de desenvolvimento
-
-``` text
-1. Definir regra
-       |
-2. Criar/alterar Domain
-       |
-3. Criar testes quando necessário
-       |
-4. Criar caso de uso
-       |
-5. Criar abstrações
-       |
-6. Implementar Infrastructure
-       |
-7. Criar migration
-       |
-8. Expor API
-       |
-9. Validar no Swagger
-       |
-10. Integrar Client/UI
-```
-
-------------------------------------------------------------------------
-
-# Progresso atual
-
-Aproximadamente **55%** da fundação e dos módulos centrais planejados já
-estão implementados.
-
-``` text
-Arquitetura / infraestrutura       ██████████████████░░  90%
-Banco / EF / Migrations             ███████████████████  95%
-JWT / Segurança                     ███████████████████  95%
-Computadores / Heartbeat            ███████████████████ 100%
-Estações                            ███████████████████ 100%
-Clientes                            ███████████████████ 100%
-Sessões                             ███████████████████ 100%
-Tipos de máquina                    ███████████████████ 100%
-Configuração de tarifação           ███████████████████ 100%
-Faixas de horário                   ███████████████████ 100%
-Promoções                           ███████████████████ 100%
-Motor de tarifação                  ███████████████████ 100%
-Histórico de consumo                ███████████████████ 100%
-Créditos / Pagamentos               ░░░░░░░░░░░░░░░░░░░  0%
-Produtos / Vendas                   ░░░░░░░░░░░░░░░░░░░  0%
-WPF                                 █░░░░░░░░░░░░░░░░░░  5%
-SignalR                             ░░░░░░░░░░░░░░░░░░░  0%
-Dashboard                           █░░░░░░░░░░░░░░░░░░  5%
-```
-
-## Testes
-
-``` text
-29 testes
-29 aprovados
-0 falhas
-```
-
-------------------------------------------------------------------------
-
-# Status
-
-🚧 **Em desenvolvimento ativo**
-
-A fundação da API, persistência, Swagger, JWT Bearer, gerenciamento de
-computadores, heartbeat, estações, clientes, sessões, tipos de máquina,
-tarifação, faixas de horário, promoções e histórico de consumo já estão
-implementados e validados.
-
-O **motor de tarifação** já calcula valores proporcionais, identifica
-regras por tipo de máquina, horário e dia da semana, aplica promoções
-por prioridade e registra os segmentos efetivamente cobrados no
-histórico da sessão.
-
-**Próxima grande etapa:** implementar **carteira de crédito e
-movimentações financeiras**, preparando recargas, consumo de crédito,
-pagamentos e posteriormente produtos e vendas.
-
-------------------------------------------------------------------------
-
-# Licença
-
-Projeto em desenvolvimento.
-
-A licença definitiva ainda será definida.
-
-------------------------------------------------------------------------
-
-## Autor
+## 👨‍💻 Autor
 
 **Artenir Pinho**
 
-Projeto de estudo e construção de uma solução real para gerenciamento de
-LAN Houses, com foco em arquitetura de software, desenvolvimento .NET,
-APIs, persistência, segurança, testes automatizados e comunicação entre
-aplicações.
+Projeto pessoal de estudo e desenvolvimento profissional utilizando .NET 9, Clean Architecture, EF Core e SQL Server.

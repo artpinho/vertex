@@ -12,5 +12,7 @@ namespace Vertex.Application.Sessions.Commands.IniciarSessao
         Guid ClienteId,
         Guid EstacaoId,
         DateTime Inicio,
-        StatusSessao Status);
+        StatusSessao Status,
+        TipoCobranca TipoCobranca,
+        DateTime? FimPermitido);
 }
