@@ -17,6 +17,41 @@ O projeto está sendo construído de forma incremental, utilizando **Clean Archi
 
 ---
 
+## 📊 Andamento do Projeto
+
+**75% concluído**
+
+```text
+███████████████████░░░░░ 75%
+```
+
+### Status atual
+
+- ✅ Núcleo da aplicação
+- ✅ Cadastro e gerenciamento de clientes
+- ✅ Estações e computadores
+- ✅ Autenticação e segurança
+- ✅ Sessões
+- ✅ Tipos de máquina
+- ✅ Motor de tarifação
+- ✅ Tarifas e faixas de horário
+- ✅ Promoções
+- ✅ Carteira e recargas
+- ✅ Movimentações financeiras
+- ✅ Sessões pré-pagas
+- ✅ Encerramento automático por limite de saldo
+- 🔄 Sessões pós-pagas
+- ⏳ Produtos e vendas
+- ⏳ Controle de estoque
+- ⏳ SignalR
+- ⏳ Cliente WPF
+- ⏳ Dashboard e relatórios
+- ⏳ Fechamento de caixa
+
+![Progress](https://img.shields.io/badge/Progress-75%25-blue)
+
+---
+
 ## 🏗️ Arquitetura
 
 O Vertex utiliza uma arquitetura modular baseada em Clean Architecture:
